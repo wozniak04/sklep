@@ -29,7 +29,7 @@ namespace sklep
         /// </summary>
         private void InitializeComponent()
         {
-           
+            this.SuspendLayout();
             // 
             // Form1
             // 
@@ -39,13 +39,15 @@ namespace sklep
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+<<<<<<< HEAD
 
         
+=======
+>>>>>>> 3549ba6d44706d5de4928835fa422561fa0fb2ce
     }
 }
 
