@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace sklep
 {
-    public partial class Form1 : Form
+    public partial class Register_Alert : Form
     {
-        public Form1()
+        public Register_Alert()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Register reg = new Register();
-            reg.Show();
         }
     }
 }

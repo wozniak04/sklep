@@ -1,7 +1,6 @@
-﻿
-namespace sklep
+﻿namespace sklep
 {
-    partial class Form1
+    partial class Register_Alert
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +28,37 @@ namespace sklep
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnRegister
+            // label1
             // 
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.btnRegister.Location = new System.Drawing.Point(494, 390);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(196, 44);
-            this.btnRegister.TabIndex = 0;
-            this.btnRegister.Text = "Zarejestruj";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.button1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.label1.Location = new System.Drawing.Point(45, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(381, 55);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Zarejestrowny/a";
             // 
-            // Form1
+            // Register_Alert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 761);
-            this.Controls.Add(this.btnRegister);
-            this.Name = "Form1";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.ClientSize = new System.Drawing.Size(468, 230);
+            this.Controls.Add(this.label1);
+            this.Name = "Register_Alert";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Register_Alert";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Label label1;
     }
 }
-
