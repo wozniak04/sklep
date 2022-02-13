@@ -43,11 +43,7 @@ namespace sklep
         }
 
         #endregion
-<<<<<<< HEAD
 
-        
-=======
->>>>>>> 3549ba6d44706d5de4928835fa422561fa0fb2ce
     }
 }
 
