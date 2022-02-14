@@ -15,18 +15,6 @@ namespace sklep
         public Register()
         {
             InitializeComponent();
-
-            tUser.MouseHover += new EventHandler(this.User_Clear);
-            tUser.MouseLeave += new EventHandler(this.User_Return);
-            
-            tEmail.MouseHover += new EventHandler(this.Email_Clear);
-            tEmail.MouseLeave += new EventHandler(this.Email_Return);
-
-            tPassword.MouseHover += new EventHandler(this.Password_Clear);
-            tPassword.MouseLeave += new EventHandler(this.Password_Return);
-
-            tLogin.MouseHover += new EventHandler(this.Login_Clear);
-            tLogin.MouseLeave += new EventHandler(this.Login_Return);
         }
         
         // User clear and return text functions 
@@ -99,10 +87,7 @@ namespace sklep
             regAlert.Show();
         }
 
-        //Return button 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+       //Return button 
+
     }
 }

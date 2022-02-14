@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace sklep
 {
-    public partial class Form1 : Form
+    public partial class Logging : Form
     {
-        public Form1()
+        public Logging()
         {
             InitializeComponent();
         }

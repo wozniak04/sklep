@@ -37,16 +37,16 @@
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_Login = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // tPassword
@@ -61,6 +61,8 @@
             this.tPassword.TabIndex = 2;
             this.tPassword.Text = "Hasło";
             this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tPassword.MouseHover += new System.EventHandler(this.Password_Clear);
+            this.tPassword.MouseLeave += new System.EventHandler(this.Password_Return);
             // 
             // tEmail
             // 
@@ -74,6 +76,8 @@
             this.tEmail.TabIndex = 1;
             this.tEmail.Text = "Email";
             this.tEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tEmail.MouseHover += new System.EventHandler(this.Email_Clear);
+            this.tEmail.MouseLeave += new System.EventHandler(this.Email_Return);
             // 
             // tLogin
             // 
@@ -87,6 +91,8 @@
             this.tLogin.TabIndex = 3;
             this.tLogin.Text = "Login";
             this.tLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tLogin.MouseHover += new System.EventHandler(this.Login_Clear);
+            this.tLogin.MouseLeave += new System.EventHandler(this.Login_Return);
             // 
             // tUser
             // 
@@ -100,6 +106,8 @@
             this.tUser.TabIndex = 4;
             this.tUser.Text = "Nazwa użytkownika";
             this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tUser.MouseHover += new System.EventHandler(this.User_Clear);
+            this.tUser.MouseLeave += new System.EventHandler(this.User_Return);
             // 
             // tER_User
             // 
@@ -164,29 +172,6 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Location = new System.Drawing.Point(257, 551);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(248, 44);
-            this.btnRegister.TabIndex = 10;
-            this.btnRegister.Text = "Zatwierdź";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.Image = global::sklep.Properties.Resources.back;
-            this.btnBack.Location = new System.Drawing.Point(1089, 26);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(70, 54);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnBack.TabIndex = 6;
-            this.btnBack.TabStop = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::sklep.Properties.Resources.right_arrow;
@@ -207,6 +192,18 @@
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Location = new System.Drawing.Point(257, 551);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(248, 44);
+            this.btnRegister.TabIndex = 10;
+            this.btnRegister.Text = "Zatwierdź";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::sklep.Properties.Resources.user;
@@ -216,6 +213,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Image = global::sklep.Properties.Resources.back;
+            this.btnBack.Location = new System.Drawing.Point(1089, 26);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(70, 54);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBack.TabIndex = 6;
+            this.btnBack.TabStop = false;
             // 
             // Register
             // 
@@ -230,10 +237,10 @@
             this.Text = "Register";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
 
         }

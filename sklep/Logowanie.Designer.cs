@@ -1,7 +1,7 @@
 ﻿
 namespace sklep
 {
-    partial class Form1
+    partial class Logging
     {
         /// <summary>
         /// Required designer variable.
@@ -49,9 +49,9 @@ namespace sklep
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.btnRegister);
-            this.Name = "Form1";
+            this.Name = "Logowanie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Logowanie";
             this.ResumeLayout(false);
 
         }
