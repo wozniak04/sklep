@@ -95,6 +95,28 @@ namespace sklep
             log.ShowDialog();
             this.Close();
         }
+        int count = -1;
+        private void userChange_Left_Click(object sender, EventArgs e)
+        {
+            
+            if (count > 0)
+            {
+                count--;
+            }
 
+            userAwatar.Image = userAwatar_List.Images[count];
+        }
+
+        private void userChange_Right_Click(object sender, EventArgs e)
+        {
+            
+            
+            if (count < 10)
+            {
+                count++;
+            }
+
+            userAwatar.Image = userAwatar_List.Images[count];
+        }
     }
 }
