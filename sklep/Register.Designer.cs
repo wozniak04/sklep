@@ -61,8 +61,8 @@
             this.tPassword.TabIndex = 2;
             this.tPassword.Text = "Hasło";
             this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tPassword.MouseHover += new System.EventHandler(this.Password_Clear);
-            this.tPassword.MouseLeave += new System.EventHandler(this.Password_Return);
+            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
+            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
             // 
             // tEmail
             // 
@@ -76,8 +76,8 @@
             this.tEmail.TabIndex = 1;
             this.tEmail.Text = "Email";
             this.tEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tEmail.MouseHover += new System.EventHandler(this.Email_Clear);
-            this.tEmail.MouseLeave += new System.EventHandler(this.Email_Return);
+            this.tEmail.Enter += new System.EventHandler(this.Email_Clear);
+            this.tEmail.Leave += new System.EventHandler(this.Email_Return);
             // 
             // tLogin
             // 
@@ -91,8 +91,8 @@
             this.tLogin.TabIndex = 3;
             this.tLogin.Text = "Login";
             this.tLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tLogin.MouseHover += new System.EventHandler(this.Login_Clear);
-            this.tLogin.MouseLeave += new System.EventHandler(this.Login_Return);
+            this.tLogin.Enter += new System.EventHandler(this.Login_Clear);
+            this.tLogin.Leave += new System.EventHandler(this.Login_Return);
             // 
             // tUser
             // 
@@ -106,8 +106,8 @@
             this.tUser.TabIndex = 4;
             this.tUser.Text = "Nazwa użytkownika";
             this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tUser.MouseHover += new System.EventHandler(this.User_Clear);
-            this.tUser.MouseLeave += new System.EventHandler(this.User_Return);
+            this.tUser.Enter += new System.EventHandler(this.User_Clear);
+            this.tUser.Leave += new System.EventHandler(this.User_Return);
             // 
             // tER_User
             // 
