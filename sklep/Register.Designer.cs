@@ -34,7 +34,7 @@
             this.tER_Email = new System.Windows.Forms.Label();
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_Login = new System.Windows.Forms.Label();
-            this.gbRegister = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnRegister_Apply = new Krypton.Toolkit.KryptonButton();
             this.tLogin = new Krypton.Toolkit.KryptonTextBox();
             this.tPassword = new Krypton.Toolkit.KryptonTextBox();
@@ -46,7 +46,7 @@
             this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
             this.userAwatar_List = new System.Windows.Forms.ImageList(this.components);
             this.btnBack = new System.Windows.Forms.PictureBox();
-            this.gbRegister.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
@@ -93,28 +93,28 @@
             this.tER_Login.TabIndex = 9;
             this.tER_Login.Text = "label";
             // 
-            // gbRegister
+            // groupBox1
             // 
-            this.gbRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
-            this.gbRegister.Controls.Add(this.btnRegister_Apply);
-            this.gbRegister.Controls.Add(this.tLogin);
-            this.gbRegister.Controls.Add(this.tPassword);
-            this.gbRegister.Controls.Add(this.tEmail);
-            this.gbRegister.Controls.Add(this.tUser);
-            this.gbRegister.Controls.Add(this.userChange_Right);
-            this.gbRegister.Controls.Add(this.userChange_Left);
-            this.gbRegister.Controls.Add(this.tER_Login);
-            this.gbRegister.Controls.Add(this.tER_Password);
-            this.gbRegister.Controls.Add(this.tER_Email);
-            this.gbRegister.Controls.Add(this.tER_User);
-            this.gbRegister.Controls.Add(this.userAwatar);
-            this.gbRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.gbRegister.Location = new System.Drawing.Point(227, 12);
-            this.gbRegister.Name = "gbRegister";
-            this.gbRegister.Size = new System.Drawing.Size(764, 716);
-            this.gbRegister.TabIndex = 5;
-            this.gbRegister.TabStop = false;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.groupBox1.Controls.Add(this.btnRegister_Apply);
+            this.groupBox1.Controls.Add(this.tLogin);
+            this.groupBox1.Controls.Add(this.tPassword);
+            this.groupBox1.Controls.Add(this.tEmail);
+            this.groupBox1.Controls.Add(this.tUser);
+            this.groupBox1.Controls.Add(this.userChange_Right);
+            this.groupBox1.Controls.Add(this.userChange_Left);
+            this.groupBox1.Controls.Add(this.tER_Login);
+            this.groupBox1.Controls.Add(this.tER_Password);
+            this.groupBox1.Controls.Add(this.tER_Email);
+            this.groupBox1.Controls.Add(this.tER_User);
+            this.groupBox1.Controls.Add(this.userAwatar);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox1.Location = new System.Drawing.Point(227, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(764, 716);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
             // 
             // btnRegister_Apply
             // 
@@ -272,7 +272,7 @@
             this.userChange_Right.Image = global::sklep.Properties.Resources.right_arrow;
             this.userChange_Right.Location = new System.Drawing.Point(539, 142);
             this.userChange_Right.Name = "userChange_Right";
-            this.userChange_Right.Size = new System.Drawing.Size(79, 55);
+            this.userChange_Right.Size = new System.Drawing.Size(92, 76);
             this.userChange_Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userChange_Right.TabIndex = 12;
             this.userChange_Right.TabStop = false;
@@ -281,9 +281,9 @@
             // userChange_Left
             // 
             this.userChange_Left.Image = global::sklep.Properties.Resources.left_arrow1;
-            this.userChange_Left.Location = new System.Drawing.Point(138, 142);
+            this.userChange_Left.Location = new System.Drawing.Point(130, 142);
             this.userChange_Left.Name = "userChange_Left";
-            this.userChange_Left.Size = new System.Drawing.Size(79, 55);
+            this.userChange_Left.Size = new System.Drawing.Size(92, 76);
             this.userChange_Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userChange_Left.TabIndex = 11;
             this.userChange_Left.TabStop = false;
@@ -344,6 +344,17 @@
             this.userAwatar_List.TransparentColor = System.Drawing.Color.Transparent;
             this.userAwatar_List.Images.SetKeyName(0, "user0.png");
             this.userAwatar_List.Images.SetKeyName(1, "user1.png");
+            this.userAwatar_List.Images.SetKeyName(2, "user2.png");
+            this.userAwatar_List.Images.SetKeyName(3, "user3.png");
+            this.userAwatar_List.Images.SetKeyName(4, "user4.png");
+            this.userAwatar_List.Images.SetKeyName(5, "user5.png");
+            this.userAwatar_List.Images.SetKeyName(6, "user6.png");
+            this.userAwatar_List.Images.SetKeyName(7, "user7.png");
+            this.userAwatar_List.Images.SetKeyName(8, "user8.png");
+            this.userAwatar_List.Images.SetKeyName(9, "user9.png");
+            this.userAwatar_List.Images.SetKeyName(10, "user10.png");
+            this.userAwatar_List.Images.SetKeyName(11, "user11.png");
+            this.userAwatar_List.Images.SetKeyName(12, "user12.png");
             // 
             // btnBack
             // 
@@ -363,15 +374,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.gbRegister);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Register";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rejestracja";
-            this.gbRegister.ResumeLayout(false);
-            this.gbRegister.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
@@ -386,7 +397,7 @@
         private System.Windows.Forms.Label tER_Email;
         private System.Windows.Forms.Label tER_Password;
         private System.Windows.Forms.Label tER_Login;
-        private System.Windows.Forms.GroupBox gbRegister;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.PictureBox userChange_Right;
         private System.Windows.Forms.PictureBox userChange_Left;

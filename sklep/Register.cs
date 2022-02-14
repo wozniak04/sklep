@@ -110,7 +110,6 @@ namespace sklep
         private void userChange_Right_Click(object sender, EventArgs e)
         {
             
-            
             if (count < 10)
             {
                 count++;
@@ -118,5 +117,7 @@ namespace sklep
 
             userAwatar.Image = userAwatar_List.Images[count];
         }
+
     }
 }
+
