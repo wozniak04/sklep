@@ -43,13 +43,13 @@ namespace sklep
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Logging
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.btnRegister);
-            this.Name = "Logowanie";
+            this.Name = "Logging";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logowanie";
             this.ResumeLayout(false);
