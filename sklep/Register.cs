@@ -110,7 +110,7 @@ namespace sklep
         private void userChange_Right_Click(object sender, EventArgs e)
         {
             
-            if (count < 13)
+            if (count < 12)
             {
                 count++;
             }
