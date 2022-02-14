@@ -19,8 +19,10 @@ namespace sklep
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Register reg = new Register();
-            reg.Show();
+            this.Hide();
+            var Register = new Register();
+            Register.ShowDialog();
+            this.Close();
         }
     }
 }
