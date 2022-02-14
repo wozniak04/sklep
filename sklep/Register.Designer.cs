@@ -193,6 +193,8 @@
             this.tLogin.TabIndex = 16;
             this.tLogin.Text = "Login";
             this.tLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tLogin.Enter += new System.EventHandler(this.Login_Clear);
+            this.tLogin.Leave += new System.EventHandler(this.Login_Return);
             // 
             // tPassword
             // 
@@ -214,6 +216,8 @@
             this.tPassword.TabIndex = 15;
             this.tPassword.Text = "Hasło";
             this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
+            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
             // 
             // tEmail
             // 
@@ -235,6 +239,8 @@
             this.tEmail.TabIndex = 14;
             this.tEmail.Text = "Email";
             this.tEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tEmail.Enter += new System.EventHandler(this.Email_Clear);
+            this.tEmail.Leave += new System.EventHandler(this.Email_Return);
             // 
             // tUser
             // 
@@ -256,6 +262,8 @@
             this.tUser.TabIndex = 13;
             this.tUser.Text = "Nazwa użytkownika";
             this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tUser.Enter += new System.EventHandler(this.User_Clear);
+            this.tUser.Leave += new System.EventHandler(this.User_Return);
             // 
             // pictureBox3
             // 
