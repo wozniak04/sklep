@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!--Created by exporting the settings of a KryptonPalette instance.-->
+<!--For more information about Krypton visit www.ComponentFactory.com-->
+<!--WARNING: Modifying this file may render it invalid for importing.-->
+<KryptonPalette Version="18" Generated="Monday, 14 February 2022, 16:33">
+  <Properties>
+    <ButtonStyles>
+      <ButtonForm>
+        <StateNormal>
+          <Back>
+            <Color1 Type="Color" Value="90, 92, 91" />
+            <Color2 Type="Color" Value="90, 92, 91" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Width Type="Int" Value="0" />
+          </Border>
+        </StateNormal>
+        <StateTracking>
+          <Back>
+            <Color1 Type="Color" Value="90, 92, 91" />
+            <Color2 Type="Color" Value="90, 92, 91" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Width Type="Int" Value="0" />
+          </Border>
+        </StateTracking>
+        <StatePressed>
+          <Back>
+            <Color1 Type="Color" Value="90, 92, 91" />
+            <Color2 Type="Color" Value="90, 92, 91" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Width Type="Int" Value="0" />
+          </Border>
+        </StatePressed>
+      </ButtonForm>
+    </ButtonStyles>
+    <FormStyles>
+      <FormCommon>
+        <StateCommon>
+          <Back>
+            <Color1 Type="Color" Value="90, 92, 91" />
+            <Color2 Type="Color" Value="90, 92, 91" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Rounding Type="Int" Value="12" />
+          </Border>
+        </StateCommon>
+      </FormCommon>
+      <FormMain>
+        <StateCommon>
+          <Back>
+            <Color1 Type="Color" Value="90, 92, 91" />
+            <Color2 Type="Color" Value="90, 92, 91" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <GraphicsHint Type="PaletteGraphicsHint" Value="None" />
+            <Rounding Type="Int" Value="12" />
+          </Border>
+        </StateCommon>
+        <StateInactive>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <GraphicsHint Type="PaletteGraphicsHint" Value="None" />
+            <Rounding Type="Int" Value="12" />
+          </Border>
+        </StateInactive>
+      </FormMain>
+    </FormStyles>
+    <HeaderStyles>
+      <HeaderForm>
+        <StateCommon>
+          <Back>
+            <Color1 Type="Color" Value="GreenYellow" />
+            <Color2 Type="Color" Value="Green" />
+          </Back>
+          <Content>
+            <Padding Type="Padding" Value="10, -1, -1, -1" />
+          </Content>
+        </StateCommon>
+      </HeaderForm>
+    </HeaderStyles>
+  </Properties>
+  <Images />
+</KryptonPalette>
