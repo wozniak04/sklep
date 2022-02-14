@@ -14,19 +14,7 @@ namespace sklep
     {
         public Register()
         {
-            InitializeComponent();
-            
-            this.tUser.Enter += new System.EventHandler(this.User_Clear);
-            this.tUser.Leave += new System.EventHandler(this.User_Return);
-            
-            this.tEmail.Enter += new System.EventHandler(this.Email_Clear);
-            this.tEmail.Leave += new System.EventHandler(this.Email_Return);
-
-            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
-            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
-
-            this.tLogin.Enter += new System.EventHandler(this.Login_Clear);
-            this.tLogin.Leave += new System.EventHandler(this.Login_Return);
+            InitializeComponent();                                                             
         }
 
         // User clear and return text functions 
