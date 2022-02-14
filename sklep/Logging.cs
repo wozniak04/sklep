@@ -17,5 +17,12 @@ namespace sklep
             InitializeComponent();
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Shop shop = new Shop();
+            shop.ShowDialog();
+            this.Close();
+        }
     }
 }

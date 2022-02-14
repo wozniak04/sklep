@@ -35,7 +35,7 @@ namespace sklep
             this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
             this.btnRegister = new Krypton.Toolkit.KryptonButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnRegister_Apply = new Krypton.Toolkit.KryptonButton();
+            this.btnLogin = new Krypton.Toolkit.KryptonButton();
             this.tPassword = new Krypton.Toolkit.KryptonTextBox();
             this.tUser = new Krypton.Toolkit.KryptonTextBox();
             this.tER_Password = new System.Windows.Forms.Label();
@@ -150,7 +150,7 @@ namespace sklep
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
-            this.groupBox1.Controls.Add(this.btnRegister_Apply);
+            this.groupBox1.Controls.Add(this.btnLogin);
             this.groupBox1.Controls.Add(this.btnRegister);
             this.groupBox1.Controls.Add(this.tPassword);
             this.groupBox1.Controls.Add(this.tUser);
@@ -165,63 +165,64 @@ namespace sklep
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
-            // btnRegister_Apply
+            // btnLogin
             // 
-            this.btnRegister_Apply.Location = new System.Drawing.Point(257, 465);
-            this.btnRegister_Apply.Name = "btnRegister_Apply";
-            this.btnRegister_Apply.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogin.Location = new System.Drawing.Point(257, 465);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRegister_Apply.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogin.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRegister_Apply.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnRegister_Apply.Size = new System.Drawing.Size(248, 51);
-            this.btnRegister_Apply.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateCommon.Back.ColorAngle = 45F;
-            this.btnRegister_Apply.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogin.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnLogin.Size = new System.Drawing.Size(248, 51);
+            this.btnLogin.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateCommon.Back.ColorAngle = 45F;
+            this.btnLogin.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRegister_Apply.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRegister_Apply.StateCommon.Border.Rounding = 20F;
-            this.btnRegister_Apply.StateCommon.Border.Width = 1;
-            this.btnRegister_Apply.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.btnRegister_Apply.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
-            this.btnRegister_Apply.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.btnRegister_Apply.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogin.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnLogin.StateCommon.Border.Rounding = 20F;
+            this.btnLogin.StateCommon.Border.Width = 1;
+            this.btnLogin.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.btnLogin.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.btnLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnLogin.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRegister_Apply.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogin.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRegister_Apply.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister_Apply.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnLogin.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnLogin.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRegister_Apply.TabIndex = 18;
-            this.btnRegister_Apply.Values.Text = "Zatwierdź";
+            this.btnLogin.TabIndex = 18;
+            this.btnLogin.Values.Text = "Zatwierdź";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // tPassword
             // 
@@ -359,7 +360,7 @@ namespace sklep
         private Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private Krypton.Toolkit.KryptonButton btnRegister;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Krypton.Toolkit.KryptonButton btnRegister_Apply;
+        private Krypton.Toolkit.KryptonButton btnLogin;
         private Krypton.Toolkit.KryptonTextBox tPassword;
         private Krypton.Toolkit.KryptonTextBox tUser;
         private System.Windows.Forms.Label tER_Password;

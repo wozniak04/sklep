@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
+
 namespace sklep
 {
     public partial class Register : KryptonForm
@@ -17,6 +18,7 @@ namespace sklep
             InitializeComponent();                                                             
         }
 
+        
     }
 }
 

@@ -282,7 +282,7 @@ namespace sklep
             // 
             // userChange_Left
             // 
-            this.userChange_Left.Image = global::sklep.Properties.Resources.left_arrow1;
+            this.userChange_Left.Image = global::sklep.Properties.Resources.left_arrow;
             this.userChange_Left.Location = new System.Drawing.Point(130, 142);
             this.userChange_Left.Name = "userChange_Left";
             this.userChange_Left.Size = new System.Drawing.Size(92, 76);
@@ -360,7 +360,6 @@ namespace sklep
             // 
             // btnBack
             // 
-            this.btnBack.Image = global::sklep.Properties.Resources.back;
             this.btnBack.Location = new System.Drawing.Point(1089, 26);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(70, 54);
