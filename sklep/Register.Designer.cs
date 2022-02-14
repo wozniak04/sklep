@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tPassword = new System.Windows.Forms.TextBox();
-            this.tEmail = new System.Windows.Forms.TextBox();
-            this.tLogin = new System.Windows.Forms.TextBox();
-            this.tUser = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
             this.tER_User = new System.Windows.Forms.Label();
             this.tER_Email = new System.Windows.Forms.Label();
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_Login = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnRegister_Apply = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.tLogin = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.tPassword = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.tEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.tUser = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -48,66 +50,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tPassword
-            // 
-            this.tPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tPassword.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.tPassword.Location = new System.Drawing.Point(223, 427);
-            this.tPassword.Multiline = true;
-            this.tPassword.Name = "tPassword";
-            this.tPassword.Size = new System.Drawing.Size(325, 35);
-            this.tPassword.TabIndex = 2;
-            this.tPassword.Text = "Hasło";
-            this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
-            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
-            // 
-            // tEmail
-            // 
-            this.tEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.tEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tEmail.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.tEmail.Location = new System.Drawing.Point(223, 374);
-            this.tEmail.Multiline = true;
-            this.tEmail.Name = "tEmail";
-            this.tEmail.Size = new System.Drawing.Size(325, 35);
-            this.tEmail.TabIndex = 1;
-            this.tEmail.Text = "Email";
-            this.tEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tEmail.Enter += new System.EventHandler(this.Email_Clear);
-            this.tEmail.Leave += new System.EventHandler(this.Email_Return);
-            // 
-            // tLogin
-            // 
-            this.tLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.tLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tLogin.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.tLogin.Location = new System.Drawing.Point(223, 480);
-            this.tLogin.Multiline = true;
-            this.tLogin.Name = "tLogin";
-            this.tLogin.Size = new System.Drawing.Size(325, 35);
-            this.tLogin.TabIndex = 3;
-            this.tLogin.Text = "Login";
-            this.tLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tLogin.Enter += new System.EventHandler(this.Login_Clear);
-            this.tLogin.Leave += new System.EventHandler(this.Login_Return);
-            // 
-            // tUser
-            // 
-            this.tUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.tUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tUser.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.tUser.Location = new System.Drawing.Point(223, 312);
-            this.tUser.Multiline = true;
-            this.tUser.Name = "tUser";
-            this.tUser.Size = new System.Drawing.Size(325, 35);
-            this.tUser.TabIndex = 4;
-            this.tUser.Text = "Nazwa użytkownika";
-            this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tUser.Enter += new System.EventHandler(this.User_Clear);
-            this.tUser.Leave += new System.EventHandler(this.User_Return);
             // 
             // tER_User
             // 
@@ -123,7 +65,7 @@
             // 
             this.tER_Email.AutoSize = true;
             this.tER_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.tER_Email.Location = new System.Drawing.Point(584, 374);
+            this.tER_Email.Location = new System.Drawing.Point(584, 385);
             this.tER_Email.Name = "tER_Email";
             this.tER_Email.Size = new System.Drawing.Size(47, 20);
             this.tER_Email.TabIndex = 7;
@@ -133,7 +75,7 @@
             // 
             this.tER_Password.AutoSize = true;
             this.tER_Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.tER_Password.Location = new System.Drawing.Point(584, 427);
+            this.tER_Password.Location = new System.Drawing.Point(584, 448);
             this.tER_Password.Name = "tER_Password";
             this.tER_Password.Size = new System.Drawing.Size(47, 20);
             this.tER_Password.TabIndex = 8;
@@ -143,7 +85,7 @@
             // 
             this.tER_Login.AutoSize = true;
             this.tER_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.tER_Login.Location = new System.Drawing.Point(584, 480);
+            this.tER_Login.Location = new System.Drawing.Point(584, 509);
             this.tER_Login.Name = "tER_Login";
             this.tER_Login.Size = new System.Drawing.Size(47, 20);
             this.tER_Login.TabIndex = 9;
@@ -152,25 +94,168 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.groupBox1.Controls.Add(this.btnRegister_Apply);
+            this.groupBox1.Controls.Add(this.tLogin);
+            this.groupBox1.Controls.Add(this.tPassword);
+            this.groupBox1.Controls.Add(this.tEmail);
+            this.groupBox1.Controls.Add(this.tUser);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.btnRegister);
             this.groupBox1.Controls.Add(this.tER_Login);
             this.groupBox1.Controls.Add(this.tER_Password);
             this.groupBox1.Controls.Add(this.tER_Email);
             this.groupBox1.Controls.Add(this.tER_User);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.tUser);
-            this.groupBox1.Controls.Add(this.tLogin);
-            this.groupBox1.Controls.Add(this.tEmail);
-            this.groupBox1.Controls.Add(this.tPassword);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(227, 26);
+            this.groupBox1.Location = new System.Drawing.Point(227, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(764, 702);
+            this.groupBox1.Size = new System.Drawing.Size(764, 716);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
+            // 
+            // btnRegister_Apply
+            // 
+            this.btnRegister_Apply.Location = new System.Drawing.Point(257, 571);
+            this.btnRegister_Apply.Name = "btnRegister_Apply";
+            this.btnRegister_Apply.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRegister_Apply.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRegister_Apply.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnRegister_Apply.Size = new System.Drawing.Size(248, 51);
+            this.btnRegister_Apply.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateCommon.Back.ColorAngle = 45F;
+            this.btnRegister_Apply.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRegister_Apply.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnRegister_Apply.StateCommon.Border.Rounding = 20;
+            this.btnRegister_Apply.StateCommon.Border.Width = 1;
+            this.btnRegister_Apply.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.btnRegister_Apply.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.btnRegister_Apply.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnRegister_Apply.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRegister_Apply.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRegister_Apply.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
+            this.btnRegister_Apply.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRegister_Apply.TabIndex = 18;
+            this.btnRegister_Apply.Values.Text = "Zatwierdź";
+            this.btnRegister_Apply.Click += new System.EventHandler(this.btnRegister_Apply_Click);
+            // 
+            // tLogin
+            // 
+            this.tLogin.Location = new System.Drawing.Point(215, 509);
+            this.tLogin.Multiline = true;
+            this.tLogin.Name = "tLogin";
+            this.tLogin.Size = new System.Drawing.Size(325, 41);
+            this.tLogin.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tLogin.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tLogin.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tLogin.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tLogin.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.tLogin.StateCommon.Border.Rounding = 20;
+            this.tLogin.StateCommon.Border.Width = 1;
+            this.tLogin.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.tLogin.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, 10, -1);
+            this.tLogin.TabIndex = 16;
+            this.tLogin.Text = "Login";
+            this.tLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tPassword
+            // 
+            this.tPassword.Location = new System.Drawing.Point(215, 448);
+            this.tPassword.Multiline = true;
+            this.tPassword.Name = "tPassword";
+            this.tPassword.Size = new System.Drawing.Size(325, 41);
+            this.tPassword.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tPassword.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tPassword.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tPassword.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tPassword.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.tPassword.StateCommon.Border.Rounding = 20;
+            this.tPassword.StateCommon.Border.Width = 1;
+            this.tPassword.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.tPassword.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, 10, -1);
+            this.tPassword.TabIndex = 15;
+            this.tPassword.Text = "Hasło";
+            this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tEmail
+            // 
+            this.tEmail.Location = new System.Drawing.Point(215, 385);
+            this.tEmail.Multiline = true;
+            this.tEmail.Name = "tEmail";
+            this.tEmail.Size = new System.Drawing.Size(325, 41);
+            this.tEmail.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tEmail.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tEmail.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.tEmail.StateCommon.Border.Rounding = 20;
+            this.tEmail.StateCommon.Border.Width = 1;
+            this.tEmail.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.tEmail.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, 10, -1);
+            this.tEmail.TabIndex = 14;
+            this.tEmail.Text = "Email";
+            this.tEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tUser
+            // 
+            this.tUser.Location = new System.Drawing.Point(215, 314);
+            this.tUser.Multiline = true;
+            this.tUser.Name = "tUser";
+            this.tUser.Size = new System.Drawing.Size(325, 41);
+            this.tUser.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tUser.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tUser.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tUser.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tUser.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.tUser.StateCommon.Border.Rounding = 20;
+            this.tUser.StateCommon.Border.Width = 1;
+            this.tUser.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.tUser.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, 10, -1);
+            this.tUser.TabIndex = 13;
+            this.tUser.Text = "Nazwa użytkownika";
+            this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
@@ -192,18 +277,6 @@
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(230)))), ((int)(((byte)(83)))));
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Location = new System.Drawing.Point(257, 551);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(248, 44);
-            this.btnRegister.TabIndex = 10;
-            this.btnRegister.Text = "Zatwierdź";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::sklep.Properties.Resources.user;
@@ -214,6 +287,46 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // kryptonPalette1
+            // 
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StateNormal.Border.Width = 0;
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StatePressed.Border.Width = 0;
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette1.ButtonStyles.ButtonForm.StateTracking.Border.Width = 0;
+            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.FormStyles.FormCommon.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Rounding = 12;
+            this.kryptonPalette1.FormStyles.FormMain.StateInactive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette1.FormStyles.FormMain.StateInactive.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.kryptonPalette1.FormStyles.FormMain.StateInactive.Border.Rounding = 12;
+            this.kryptonPalette1.HeaderStyles.HeaderCommon.StateCommon.ButtonEdgeInset = 10;
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.GreenYellow;
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.Green;
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 10;
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
+            // 
             // btnBack
             // 
             this.btnBack.Image = global::sklep.Properties.Resources.back;
@@ -223,6 +336,7 @@
             this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBack.TabIndex = 6;
             this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Register
             // 
@@ -233,6 +347,9 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox1);
             this.Name = "Register";
+            this.Palette = this.kryptonPalette1;
+            this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rejestracja";
             this.groupBox1.ResumeLayout(false);
@@ -246,20 +363,20 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tPassword;
-        private System.Windows.Forms.TextBox tEmail;
-        private System.Windows.Forms.TextBox tLogin;
-        private System.Windows.Forms.TextBox tUser;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label tER_User;
         private System.Windows.Forms.Label tER_Email;
         private System.Windows.Forms.Label tER_Password;
         private System.Windows.Forms.Label tER_Login;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tLogin;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tPassword;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tEmail;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tUser;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRegister_Apply;
     }
 }

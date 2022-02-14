@@ -7,16 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ComponentFactory.Krypton.Toolkit;
 namespace sklep
 {
-    public partial class Register : Form
+    public partial class Register : KryptonForm
     {
         public Register()
         {
             InitializeComponent();
+            
+            this.tUser.Enter += new System.EventHandler(this.User_Clear);
+            this.tUser.Leave += new System.EventHandler(this.User_Return);
+            
+            this.tEmail.Enter += new System.EventHandler(this.Email_Clear);
+            this.tEmail.Leave += new System.EventHandler(this.Email_Return);
+
+            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
+            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
+
+            this.tLogin.Enter += new System.EventHandler(this.Login_Clear);
+            this.tLogin.Leave += new System.EventHandler(this.Login_Return);
         }
-        
+
         // User clear and return text functions 
         private void User_Clear(object sender, EventArgs e)
         {
@@ -80,14 +92,21 @@ namespace sklep
             }
         }
 
-        //Show a notification about registration
-        private void btnRegister_Click(object sender, EventArgs e)
+        //information about registration
+        private void btnRegister_Apply_Click(object sender, EventArgs e)
         {
             Register_Alert regAlert = new Register_Alert();
             regAlert.Show();
         }
 
-       //Return button 
+        //return to main window
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Logging log = new Logging();
+            log.ShowDialog();
+            this.Close();
+        }
 
     }
 }

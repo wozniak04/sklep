@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace sklep
 {
-    public partial class Register_Alert : Form
+    public partial class Register_Alert : KryptonForm
     {
         public Register_Alert()
         {
