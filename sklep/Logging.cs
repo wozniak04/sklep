@@ -17,12 +17,5 @@ namespace sklep
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var Register = new Register();
-            Register.ShowDialog();
-            this.Close();
-        }
     }
 }

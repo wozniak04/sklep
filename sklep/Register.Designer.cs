@@ -1,4 +1,6 @@
-﻿namespace sklep
+﻿using System;
+
+namespace sklep
 {
     partial class Register
     {
@@ -110,7 +112,7 @@
             this.groupBox1.Controls.Add(this.userAwatar);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(227, 12);
+            this.groupBox1.Location = new System.Drawing.Point(203, 26);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(764, 716);
             this.groupBox1.TabIndex = 5;
@@ -391,6 +393,111 @@
 
         }
 
+        // User clear and return text functions 
+        private void User_Clear(object sender, EventArgs e)
+        {
+            if (tUser.Text == "Nazwa użytkownika")
+            {
+                tUser.Clear();
+            }
+        }
+        private void User_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tUser.Text))
+            {
+                tUser.Text = "Nazwa użytkownika";
+            }
+        }
+
+        // Login Email and return text functions 
+        private void Email_Clear(object sender, EventArgs e)
+        {
+            if (tEmail.Text == "Email")
+            {
+                tEmail.Clear();
+            }
+        }
+        private void Email_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tEmail.Text))
+            {
+                tEmail.Text = "Email";
+            }
+        }
+        // Password clear and return text functions 
+        private void Password_Clear(object sender, EventArgs e)
+        {
+            if (tPassword.Text == "Hasło")
+            {
+                tPassword.Clear();
+            }
+        }
+        private void Password_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tPassword.Text))
+            {
+                tPassword.Text = "Hasło";
+            }
+        }
+
+        // Login clear and return text functions 
+        private void Login_Clear(object sender, EventArgs e)
+        {
+            if (tLogin.Text == "Login")
+            {
+                tLogin.Clear();
+            }
+        }
+        private void Login_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tLogin.Text))
+            {
+                tLogin.Text = "Login";
+            }
+        }
+
+        //information about registration
+        private void btnRegister_Apply_Click(object sender, EventArgs e)
+        {
+            Register_Alert regAlert = new Register_Alert();
+            regAlert.Show();
+        }
+
+        //return to main window
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Logging log = new Logging();
+            log.ShowDialog();
+            this.Close();
+        }
+        
+        //Changing the user image functions
+        int count = -1;
+        private void userChange_Left_Click(object sender, EventArgs e)
+        {
+
+            if (count > 0)
+            {
+                count--;
+            }
+
+            userAwatar.Image = userAwatar_List.Images[count];
+        }
+
+        private void userChange_Right_Click(object sender, EventArgs e)
+        {
+
+            if (count < 12)
+            {
+                count++;
+            }
+
+            userAwatar.Image = userAwatar_List.Images[count];
+        }
+
+        
+        
         #endregion
         private System.Windows.Forms.PictureBox userAwatar;
         private System.Windows.Forms.Label tER_User;
