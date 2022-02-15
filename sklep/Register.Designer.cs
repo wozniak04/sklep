@@ -45,8 +45,9 @@ namespace sklep
             this.userChange_Right = new System.Windows.Forms.PictureBox();
             this.userChange_Left = new System.Windows.Forms.PictureBox();
             this.userAwatar = new System.Windows.Forms.PictureBox();
-            this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
             this.userAwatar_List = new System.Windows.Forms.ImageList(this.components);
+            this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.listNawigation = new System.Windows.Forms.ImageList(this.components);
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).BeginInit();
@@ -272,10 +273,9 @@ namespace sklep
             // userChange_Right
             // 
             this.userChange_Right.Image = global::sklep.Properties.Resources.right_arrow;
-            this.userChange_Right.Location = new System.Drawing.Point(539, 142);
+            this.userChange_Right.Location = new System.Drawing.Point(484, 129);
             this.userChange_Right.Name = "userChange_Right";
-            this.userChange_Right.Size = new System.Drawing.Size(92, 76);
-            this.userChange_Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userChange_Right.Size = new System.Drawing.Size(73, 101);
             this.userChange_Right.TabIndex = 12;
             this.userChange_Right.TabStop = false;
             this.userChange_Right.Click += new System.EventHandler(this.userChange_Right_Click);
@@ -283,10 +283,9 @@ namespace sklep
             // userChange_Left
             // 
             this.userChange_Left.Image = global::sklep.Properties.Resources.left_arrow;
-            this.userChange_Left.Location = new System.Drawing.Point(130, 142);
+            this.userChange_Left.Location = new System.Drawing.Point(215, 129);
             this.userChange_Left.Name = "userChange_Left";
-            this.userChange_Left.Size = new System.Drawing.Size(92, 76);
-            this.userChange_Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userChange_Left.Size = new System.Drawing.Size(63, 101);
             this.userChange_Left.TabIndex = 11;
             this.userChange_Left.TabStop = false;
             this.userChange_Left.Click += new System.EventHandler(this.userChange_Left_Click);
@@ -299,6 +298,25 @@ namespace sklep
             this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userAwatar.TabIndex = 0;
             this.userAwatar.TabStop = false;
+            // 
+            // userAwatar_List
+            // 
+            this.userAwatar_List.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("userAwatar_List.ImageStream")));
+            this.userAwatar_List.TransparentColor = System.Drawing.Color.Transparent;
+            this.userAwatar_List.Images.SetKeyName(0, "user0.png");
+            this.userAwatar_List.Images.SetKeyName(1, "user1.png");
+            this.userAwatar_List.Images.SetKeyName(2, "user2.png");
+            this.userAwatar_List.Images.SetKeyName(3, "user3.png");
+            this.userAwatar_List.Images.SetKeyName(4, "user4.png");
+            this.userAwatar_List.Images.SetKeyName(5, "user5.png");
+            this.userAwatar_List.Images.SetKeyName(6, "user6.png");
+            this.userAwatar_List.Images.SetKeyName(7, "user7.png");
+            this.userAwatar_List.Images.SetKeyName(8, "user8.png");
+            this.userAwatar_List.Images.SetKeyName(9, "user9.png");
+            this.userAwatar_List.Images.SetKeyName(10, "user10.png");
+            this.userAwatar_List.Images.SetKeyName(11, "user11.png");
+            this.userAwatar_List.Images.SetKeyName(12, "user12.png");
+            this.userAwatar.Image = this.userAwatar_List.Images[0];
             // 
             // kryptonPalette1
             // 
@@ -340,23 +358,14 @@ namespace sklep
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 10;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
-            // userAwatar_List
+            // listNawigation
             // 
-            this.userAwatar_List.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("userAwatar_List.ImageStream")));
-            this.userAwatar_List.TransparentColor = System.Drawing.Color.Transparent;
-            this.userAwatar_List.Images.SetKeyName(0, "user0.png");
-            this.userAwatar_List.Images.SetKeyName(1, "user1.png");
-            this.userAwatar_List.Images.SetKeyName(2, "user2.png");
-            this.userAwatar_List.Images.SetKeyName(3, "user3.png");
-            this.userAwatar_List.Images.SetKeyName(4, "user4.png");
-            this.userAwatar_List.Images.SetKeyName(5, "user5.png");
-            this.userAwatar_List.Images.SetKeyName(6, "user6.png");
-            this.userAwatar_List.Images.SetKeyName(7, "user7.png");
-            this.userAwatar_List.Images.SetKeyName(8, "user8.png");
-            this.userAwatar_List.Images.SetKeyName(9, "user9.png");
-            this.userAwatar_List.Images.SetKeyName(10, "user10.png");
-            this.userAwatar_List.Images.SetKeyName(11, "user11.png");
-            this.userAwatar_List.Images.SetKeyName(12, "user12.png");
+            this.listNawigation.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("listNawigation.ImageStream")));
+            this.listNawigation.TransparentColor = System.Drawing.Color.Transparent;
+            this.listNawigation.Images.SetKeyName(0, "left-arrow.png");
+            this.listNawigation.Images.SetKeyName(1, "right-arrow.png");
+            this.listNawigation.Images.SetKeyName(2, "back.png");
+            this.listNawigation.Images.SetKeyName(3, "menu.png");
             // 
             // btnBack
             // 
@@ -367,6 +376,7 @@ namespace sklep
             this.btnBack.TabIndex = 6;
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.Image = this.listNawigation.Images[2];
             // 
             // Register
             // 
@@ -475,12 +485,10 @@ namespace sklep
         int count = -1;
         private void userChange_Left_Click(object sender, EventArgs e)
         {
-
             if (count > 0)
             {
                 count--;
             }
-
             userAwatar.Image = userAwatar_List.Images[count];
         }
 
@@ -489,9 +497,8 @@ namespace sklep
 
             if (count < 12)
             {
-                count++;
+                count++;  
             }
-
             userAwatar.Image = userAwatar_List.Images[count];
         }
 
@@ -514,5 +521,6 @@ namespace sklep
         private Krypton.Toolkit.KryptonTextBox tUser;
         private Krypton.Toolkit.KryptonButton btnRegister_Apply;
         private System.Windows.Forms.ImageList userAwatar_List;
+        private System.Windows.Forms.ImageList listNawigation;
     }
 }

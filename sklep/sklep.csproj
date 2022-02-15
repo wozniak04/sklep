@@ -148,5 +148,8 @@
   <ItemGroup>
     <None Include="Addons\Images\Navigation\menu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Addons\Images\Navigation\back.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
