@@ -354,8 +354,8 @@ namespace sklep
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Logging log = new Logging();
-            log.ShowDialog();
+            var Logging = new Logging();
+            Logging.ShowDialog();
             this.Close();
         }
         
