@@ -33,21 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Krypton.Docking, Version=60.22.2.32, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Docking.60.22.2.32\lib\net472\Krypton.Docking.dll</HintPath>
-    </Reference>
-    <Reference Include="Krypton.Navigator, Version=60.22.2.32, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Navigator.60.22.2.32\lib\net472\Krypton.Navigator.dll</HintPath>
-    </Reference>
-    <Reference Include="Krypton.Ribbon, Version=60.22.2.32, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Ribbon.60.22.2.32\lib\net472\Krypton.Ribbon.dll</HintPath>
-    </Reference>
-    <Reference Include="Krypton.Toolkit, Version=60.22.2.32, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Toolkit.60.22.2.32\lib\net472\Krypton.Toolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="Krypton.Workspace, Version=60.22.2.32, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Workspace.60.22.2.32\lib\net472\Krypton.Workspace.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
