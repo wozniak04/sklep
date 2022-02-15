@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using Krypton.Toolkit;
 namespace sklep
 {
-    public partial class Shop : KryptonForm
+    public partial class Shop : Form
     {
         public Shop()
         {
@@ -20,13 +20,13 @@ namespace sklep
 
         private void btn_flyMenu_Click(object sender, EventArgs e)
         {
-            flyMenu.StateCommon.Color1 = Color.FromArgb(80, 82, 81);
+            flyMenu.BackColor = Color.FromArgb(80, 82, 81);
             
         }
 
         private void btn_flyMenu_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            flyMenu.StateCommon.Color1 = Color.Transparent;
+            flyMenu.BackColor = Color.Transparent;
             
         }
     }

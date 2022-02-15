@@ -11,7 +11,7 @@ using Krypton.Toolkit;
 
 namespace sklep
 {
-    public partial class Register_Alert : KryptonForm
+    public partial class Register_Alert : Form
     {
         public Register_Alert()
         {

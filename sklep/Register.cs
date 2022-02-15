@@ -7,15 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Krypton.Toolkit;
 
 namespace sklep
 {
-    public partial class Register : KryptonForm
+    public partial class Register : Form
     {
         public Register()
         {
-            InitializeComponent();                                                             
+            
+            InitializeComponent();
+            userAwatar.Image = userAwatar_List.Images[0];
         }
 
         
