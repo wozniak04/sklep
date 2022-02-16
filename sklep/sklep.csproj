@@ -78,6 +78,7 @@
     <Compile Include="Shop.Designer.cs">
       <DependentUpon>Shop.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Logging.resx">
       <DependentUpon>Logging.cs</DependentUpon>
     </EmbeddedResource>
