@@ -163,35 +163,6 @@ namespace sklep
 
         }
 
-        private void User_Clear(object sender, EventArgs e)
-        {
-            if (tUser.Text == "Nazwa użytkownika")
-            {
-                tUser.Clear();
-            }
-        }
-        private void User_Return(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(tUser.Text))
-            {
-                tUser.Text = "Nazwa użytkownika";
-            }
-        }
-
-        private void Password_Clear(object sender, EventArgs e)
-        {
-            if (tPassword.Text == "Hasło")
-            {
-                tPassword.Clear();
-            }
-        }
-        private void Password_Return(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(tPassword.Text))
-            {
-                tPassword.Text = "Hasło";
-            }
-        }
         
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;

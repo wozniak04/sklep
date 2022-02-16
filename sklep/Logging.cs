@@ -17,6 +17,8 @@ namespace sklep
             InitializeComponent();
         }
 
+        
+        
         private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -31,6 +33,42 @@ namespace sklep
             var Register = new Register();
             Register.ShowDialog();
             this.Close();
+        }
+        private void User_Clear(object sender, EventArgs e)
+        {
+            if (tUser.Text == "Nazwa użytkownika")
+            {
+                tUser.Clear();
+            }
+        }
+        private void User_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tUser.Text))
+            {
+                tUser.Text = "Nazwa użytkownika";
+            }
+            else
+            {
+                 var data = new DataAcces();
+                 string nazwa = data.sprlogin(tUser.Text);
+                 tER_User.Text = nazwa;
+                
+            }
+        }
+
+        private void Password_Clear(object sender, EventArgs e)
+        {
+            if (tPassword.Text == "Hasło")
+            {
+                tPassword.Clear();
+            }
+        }
+        private void Password_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tPassword.Text))
+            {
+                tPassword.Text = "Hasło";
+            }
         }
     }
 }
