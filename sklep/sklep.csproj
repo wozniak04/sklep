@@ -197,5 +197,8 @@
   <ItemGroup>
     <None Include="Addons\Images\Navigation\contrast.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Addons\Images\Navigation\power-off.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

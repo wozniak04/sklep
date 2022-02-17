@@ -8,14 +8,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace sklep
 {
     public partial class Shop : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr RoundCorner(
+            int leftRect,
+            int topRect,
+            int rigthRect,
+            int bottomRect,
+            int widthEllipse,
+            int heightEllipse
+            );
         public Shop()
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
         }
 
         private void btn_flyMenu_Click(object sender, EventArgs e)
@@ -28,7 +39,7 @@ namespace sklep
                 
                 userAwatar.Visible = false;
                 lbUserName.Visible = false;
-               
+                btnClose.Visible = false;
                
             }
             else { 
@@ -39,10 +50,15 @@ namespace sklep
                 
                 userAwatar.Visible = true;
                 lbUserName.Visible = true;
+                btnClose.Visible = true;
                 
             }
             
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

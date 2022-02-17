@@ -40,9 +40,11 @@ namespace sklep
             this.tER_User = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userAwatar = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -156,14 +158,27 @@ namespace sklep
             this.userAwatar.TabIndex = 0;
             this.userAwatar.TabStop = false;
             // 
+            // btnClose
+            // 
+            this.btnClose.Image = global::sklep.Properties.Resources.power_off;
+            this.btnClose.Location = new System.Drawing.Point(1072, 663);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(100, 74);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnClose.TabIndex = 8;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Logging
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Logging";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -172,11 +187,79 @@ namespace sklep
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
+
+
+        }
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var Shop = new Shop();
+            Shop.ShowDialog();
+            this.Close();
         }
 
-        
+        private void btnRegister_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var Register = new Register();
+            Register.ShowDialog();
+            this.Close();
+        }
+        private void User_Clear(object sender, EventArgs e)
+        {
+            if (tUser.Text == "Nazwa użytkownika")
+            {
+                tUser.Clear();
+            }
+        }
+        private void User_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tUser.Text))
+            {
+                tUser.Text = "Nazwa użytkownika";
+            }
+            else
+            {
+
+                var data = new DataAcces();
+                if (!data.getUser(tUser.Text.ToString()))
+                {
+                    tER_User.Text = "nie ma takiego użytkownika";
+                    this.nazwa = false;
+                }
+                else
+                {
+                    tER_User.Text = "";
+                    this.nazwa = true;
+                }
+
+
+            }
+        }
+
+        private void Password_Clear(object sender, EventArgs e)
+        {
+            if (tPassword.Text == "Hasło")
+            {
+                tPassword.Clear();
+            }
+        }
+        private void Password_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tPassword.Text))
+            {
+                tPassword.Text = "Hasło";
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label tER_Password;
@@ -187,6 +270,7 @@ namespace sklep
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnClose;
     }
 }
 

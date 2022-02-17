@@ -40,17 +40,19 @@ namespace sklep
             this.tEmail = new System.Windows.Forms.TextBox();
             this.tPassword = new System.Windows.Forms.TextBox();
             this.tUser = new System.Windows.Forms.TextBox();
+            this.userAwatar_List = new System.Windows.Forms.ImageList(this.components);
+            this.listNawigation = new System.Windows.Forms.ImageList(this.components);
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             this.userChange_Right = new System.Windows.Forms.PictureBox();
             this.userChange_Left = new System.Windows.Forms.PictureBox();
             this.userAwatar = new System.Windows.Forms.PictureBox();
-            this.userAwatar_List = new System.Windows.Forms.ImageList(this.components);
-            this.listNawigation = new System.Windows.Forms.ImageList(this.components);
-            this.btnBack = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // tER_User
@@ -158,6 +160,57 @@ namespace sklep
             this.tUser.Enter += new System.EventHandler(this.User_Clear);
             this.tUser.Leave += new System.EventHandler(this.User_Return);
             // 
+            // userAwatar_List
+            // 
+            this.userAwatar_List.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("userAwatar_List.ImageStream")));
+            this.userAwatar_List.TransparentColor = System.Drawing.Color.Transparent;
+            this.userAwatar_List.Images.SetKeyName(0, "user0.png");
+            this.userAwatar_List.Images.SetKeyName(1, "user1.png");
+            this.userAwatar_List.Images.SetKeyName(2, "user2.png");
+            this.userAwatar_List.Images.SetKeyName(3, "user3.png");
+            this.userAwatar_List.Images.SetKeyName(4, "user4.png");
+            this.userAwatar_List.Images.SetKeyName(5, "user5.png");
+            this.userAwatar_List.Images.SetKeyName(6, "user6.png");
+            this.userAwatar_List.Images.SetKeyName(7, "user7.png");
+            this.userAwatar_List.Images.SetKeyName(8, "user8.png");
+            this.userAwatar_List.Images.SetKeyName(9, "user9.png");
+            this.userAwatar_List.Images.SetKeyName(10, "user10.png");
+            this.userAwatar_List.Images.SetKeyName(11, "user11.png");
+            this.userAwatar_List.Images.SetKeyName(12, "user12.png");
+            // 
+            // listNawigation
+            // 
+            this.listNawigation.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("listNawigation.ImageStream")));
+            this.listNawigation.TransparentColor = System.Drawing.Color.Transparent;
+            this.listNawigation.Images.SetKeyName(0, "left-arrow.png");
+            this.listNawigation.Images.SetKeyName(1, "right-arrow.png");
+            this.listNawigation.Images.SetKeyName(2, "back.png");
+            this.listNawigation.Images.SetKeyName(3, "menu.png");
+            this.listNawigation.Images.SetKeyName(4, "contrast.png");
+            this.listNawigation.Images.SetKeyName(5, "power-off.png");
+            // 
+            // btnClose
+            // 
+            this.btnClose.Image = global::sklep.Properties.Resources.power_off;
+            this.btnClose.Location = new System.Drawing.Point(1059, 664);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(100, 78);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnClose.TabIndex = 7;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Image = global::sklep.Properties.Resources.back1;
+            this.btnBack.Location = new System.Drawing.Point(1089, 26);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(70, 54);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBack.TabIndex = 6;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // userChange_Right
             // 
             this.userChange_Right.Image = global::sklep.Properties.Resources.right_arrow;
@@ -187,64 +240,27 @@ namespace sklep
             this.userAwatar.TabIndex = 0;
             this.userAwatar.TabStop = false;
             // 
-            // userAwatar_List
-            // 
-            this.userAwatar_List.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("userAwatar_List.ImageStream")));
-            this.userAwatar_List.TransparentColor = System.Drawing.Color.Transparent;
-            this.userAwatar_List.Images.SetKeyName(0, "user0.png");
-            this.userAwatar_List.Images.SetKeyName(1, "user1.png");
-            this.userAwatar_List.Images.SetKeyName(2, "user2.png");
-            this.userAwatar_List.Images.SetKeyName(3, "user3.png");
-            this.userAwatar_List.Images.SetKeyName(4, "user4.png");
-            this.userAwatar_List.Images.SetKeyName(5, "user5.png");
-            this.userAwatar_List.Images.SetKeyName(6, "user6.png");
-            this.userAwatar_List.Images.SetKeyName(7, "user7.png");
-            this.userAwatar_List.Images.SetKeyName(8, "user8.png");
-            this.userAwatar_List.Images.SetKeyName(9, "user9.png");
-            this.userAwatar_List.Images.SetKeyName(10, "user10.png");
-            this.userAwatar_List.Images.SetKeyName(11, "user11.png");
-            this.userAwatar_List.Images.SetKeyName(12, "user12.png");
-            // 
-            // listNawigation
-            // 
-            this.listNawigation.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("listNawigation.ImageStream")));
-            this.listNawigation.TransparentColor = System.Drawing.Color.Transparent;
-            this.listNawigation.Images.SetKeyName(0, "left-arrow.png");
-            this.listNawigation.Images.SetKeyName(1, "right-arrow.png");
-            this.listNawigation.Images.SetKeyName(2, "back.png");
-            this.listNawigation.Images.SetKeyName(3, "menu.png");
-            this.listNawigation.Images.SetKeyName(4, "contrast.png");
-            // 
-            // btnBack
-            // 
-            this.btnBack.Image = global::sklep.Properties.Resources.back1;
-            this.btnBack.Location = new System.Drawing.Point(1089, 26);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(70, 54);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnBack.TabIndex = 6;
-            this.btnBack.TabStop = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Register";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rejestracja";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,5 +284,6 @@ namespace sklep
         private System.Windows.Forms.TextBox tPassword;
         private System.Windows.Forms.TextBox tUser;
         private System.Windows.Forms.Button btnRegister_Apply;
+        private System.Windows.Forms.PictureBox btnClose;
     }
 }
