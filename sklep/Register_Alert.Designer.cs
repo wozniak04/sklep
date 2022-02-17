@@ -1,4 +1,6 @@
-﻿namespace sklep
+﻿using System;
+
+namespace sklep
 {
     partial class Register_Alert
     {
@@ -71,6 +73,10 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         #endregion
