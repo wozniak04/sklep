@@ -35,33 +35,35 @@ namespace sklep
             this.tER_User = new System.Windows.Forms.Label();
             this.tER_Email = new System.Windows.Forms.Label();
             this.tER_Password = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnRegister_Apply = new System.Windows.Forms.Button();
-            this.tEmail = new System.Windows.Forms.TextBox();
-            this.tPassword = new System.Windows.Forms.TextBox();
-            this.tUser = new System.Windows.Forms.TextBox();
             this.userAwatar_List = new System.Windows.Forms.ImageList(this.components);
             this.listNawigation = new System.Windows.Forms.ImageList(this.components);
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.PictureBox();
+            this.boxRegister = new System.Windows.Forms.Panel();
+            this.tPassword = new System.Windows.Forms.TextBox();
+            this.tUser = new System.Windows.Forms.TextBox();
+            this.tEmail = new System.Windows.Forms.TextBox();
             this.userChange_Right = new System.Windows.Forms.PictureBox();
             this.userChange_Left = new System.Windows.Forms.PictureBox();
+            this.btnRegister_Apply = new System.Windows.Forms.Button();
             this.userAwatar = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
+            this.Contrast = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
+            this.boxRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             this.SuspendLayout();
             // 
             // tER_User
             // 
             this.tER_User.AutoSize = true;
             this.tER_User.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.tER_User.Location = new System.Drawing.Point(584, 314);
+            this.tER_User.Location = new System.Drawing.Point(1386, 505);
             this.tER_User.Name = "tER_User";
-            this.tER_User.Size = new System.Drawing.Size(47, 20);
+            this.tER_User.Size = new System.Drawing.Size(29, 13);
             this.tER_User.TabIndex = 6;
             this.tER_User.Text = "label";
             // 
@@ -69,9 +71,9 @@ namespace sklep
             // 
             this.tER_Email.AutoSize = true;
             this.tER_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.tER_Email.Location = new System.Drawing.Point(584, 385);
+            this.tER_Email.Location = new System.Drawing.Point(1386, 576);
             this.tER_Email.Name = "tER_Email";
-            this.tER_Email.Size = new System.Drawing.Size(47, 20);
+            this.tER_Email.Size = new System.Drawing.Size(29, 13);
             this.tER_Email.TabIndex = 7;
             this.tER_Email.Text = "label";
             // 
@@ -79,86 +81,11 @@ namespace sklep
             // 
             this.tER_Password.AutoSize = true;
             this.tER_Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.tER_Password.Location = new System.Drawing.Point(584, 448);
+            this.tER_Password.Location = new System.Drawing.Point(1386, 639);
             this.tER_Password.Name = "tER_Password";
-            this.tER_Password.Size = new System.Drawing.Size(47, 20);
+            this.tER_Password.Size = new System.Drawing.Size(29, 13);
             this.tER_Password.TabIndex = 8;
             this.tER_Password.Text = "label";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
-            this.groupBox1.Controls.Add(this.btnRegister_Apply);
-            this.groupBox1.Controls.Add(this.tEmail);
-            this.groupBox1.Controls.Add(this.tPassword);
-            this.groupBox1.Controls.Add(this.tUser);
-            this.groupBox1.Controls.Add(this.userChange_Right);
-            this.groupBox1.Controls.Add(this.userChange_Left);
-            this.groupBox1.Controls.Add(this.tER_Password);
-            this.groupBox1.Controls.Add(this.tER_Email);
-            this.groupBox1.Controls.Add(this.tER_User);
-            this.groupBox1.Controls.Add(this.userAwatar);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.Location = new System.Drawing.Point(203, 26);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(764, 716);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            // 
-            // btnRegister_Apply
-            // 
-            this.btnRegister_Apply.BackColor = System.Drawing.Color.Lime;
-            this.btnRegister_Apply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister_Apply.Location = new System.Drawing.Point(257, 512);
-            this.btnRegister_Apply.Name = "btnRegister_Apply";
-            this.btnRegister_Apply.Size = new System.Drawing.Size(248, 41);
-            this.btnRegister_Apply.TabIndex = 19;
-            this.btnRegister_Apply.Text = "Zatwierdź";
-            this.btnRegister_Apply.UseVisualStyleBackColor = false;
-            this.btnRegister_Apply.Click += new System.EventHandler(this.btnRegister_Apply_Click_1);
-            // 
-            // tEmail
-            // 
-            this.tEmail.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.tEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tEmail.Location = new System.Drawing.Point(235, 448);
-            this.tEmail.Multiline = true;
-            this.tEmail.Name = "tEmail";
-            this.tEmail.Size = new System.Drawing.Size(302, 35);
-            this.tEmail.TabIndex = 17;
-            this.tEmail.Text = "Email";
-            this.tEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tEmail.Enter += new System.EventHandler(this.Email_Clear);
-            this.tEmail.Leave += new System.EventHandler(this.Email_Return);
-            // 
-            // tPassword
-            // 
-            this.tPassword.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tPassword.Location = new System.Drawing.Point(235, 385);
-            this.tPassword.Multiline = true;
-            this.tPassword.Name = "tPassword";
-            this.tPassword.Size = new System.Drawing.Size(302, 35);
-            this.tPassword.TabIndex = 16;
-            this.tPassword.Text = "Hasło";
-            this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
-            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
-            // 
-            // tUser
-            // 
-            this.tUser.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.tUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tUser.Location = new System.Drawing.Point(235, 314);
-            this.tUser.Multiline = true;
-            this.tUser.Name = "tUser";
-            this.tUser.Size = new System.Drawing.Size(302, 35);
-            this.tUser.TabIndex = 15;
-            this.tUser.Text = "Nazwa użytkownika";
-            this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tUser.Enter += new System.EventHandler(this.User_Clear);
-            this.tUser.Leave += new System.EventHandler(this.User_Return);
             // 
             // userAwatar_List
             // 
@@ -192,7 +119,7 @@ namespace sklep
             // btnClose
             // 
             this.btnClose.Image = global::sklep.Properties.Resources.power_off;
-            this.btnClose.Location = new System.Drawing.Point(1059, 664);
+            this.btnClose.Location = new System.Drawing.Point(991, 664);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(100, 78);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -202,19 +129,79 @@ namespace sklep
             // 
             // btnBack
             // 
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnBack.Image = global::sklep.Properties.Resources.back1;
-            this.btnBack.Location = new System.Drawing.Point(1089, 26);
+            this.btnBack.Location = new System.Drawing.Point(1114, 0);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(70, 54);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBack.Size = new System.Drawing.Size(70, 761);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnBack.TabIndex = 6;
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // boxRegister
+            // 
+            this.boxRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.boxRegister.Controls.Add(this.Contrast);
+            this.boxRegister.Controls.Add(this.userAwatar);
+            this.boxRegister.Controls.Add(this.btnRegister_Apply);
+            this.boxRegister.Controls.Add(this.userChange_Left);
+            this.boxRegister.Controls.Add(this.userChange_Right);
+            this.boxRegister.Controls.Add(this.tEmail);
+            this.boxRegister.Controls.Add(this.tUser);
+            this.boxRegister.Controls.Add(this.tPassword);
+            this.boxRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.boxRegister.Location = new System.Drawing.Point(203, 26);
+            this.boxRegister.Name = "boxRegister";
+            this.boxRegister.Size = new System.Drawing.Size(764, 716);
+            this.boxRegister.TabIndex = 8;
+            // 
+            // tPassword
+            // 
+            this.tPassword.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tPassword.Location = new System.Drawing.Point(230, 406);
+            this.tPassword.Multiline = true;
+            this.tPassword.Name = "tPassword";
+            this.tPassword.Size = new System.Drawing.Size(302, 35);
+            this.tPassword.TabIndex = 16;
+            this.tPassword.Text = "Hasło";
+            this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
+            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
+            // 
+            // tUser
+            // 
+            this.tUser.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.tUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tUser.Location = new System.Drawing.Point(230, 335);
+            this.tUser.Multiline = true;
+            this.tUser.Name = "tUser";
+            this.tUser.Size = new System.Drawing.Size(302, 35);
+            this.tUser.TabIndex = 15;
+            this.tUser.Text = "Nazwa użytkownika";
+            this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tUser.Enter += new System.EventHandler(this.User_Clear);
+            this.tUser.Leave += new System.EventHandler(this.User_Return);
+            // 
+            // tEmail
+            // 
+            this.tEmail.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.tEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tEmail.Location = new System.Drawing.Point(230, 469);
+            this.tEmail.Multiline = true;
+            this.tEmail.Name = "tEmail";
+            this.tEmail.Size = new System.Drawing.Size(302, 35);
+            this.tEmail.TabIndex = 17;
+            this.tEmail.Text = "Email";
+            this.tEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tEmail.Enter += new System.EventHandler(this.Email_Clear);
+            this.tEmail.Leave += new System.EventHandler(this.Email_Return);
+            // 
             // userChange_Right
             // 
             this.userChange_Right.Image = global::sklep.Properties.Resources.right_arrow;
-            this.userChange_Right.Location = new System.Drawing.Point(484, 129);
+            this.userChange_Right.Location = new System.Drawing.Point(479, 150);
             this.userChange_Right.Name = "userChange_Right";
             this.userChange_Right.Size = new System.Drawing.Size(73, 101);
             this.userChange_Right.TabIndex = 12;
@@ -224,21 +211,44 @@ namespace sklep
             // userChange_Left
             // 
             this.userChange_Left.Image = global::sklep.Properties.Resources.left_arrow;
-            this.userChange_Left.Location = new System.Drawing.Point(215, 129);
+            this.userChange_Left.Location = new System.Drawing.Point(210, 150);
             this.userChange_Left.Name = "userChange_Left";
             this.userChange_Left.Size = new System.Drawing.Size(63, 101);
             this.userChange_Left.TabIndex = 11;
             this.userChange_Left.TabStop = false;
             this.userChange_Left.Click += new System.EventHandler(this.userChange_Left_Click);
             // 
+            // btnRegister_Apply
+            // 
+            this.btnRegister_Apply.BackColor = System.Drawing.Color.Lime;
+            this.btnRegister_Apply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister_Apply.Location = new System.Drawing.Point(252, 533);
+            this.btnRegister_Apply.Name = "btnRegister_Apply";
+            this.btnRegister_Apply.Size = new System.Drawing.Size(248, 41);
+            this.btnRegister_Apply.TabIndex = 19;
+            this.btnRegister_Apply.Text = "Zatwierdź";
+            this.btnRegister_Apply.UseVisualStyleBackColor = false;
+            this.btnRegister_Apply.Click += new System.EventHandler(this.btnRegister_Apply_Click_1);
+            // 
             // userAwatar
             // 
-            this.userAwatar.Location = new System.Drawing.Point(257, 78);
+            this.userAwatar.Location = new System.Drawing.Point(252, 99);
             this.userAwatar.Name = "userAwatar";
             this.userAwatar.Size = new System.Drawing.Size(248, 203);
             this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userAwatar.TabIndex = 0;
             this.userAwatar.TabStop = false;
+            // 
+            // Contrast
+            // 
+            this.Contrast.Image = global::sklep.Properties.Resources.contrast;
+            this.Contrast.Location = new System.Drawing.Point(652, 17);
+            this.Contrast.Name = "Contrast";
+            this.Contrast.Size = new System.Drawing.Size(91, 66);
+            this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Contrast.TabIndex = 20;
+            this.Contrast.TabStop = false;
+            this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
             // 
             // Register
             // 
@@ -246,22 +256,27 @@ namespace sklep
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.boxRegister);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.tER_User);
+            this.Controls.Add(this.tER_Email);
+            this.Controls.Add(this.tER_Password);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Register";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rejestracja";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
+            this.boxRegister.ResumeLayout(false);
+            this.boxRegister.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -270,20 +285,21 @@ namespace sklep
         
         
         #endregion
-        private System.Windows.Forms.PictureBox userAwatar;
         private System.Windows.Forms.Label tER_User;
         private System.Windows.Forms.Label tER_Email;
         private System.Windows.Forms.Label tER_Password;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox btnBack;
-        private System.Windows.Forms.PictureBox userChange_Right;
-        private System.Windows.Forms.PictureBox userChange_Left;
         private System.Windows.Forms.ImageList userAwatar_List;
         private System.Windows.Forms.ImageList listNawigation;
-        private System.Windows.Forms.TextBox tEmail;
-        private System.Windows.Forms.TextBox tPassword;
-        private System.Windows.Forms.TextBox tUser;
-        private System.Windows.Forms.Button btnRegister_Apply;
         private System.Windows.Forms.PictureBox btnClose;
+        private System.Windows.Forms.Panel boxRegister;
+        private System.Windows.Forms.PictureBox userAwatar;
+        private System.Windows.Forms.Button btnRegister_Apply;
+        private System.Windows.Forms.PictureBox userChange_Left;
+        private System.Windows.Forms.PictureBox userChange_Right;
+        private System.Windows.Forms.TextBox tEmail;
+        private System.Windows.Forms.TextBox tUser;
+        private System.Windows.Forms.TextBox tPassword;
+        private System.Windows.Forms.PictureBox Contrast;
     }
 }

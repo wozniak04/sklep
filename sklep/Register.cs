@@ -89,7 +89,7 @@ namespace sklep
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var Logging = new Logging();
+            Logging Logging = new Logging();
             Logging.ShowDialog();
             this.Close();
         }
@@ -119,6 +119,27 @@ namespace sklep
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Contrast_Click(object sender, EventArgs e)
+        {
+
+            if (this.BackColor == Color.FromArgb(90, 92, 91))
+            {
+                this.BackColor = Color.FromArgb(225, 227, 225);
+                boxRegister.BackColor = Color.FromArgb(169, 171, 169);
+                tUser.BackColor = Color.FromArgb(225, 227, 225);
+                tPassword.BackColor = Color.FromArgb(225, 227, 225);
+                tEmail.BackColor = Color.FromArgb(225, 227, 225);
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(90, 92, 91);
+                boxRegister.BackColor = Color.FromArgb(80, 82, 81);
+                tUser.BackColor = Color.FromArgb(90, 92, 91);
+                tPassword.BackColor = Color.FromArgb(90, 92, 91);
+                tEmail.BackColor = Color.FromArgb(90, 92, 91);
+            }
         }
     }
 }

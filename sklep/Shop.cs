@@ -40,6 +40,7 @@ namespace sklep
                 userAwatar.Visible = false;
                 lbUserName.Visible = false;
                 btnClose.Visible = false;
+                Contrast.Visible = false;
                
             }
             else { 
@@ -51,6 +52,7 @@ namespace sklep
                 userAwatar.Visible = true;
                 lbUserName.Visible = true;
                 btnClose.Visible = true;
+                Contrast.Visible = true;
                 
             }
             
@@ -60,5 +62,52 @@ namespace sklep
         {
             this.Close();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Logging Logging = new Logging();
+            Logging.ShowDialog();
+            this.Close();
+        }
+
+        private void Contrast_Click(object sender, EventArgs e)
+        {
+            if (this.BackColor == Color.FromArgb(90, 92, 91))
+            {
+                this.BackColor = Color.FromArgb(225, 227, 225);
+                lbUserName.ForeColor = Color.Black;
+                
+                flyMenu.BackColor = BackColor = Color.FromArgb(225, 227, 225);
+                
+                flyMenu_Category.BackColor = Color.FromArgb(169, 171, 169);
+                flyMenu_Category.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
+
+                shopItems_Items.BackColor = Color.FromArgb(169, 171, 169);
+                shopItems_Items.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
+
+                shopItems_ChangingPanel.BackColor = Color.FromArgb(169, 171, 169);
+                shopItems_ChangingPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(90, 92, 91);
+                lbUserName.ForeColor = Color.GreenYellow;
+
+                flyMenu.BackColor = BackColor = Color.FromArgb(90, 92, 91);
+                
+
+                flyMenu_Category.BackColor = Color.FromArgb(80, 82, 81);
+                flyMenu_Category.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+                
+                shopItems_Items.BackColor = Color.FromArgb(80, 82, 81);
+                shopItems_Items.CellBorderStyle= TableLayoutPanelCellBorderStyle.Single;
+
+                shopItems_ChangingPanel.BackColor = Color.FromArgb(80, 82, 81);
+                shopItems_ChangingPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+
+            }
+        }
     }
 }
+
