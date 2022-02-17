@@ -83,6 +83,16 @@ namespace sklep.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap contrast {
+            get {
+                object obj = ResourceManager.GetObject("contrast", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap left_arrow {
             get {
                 object obj = ResourceManager.GetObject("left-arrow", resourceCulture);

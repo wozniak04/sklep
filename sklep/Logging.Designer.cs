@@ -31,7 +31,6 @@ namespace sklep
         /// </summary>
         private void InitializeComponent()
         {
-
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -39,8 +38,10 @@ namespace sklep
             this.tUser = new System.Windows.Forms.TextBox();
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_User = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userAwatar = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,6 +136,16 @@ namespace sklep
             this.tER_User.TabIndex = 6;
             this.tER_User.Text = "label";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sklep.Properties.Resources.contrast;
+            this.pictureBox1.Location = new System.Drawing.Point(1045, 46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // userAwatar
             // 
             this.userAwatar.Image = global::sklep.Properties.Resources.user0;
@@ -151,6 +162,7 @@ namespace sklep
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Logging";
             this.ShowIcon = false;
@@ -158,6 +170,7 @@ namespace sklep
             this.Text = "Logowanie";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
             this.ResumeLayout(false);
 
@@ -173,6 +186,7 @@ namespace sklep
         private System.Windows.Forms.TextBox tPassword;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

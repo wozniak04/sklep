@@ -16,18 +16,25 @@ namespace sklep
         public Shop()
         {
             InitializeComponent();
+            userAwatar.Visible = false;
+            lbUserName.Visible = false;
         }
 
         private void btn_flyMenu_Click(object sender, EventArgs e)
         {
-            flyMenu.BackColor = Color.FromArgb(80, 82, 81);
+            if (flyMenu.BackColor == Color.FromArgb(80, 82, 81))
+            {
+                flyMenu.BackColor = Color.Transparent;
+                userAwatar.Visible = false;
+                lbUserName.Visible = false;
+            }
+            else { 
+                flyMenu.BackColor = Color.FromArgb(80, 82, 81);
+                userAwatar.Visible = true;
+                lbUserName.Visible = true;
+            }
             
         }
 
-        private void btn_flyMenu_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            flyMenu.BackColor = Color.Transparent;
-            
-        }
     }
 }

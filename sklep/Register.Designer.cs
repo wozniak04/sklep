@@ -213,6 +213,7 @@ namespace sklep
             this.listNawigation.Images.SetKeyName(1, "right-arrow.png");
             this.listNawigation.Images.SetKeyName(2, "back.png");
             this.listNawigation.Images.SetKeyName(3, "menu.png");
+            this.listNawigation.Images.SetKeyName(4, "contrast.png");
             // 
             // btnBack
             // 

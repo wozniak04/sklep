@@ -42,7 +42,7 @@
             this.lbUserName.AutoSize = true;
             this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbUserName.ForeColor = System.Drawing.Color.GreenYellow;
-            this.lbUserName.Location = new System.Drawing.Point(137, 12);
+            this.lbUserName.Location = new System.Drawing.Point(136, 12);
             this.lbUserName.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(147, 20);
@@ -52,11 +52,10 @@
             // userAwatar
             // 
             this.userAwatar.BackColor = System.Drawing.Color.Transparent;
-            this.userAwatar.Dock = System.Windows.Forms.DockStyle.Top;
             this.userAwatar.Image = global::sklep.Properties.Resources.user0;
-            this.userAwatar.Location = new System.Drawing.Point(0, 0);
+            this.userAwatar.Location = new System.Drawing.Point(7, 0);
             this.userAwatar.Name = "userAwatar";
-            this.userAwatar.Size = new System.Drawing.Size(287, 128);
+            this.userAwatar.Size = new System.Drawing.Size(128, 128);
             this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.userAwatar.TabIndex = 4;
             this.userAwatar.TabStop = false;
@@ -65,14 +64,13 @@
             // 
             this.btn_flyMenu.BackColor = System.Drawing.Color.Transparent;
             this.btn_flyMenu.Image = global::sklep.Properties.Resources.menu;
-            this.btn_flyMenu.Location = new System.Drawing.Point(331, 12);
+            this.btn_flyMenu.Location = new System.Drawing.Point(309, 12);
             this.btn_flyMenu.Name = "btn_flyMenu";
             this.btn_flyMenu.Size = new System.Drawing.Size(75, 50);
             this.btn_flyMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_flyMenu.TabIndex = 1;
             this.btn_flyMenu.TabStop = false;
             this.btn_flyMenu.Click += new System.EventHandler(this.btn_flyMenu_Click);
-            this.btn_flyMenu.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.btn_flyMenu_MouseDoubleClick);
             // 
             // flyMenu
             // 
@@ -81,7 +79,7 @@
             this.flyMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.flyMenu.Location = new System.Drawing.Point(0, 0);
             this.flyMenu.Name = "flyMenu";
-            this.flyMenu.Size = new System.Drawing.Size(287, 761);
+            this.flyMenu.Size = new System.Drawing.Size(303, 761);
             this.flyMenu.TabIndex = 6;
             // 
             // Shop
