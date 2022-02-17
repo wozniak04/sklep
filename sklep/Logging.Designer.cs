@@ -37,14 +37,14 @@ namespace sklep
             this.tUser = new System.Windows.Forms.TextBox();
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_User = new System.Windows.Forms.Label();
+            this.boxLogin = new System.Windows.Forms.Panel();
             this.userAwatar = new System.Windows.Forms.PictureBox();
             this.Contrast = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
-            this.boxLogin = new System.Windows.Forms.Panel();
+            this.boxLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            this.boxLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRegister
@@ -106,9 +106,8 @@ namespace sklep
             this.tER_Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.tER_Password.Location = new System.Drawing.Point(580, 402);
             this.tER_Password.Name = "tER_Password";
-            this.tER_Password.Size = new System.Drawing.Size(47, 20);
+            this.tER_Password.Size = new System.Drawing.Size(0, 20);
             this.tER_Password.TabIndex = 8;
-            this.tER_Password.Text = "";
             // 
             // tER_User
             // 
@@ -116,9 +115,25 @@ namespace sklep
             this.tER_User.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.tER_User.Location = new System.Drawing.Point(580, 331);
             this.tER_User.Name = "tER_User";
-            this.tER_User.Size = new System.Drawing.Size(47, 20);
+            this.tER_User.Size = new System.Drawing.Size(0, 20);
             this.tER_User.TabIndex = 6;
-            this.tER_User.Text = "";
+            // 
+            // boxLogin
+            // 
+            this.boxLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.boxLogin.Controls.Add(this.btnRegister);
+            this.boxLogin.Controls.Add(this.userAwatar);
+            this.boxLogin.Controls.Add(this.Contrast);
+            this.boxLogin.Controls.Add(this.btnLogin);
+            this.boxLogin.Controls.Add(this.tER_User);
+            this.boxLogin.Controls.Add(this.tPassword);
+            this.boxLogin.Controls.Add(this.tER_Password);
+            this.boxLogin.Controls.Add(this.tUser);
+            this.boxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.boxLogin.Location = new System.Drawing.Point(207, 24);
+            this.boxLogin.Name = "boxLogin";
+            this.boxLogin.Size = new System.Drawing.Size(764, 713);
+            this.boxLogin.TabIndex = 9;
             // 
             // userAwatar
             // 
@@ -133,7 +148,7 @@ namespace sklep
             // Contrast
             // 
             this.Contrast.Image = global::sklep.Properties.Resources.contrast;
-            this.Contrast.Location = new System.Drawing.Point(1045, 46);
+            this.Contrast.Location = new System.Drawing.Point(652, 17);
             this.Contrast.Name = "Contrast";
             this.Contrast.Size = new System.Drawing.Size(91, 66);
             this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,30 +158,14 @@ namespace sklep
             // 
             // btnClose
             // 
-            this.btnClose.Image = global::sklep.Properties.Resources.power_off;
-            this.btnClose.Location = new System.Drawing.Point(1045, 663);
+            this.btnClose.Image = global::sklep.Properties.Resources.close;
+            this.btnClose.Location = new System.Drawing.Point(1124, 12);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 74);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnClose.Size = new System.Drawing.Size(64, 48);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 8;
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // boxLogin
-            // 
-            this.boxLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
-            this.boxLogin.Controls.Add(this.btnRegister);
-            this.boxLogin.Controls.Add(this.userAwatar);
-            this.boxLogin.Controls.Add(this.btnLogin);
-            this.boxLogin.Controls.Add(this.tER_User);
-            this.boxLogin.Controls.Add(this.tPassword);
-            this.boxLogin.Controls.Add(this.tER_Password);
-            this.boxLogin.Controls.Add(this.tUser);
-            this.boxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.boxLogin.Location = new System.Drawing.Point(207, 24);
-            this.boxLogin.Name = "boxLogin";
-            this.boxLogin.Size = new System.Drawing.Size(764, 713);
-            this.boxLogin.TabIndex = 9;
             // 
             // Logging
             // 
@@ -176,17 +175,16 @@ namespace sklep
             this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.boxLogin);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.Contrast);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Logging";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logowanie";
+            this.boxLogin.ResumeLayout(false);
+            this.boxLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            this.boxLogin.ResumeLayout(false);
-            this.boxLogin.PerformLayout();
             this.ResumeLayout(false);
 
         }

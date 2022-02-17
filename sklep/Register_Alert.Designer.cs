@@ -48,7 +48,7 @@ namespace sklep
             // 
             // btnClose
             // 
-            this.btnClose.Image = global::sklep.Properties.Resources.power_off;
+            this.btnClose.Image = global::sklep.Properties.Resources.close;
             this.btnClose.Location = new System.Drawing.Point(487, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(50, 48);
