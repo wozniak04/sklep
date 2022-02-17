@@ -108,7 +108,7 @@ namespace sklep
             this.tER_Password.Name = "tER_Password";
             this.tER_Password.Size = new System.Drawing.Size(47, 20);
             this.tER_Password.TabIndex = 8;
-            this.tER_Password.Text = "label";
+            this.tER_Password.Text = "";
             // 
             // tER_User
             // 
@@ -118,7 +118,7 @@ namespace sklep
             this.tER_User.Name = "tER_User";
             this.tER_User.Size = new System.Drawing.Size(47, 20);
             this.tER_User.TabIndex = 6;
-            this.tER_User.Text = "label";
+            this.tER_User.Text = "";
             // 
             // userAwatar
             // 
@@ -190,72 +190,7 @@ namespace sklep
             this.ResumeLayout(false);
 
         }
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var Shop = new Shop();
-            Shop.ShowDialog();
-            this.Close();
-        }
-
-        private void btnRegister_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            var Register = new Register();
-            Register.ShowDialog();
-            this.Close();
-        }
-        private void User_Clear(object sender, EventArgs e)
-        {
-            if (tUser.Text == "Nazwa użytkownika")
-            {
-                tUser.Clear();
-            }
-        }
-        private void User_Return(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(tUser.Text))
-            {
-                tUser.Text = "Nazwa użytkownika";
-            }
-            else
-            {
-
-                var data = new DataAcces();
-                if (!data.getUser(tUser.Text.ToString()))
-                {
-                    tER_User.Text = "nie ma takiego użytkownika";
-                    this.nazwa = false;
-                }
-                else
-                {
-                    tER_User.Text = "";
-                    this.nazwa = true;
-                }
-
-
-            }
-        }
-
-        private void Password_Clear(object sender, EventArgs e)
-        {
-            if (tPassword.Text == "Hasło")
-            {
-                tPassword.Clear();
-            }
-        }
-        private void Password_Return(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(tPassword.Text))
-            {
-                tPassword.Text = "Hasło";
-            }
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
         #endregion
         private System.Windows.Forms.Label tER_Password;
