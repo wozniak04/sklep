@@ -38,12 +38,12 @@ namespace sklep
             this.tUser = new System.Windows.Forms.TextBox();
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_User = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userAwatar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,16 +138,6 @@ namespace sklep
             this.tER_User.TabIndex = 6;
             this.tER_User.Text = "label";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::sklep.Properties.Resources.contrast;
-            this.pictureBox1.Location = new System.Drawing.Point(1045, 46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 66);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // userAwatar
             // 
             this.userAwatar.Image = global::sklep.Properties.Resources.user0;
@@ -158,10 +148,20 @@ namespace sklep
             this.userAwatar.TabIndex = 0;
             this.userAwatar.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sklep.Properties.Resources.contrast;
+            this.pictureBox1.Location = new System.Drawing.Point(1045, 46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnClose
             // 
             this.btnClose.Image = global::sklep.Properties.Resources.power_off;
-            this.btnClose.Location = new System.Drawing.Point(1072, 663);
+            this.btnClose.Location = new System.Drawing.Point(1045, 663);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(100, 74);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -185,12 +185,10 @@ namespace sklep
             this.Text = "Logowanie";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
-
-
 
         }
         private void btnLogin_Click(object sender, EventArgs e)
