@@ -66,24 +66,6 @@ namespace sklep
             }
         }
 
-        private void Login_Clear(object sender, EventArgs e)
-        {
-            if (tLogin.Text == "Login")
-            {
-                tLogin.Clear();
-            }
-        }
-
-        private void Login_Return(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(tLogin.Text))
-            {
-                tLogin.Text = "Login";
-            }
-        }
-
-
-
 
         //information about registration
         private void btnRegister_Apply_Click_1(object sender, EventArgs e)

@@ -35,10 +35,8 @@ namespace sklep
             this.tER_User = new System.Windows.Forms.Label();
             this.tER_Email = new System.Windows.Forms.Label();
             this.tER_Password = new System.Windows.Forms.Label();
-            this.tER_Login = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnRegister_Apply = new System.Windows.Forms.Button();
-            this.tLogin = new System.Windows.Forms.TextBox();
             this.tEmail = new System.Windows.Forms.TextBox();
             this.tPassword = new System.Windows.Forms.TextBox();
             this.tUser = new System.Windows.Forms.TextBox();
@@ -85,27 +83,15 @@ namespace sklep
             this.tER_Password.TabIndex = 8;
             this.tER_Password.Text = "label";
             // 
-            // tER_Login
-            // 
-            this.tER_Login.AutoSize = true;
-            this.tER_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.tER_Login.Location = new System.Drawing.Point(584, 509);
-            this.tER_Login.Name = "tER_Login";
-            this.tER_Login.Size = new System.Drawing.Size(47, 20);
-            this.tER_Login.TabIndex = 9;
-            this.tER_Login.Text = "label";
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
             this.groupBox1.Controls.Add(this.btnRegister_Apply);
-            this.groupBox1.Controls.Add(this.tLogin);
             this.groupBox1.Controls.Add(this.tEmail);
             this.groupBox1.Controls.Add(this.tPassword);
             this.groupBox1.Controls.Add(this.tUser);
             this.groupBox1.Controls.Add(this.userChange_Right);
             this.groupBox1.Controls.Add(this.userChange_Left);
-            this.groupBox1.Controls.Add(this.tER_Login);
             this.groupBox1.Controls.Add(this.tER_Password);
             this.groupBox1.Controls.Add(this.tER_Email);
             this.groupBox1.Controls.Add(this.tER_User);
@@ -122,27 +108,13 @@ namespace sklep
             // 
             this.btnRegister_Apply.BackColor = System.Drawing.Color.Lime;
             this.btnRegister_Apply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister_Apply.Location = new System.Drawing.Point(257, 584);
+            this.btnRegister_Apply.Location = new System.Drawing.Point(257, 512);
             this.btnRegister_Apply.Name = "btnRegister_Apply";
             this.btnRegister_Apply.Size = new System.Drawing.Size(248, 41);
             this.btnRegister_Apply.TabIndex = 19;
             this.btnRegister_Apply.Text = "Zatwierdź";
             this.btnRegister_Apply.UseVisualStyleBackColor = false;
             this.btnRegister_Apply.Click += new System.EventHandler(this.btnRegister_Apply_Click_1);
-            // 
-            // tLogin
-            // 
-            this.tLogin.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.tLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tLogin.Location = new System.Drawing.Point(235, 519);
-            this.tLogin.Multiline = true;
-            this.tLogin.Name = "tLogin";
-            this.tLogin.Size = new System.Drawing.Size(302, 35);
-            this.tLogin.TabIndex = 18;
-            this.tLogin.Text = "Login";
-            this.tLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tLogin.Enter += new System.EventHandler(this.Login_Clear);
-            this.tLogin.Leave += new System.EventHandler(this.Login_Return);
             // 
             // tEmail
             // 
@@ -285,14 +257,12 @@ namespace sklep
         private System.Windows.Forms.Label tER_User;
         private System.Windows.Forms.Label tER_Email;
         private System.Windows.Forms.Label tER_Password;
-        private System.Windows.Forms.Label tER_Login;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.PictureBox userChange_Right;
         private System.Windows.Forms.PictureBox userChange_Left;
         private System.Windows.Forms.ImageList userAwatar_List;
         private System.Windows.Forms.ImageList listNawigation;
-        private System.Windows.Forms.TextBox tLogin;
         private System.Windows.Forms.TextBox tEmail;
         private System.Windows.Forms.TextBox tPassword;
         private System.Windows.Forms.TextBox tUser;
