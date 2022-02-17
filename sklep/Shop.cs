@@ -16,8 +16,6 @@ namespace sklep
         public Shop()
         {
             InitializeComponent();
-            userAwatar.Visible = false;
-            lbUserName.Visible = false;
         }
 
         private void btn_flyMenu_Click(object sender, EventArgs e)
@@ -25,13 +23,23 @@ namespace sklep
             if (flyMenu.BackColor == Color.FromArgb(80, 82, 81))
             {
                 flyMenu.BackColor = Color.Transparent;
+                
+                flyMenu_Category.Visible = false;
+                
                 userAwatar.Visible = false;
                 lbUserName.Visible = false;
+               
+               
             }
             else { 
+                
                 flyMenu.BackColor = Color.FromArgb(80, 82, 81);
+                
+                flyMenu_Category.Visible = true;
+                
                 userAwatar.Visible = true;
                 lbUserName.Visible = true;
+                
             }
             
         }
