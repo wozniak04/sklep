@@ -173,7 +173,7 @@ namespace sklep
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.boxLogin);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.Contrast);
