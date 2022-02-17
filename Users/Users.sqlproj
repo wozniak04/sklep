@@ -58,10 +58,14 @@
     <Folder Include="Properties" />
     <Folder Include="dbo" />
     <Folder Include="dbo\tables" />
-    <Folder Include="dbo\procedury" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\tables\Uzytkownik.sql" />
-    <Build Include="dbo\procedury\getALL.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="test.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Users.publish.xml" />
   </ItemGroup>
 </Project>

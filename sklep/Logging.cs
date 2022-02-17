@@ -16,7 +16,8 @@ namespace sklep
         {
             InitializeComponent();
         }
-
+        private bool haslo { get; set; }
+        private bool nazwa { get; set; }
         
         
         private void btnLogin_Click(object sender, EventArgs e)
@@ -49,9 +50,19 @@ namespace sklep
             }
             else
             {
+                 
                  var data = new DataAcces();
-                 string nazwa = data.sprlogin(tUser.Text);
-                 tER_User.Text = nazwa;
+                if (!data.getUser(tUser.Text.ToString())) 
+                {
+                    tER_User.Text = "nie ma takiego użytkownika";
+                    this.nazwa = false;
+                }
+                else
+                {
+                    tER_User.Text = "";
+                    this.nazwa = true;
+                }
+                 
                 
             }
         }
