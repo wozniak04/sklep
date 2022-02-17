@@ -203,5 +203,8 @@
   <ItemGroup>
     <None Include="Addons\Images\Navigation\close.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Addons\Images\Navigation\minimize-sign.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

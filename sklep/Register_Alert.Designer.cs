@@ -32,7 +32,9 @@ namespace sklep
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.PictureBox();
+            this.btnMinimalize = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,13 +51,24 @@ namespace sklep
             // btnClose
             // 
             this.btnClose.Image = global::sklep.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(487, 12);
+            this.btnClose.Location = new System.Drawing.Point(473, 12);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(50, 48);
+            this.btnClose.Size = new System.Drawing.Size(64, 48);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 1;
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMinimalize
+            // 
+            this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
+            this.btnMinimalize.Location = new System.Drawing.Point(403, 10);
+            this.btnMinimalize.Name = "btnMinimalize";
+            this.btnMinimalize.Size = new System.Drawing.Size(64, 50);
+            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimalize.TabIndex = 11;
+            this.btnMinimalize.TabStop = false;
+            this.btnMinimalize.Click += new System.EventHandler(this.btnMinimalize_Click);
             // 
             // Register_Alert
             // 
@@ -63,6 +76,7 @@ namespace sklep
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(549, 248);
+            this.Controls.Add(this.btnMinimalize);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -70,6 +84,7 @@ namespace sklep
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register_Alert";
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,5 +97,6 @@ namespace sklep
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnClose;
+        private System.Windows.Forms.PictureBox btnMinimalize;
     }
 }

@@ -38,10 +38,12 @@ namespace sklep
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_User = new System.Windows.Forms.Label();
             this.boxLogin = new System.Windows.Forms.Panel();
+            this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.userAwatar = new System.Windows.Forms.PictureBox();
             this.Contrast = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.boxLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -135,6 +137,17 @@ namespace sklep
             this.boxLogin.Size = new System.Drawing.Size(764, 713);
             this.boxLogin.TabIndex = 9;
             // 
+            // btnMinimalize
+            // 
+            this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
+            this.btnMinimalize.Location = new System.Drawing.Point(1054, 12);
+            this.btnMinimalize.Name = "btnMinimalize";
+            this.btnMinimalize.Size = new System.Drawing.Size(64, 50);
+            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimalize.TabIndex = 10;
+            this.btnMinimalize.TabStop = false;
+            this.btnMinimalize.Click += new System.EventHandler(this.btnMinimalize_Click);
+            // 
             // userAwatar
             // 
             this.userAwatar.Image = global::sklep.Properties.Resources.user0;
@@ -173,6 +186,7 @@ namespace sklep
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.Controls.Add(this.btnMinimalize);
             this.Controls.Add(this.boxLogin);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -182,6 +196,7 @@ namespace sklep
             this.Text = "Logowanie";
             this.boxLogin.ResumeLayout(false);
             this.boxLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
@@ -201,6 +216,7 @@ namespace sklep
         private System.Windows.Forms.PictureBox Contrast;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.Panel boxLogin;
+        private System.Windows.Forms.PictureBox btnMinimalize;
     }
 }
 

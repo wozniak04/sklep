@@ -33,11 +33,7 @@ namespace sklep
         private void InitializeComponent()
         {
             this.lbUserName = new System.Windows.Forms.Label();
-            this.userAwatar = new System.Windows.Forms.PictureBox();
-            this.btn_flyMenu = new System.Windows.Forms.PictureBox();
             this.flyMenu = new System.Windows.Forms.Panel();
-            this.Contrast = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.PictureBox();
             this.flyMenu_Category = new System.Windows.Forms.TableLayoutPanel();
             this.shopItems_ChangingPanel = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,23 +42,29 @@ namespace sklep
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.shopItems_Items = new System.Windows.Forms.TableLayoutPanel();
-            this.btnBack = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).BeginInit();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.btn_flyMenu = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Contrast = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.userAwatar = new System.Windows.Forms.PictureBox();
+            this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.flyMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.shopItems_ChangingPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
             this.SuspendLayout();
             // 
             // lbUserName
@@ -78,31 +80,6 @@ namespace sklep
             this.lbUserName.Text = "Nazwa użytkownika";
             this.lbUserName.Visible = false;
             // 
-            // userAwatar
-            // 
-            this.userAwatar.BackColor = System.Drawing.Color.Transparent;
-            this.userAwatar.Image = global::sklep.Properties.Resources.user0;
-            this.userAwatar.Location = new System.Drawing.Point(12, 12);
-            this.userAwatar.Name = "userAwatar";
-            this.userAwatar.Size = new System.Drawing.Size(105, 107);
-            this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userAwatar.TabIndex = 4;
-            this.userAwatar.TabStop = false;
-            this.userAwatar.Visible = false;
-            // 
-            // btn_flyMenu
-            // 
-            this.btn_flyMenu.BackColor = System.Drawing.Color.Transparent;
-            this.btn_flyMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_flyMenu.Image = global::sklep.Properties.Resources.menu;
-            this.btn_flyMenu.Location = new System.Drawing.Point(0, 0);
-            this.btn_flyMenu.Name = "btn_flyMenu";
-            this.btn_flyMenu.Size = new System.Drawing.Size(75, 74);
-            this.btn_flyMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btn_flyMenu.TabIndex = 1;
-            this.btn_flyMenu.TabStop = false;
-            this.btn_flyMenu.Click += new System.EventHandler(this.btn_flyMenu_Click);
-            // 
             // flyMenu
             // 
             this.flyMenu.Controls.Add(this.Contrast);
@@ -115,30 +92,6 @@ namespace sklep
             this.flyMenu.Name = "flyMenu";
             this.flyMenu.Size = new System.Drawing.Size(303, 800);
             this.flyMenu.TabIndex = 6;
-            // 
-            // Contrast
-            // 
-            this.Contrast.Image = global::sklep.Properties.Resources.contrast;
-            this.Contrast.Location = new System.Drawing.Point(132, 66);
-            this.Contrast.Name = "Contrast";
-            this.Contrast.Size = new System.Drawing.Size(54, 60);
-            this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Contrast.TabIndex = 8;
-            this.Contrast.TabStop = false;
-            this.Contrast.Visible = false;
-            this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Image = global::sklep.Properties.Resources.power_off;
-            this.btnClose.Location = new System.Drawing.Point(233, 66);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(54, 60);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 7;
-            this.btnClose.TabStop = false;
-            this.btnClose.Visible = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // flyMenu_Category
             // 
@@ -254,28 +207,6 @@ namespace sklep
             this.label2.TabIndex = 3;
             this.label2.Text = "2";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::sklep.Properties.Resources.left_arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = global::sklep.Properties.Resources.right_arrow;
-            this.pictureBox2.Location = new System.Drawing.Point(805, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 92);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -314,6 +245,18 @@ namespace sklep
             this.shopItems_Items.Size = new System.Drawing.Size(897, 668);
             this.shopItems_Items.TabIndex = 10;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnMinimalize);
+            this.panel1.Controls.Add(this.btnBack);
+            this.panel1.Controls.Add(this.btn_flyMenu);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(303, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(897, 74);
+            this.panel1.TabIndex = 12;
+            // 
             // btnBack
             // 
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
@@ -326,16 +269,88 @@ namespace sklep
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // panel1
+            // btn_flyMenu
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.btnBack);
-            this.panel1.Controls.Add(this.btn_flyMenu);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(303, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(897, 74);
-            this.panel1.TabIndex = 12;
+            this.btn_flyMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btn_flyMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_flyMenu.Image = global::sklep.Properties.Resources.menu;
+            this.btn_flyMenu.Location = new System.Drawing.Point(0, 0);
+            this.btn_flyMenu.Name = "btn_flyMenu";
+            this.btn_flyMenu.Size = new System.Drawing.Size(75, 74);
+            this.btn_flyMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btn_flyMenu.TabIndex = 1;
+            this.btn_flyMenu.TabStop = false;
+            this.btn_flyMenu.Click += new System.EventHandler(this.btn_flyMenu_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::sklep.Properties.Resources.left_arrow;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(82, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::sklep.Properties.Resources.right_arrow;
+            this.pictureBox2.Location = new System.Drawing.Point(805, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(88, 92);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // Contrast
+            // 
+            this.Contrast.Image = global::sklep.Properties.Resources.contrast;
+            this.Contrast.Location = new System.Drawing.Point(132, 66);
+            this.Contrast.Name = "Contrast";
+            this.Contrast.Size = new System.Drawing.Size(54, 60);
+            this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Contrast.TabIndex = 8;
+            this.Contrast.TabStop = false;
+            this.Contrast.Visible = false;
+            this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Image = global::sklep.Properties.Resources.power_off;
+            this.btnClose.Location = new System.Drawing.Point(233, 66);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(54, 60);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 7;
+            this.btnClose.TabStop = false;
+            this.btnClose.Visible = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // userAwatar
+            // 
+            this.userAwatar.BackColor = System.Drawing.Color.Transparent;
+            this.userAwatar.Image = global::sklep.Properties.Resources.user0;
+            this.userAwatar.Location = new System.Drawing.Point(12, 12);
+            this.userAwatar.Name = "userAwatar";
+            this.userAwatar.Size = new System.Drawing.Size(105, 107);
+            this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userAwatar.TabIndex = 4;
+            this.userAwatar.TabStop = false;
+            this.userAwatar.Visible = false;
+            // 
+            // btnMinimalize
+            // 
+            this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
+            this.btnMinimalize.Location = new System.Drawing.Point(733, 0);
+            this.btnMinimalize.Name = "btnMinimalize";
+            this.btnMinimalize.Size = new System.Drawing.Size(64, 74);
+            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnMinimalize.TabIndex = 12;
+            this.btnMinimalize.TabStop = false;
+            this.btnMinimalize.Click += new System.EventHandler(this.btnMinimalize_Click);
             // 
             // Shop
             // 
@@ -351,18 +366,19 @@ namespace sklep
             this.Name = "Shop";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).EndInit();
             this.flyMenu.ResumeLayout(false);
             this.flyMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.shopItems_ChangingPanel.ResumeLayout(false);
             this.shopItems_ChangingPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -472,5 +488,6 @@ namespace sklep
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox Contrast;
+        private PictureBox btnMinimalize;
     }
 }
