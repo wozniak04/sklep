@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -6,7 +7,15 @@ namespace sklep
 {
     public partial class Register : Form
     {
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+        
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
         private static extern IntPtr RoundCorner(
             int leftRect,
             int topRect,
@@ -14,7 +23,10 @@ namespace sklep
             int bottomRect,
             int widthEllipse,
             int heightEllipse
-            );
+        );
+
+        
+
         public Register()
         {
             
@@ -27,6 +39,7 @@ namespace sklep
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        
     }
 }
 
