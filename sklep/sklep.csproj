@@ -123,6 +123,7 @@
     <Compile Include="Shop.Designer.cs">
       <DependentUpon>Shop.cs</DependentUpon>
     </Compile>
+    <Compile Include="Walidacja.cs" />
     <EmbeddedResource Include="Logging.resx">
       <DependentUpon>Logging.cs</DependentUpon>
     </EmbeddedResource>
