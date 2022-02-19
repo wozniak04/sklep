@@ -63,6 +63,22 @@ namespace sklep
             }
         }
 
+        private void PasswordR_Clear(object sender, EventArgs e)
+        {
+            if (tPasswordR.Text == "Powtórz Hasło")
+            {
+                tPasswordR.Clear();
+            }
+        }
+
+        private void PasswordR_Return(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tPasswordR.Text))
+            {
+                tPasswordR.Text = "Powtórz Hasło";
+            }
+        }
+
         private void Email_Clear(object sender, EventArgs e)
         {
             if (tEmail.Text == "Email")

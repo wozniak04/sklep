@@ -51,6 +51,7 @@ namespace sklep
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tPasswordR = new System.Windows.Forms.TextBox();
             this.boxRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
@@ -124,6 +125,7 @@ namespace sklep
             // boxRegister
             // 
             this.boxRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.boxRegister.Controls.Add(this.tPasswordR);
             this.boxRegister.Controls.Add(this.Contrast);
             this.boxRegister.Controls.Add(this.userAwatar);
             this.boxRegister.Controls.Add(this.btnRegister_Apply);
@@ -236,9 +238,9 @@ namespace sklep
             // 
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnClose.Image = global::sklep.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(990, 0);
+            this.btnClose.Location = new System.Drawing.Point(994, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(70, 68);
+            this.btnClose.Size = new System.Drawing.Size(63, 79);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnClose.TabIndex = 7;
             this.btnClose.TabStop = false;
@@ -248,9 +250,9 @@ namespace sklep
             // 
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnBack.Image = global::sklep.Properties.Resources.back1;
-            this.btnBack.Location = new System.Drawing.Point(1130, 0);
+            this.btnBack.Location = new System.Drawing.Point(1127, 0);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(70, 68);
+            this.btnBack.Size = new System.Drawing.Size(73, 79);
             this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnBack.TabIndex = 6;
             this.btnBack.TabStop = false;
@@ -260,9 +262,9 @@ namespace sklep
             // 
             this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
-            this.btnMinimalize.Location = new System.Drawing.Point(1060, 0);
+            this.btnMinimalize.Location = new System.Drawing.Point(1057, 0);
             this.btnMinimalize.Name = "btnMinimalize";
-            this.btnMinimalize.Size = new System.Drawing.Size(70, 68);
+            this.btnMinimalize.Size = new System.Drawing.Size(70, 79);
             this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnMinimalize.TabIndex = 11;
             this.btnMinimalize.TabStop = false;
@@ -277,8 +279,22 @@ namespace sklep
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 68);
+            this.panel1.Size = new System.Drawing.Size(1200, 79);
             this.panel1.TabIndex = 12;
+            // 
+            // tPasswordR
+            // 
+            this.tPasswordR.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.tPasswordR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tPasswordR.Location = new System.Drawing.Point(240, 48);
+            this.tPasswordR.Multiline = true;
+            this.tPasswordR.Name = "tPasswordR";
+            this.tPasswordR.Size = new System.Drawing.Size(302, 35);
+            this.tPasswordR.TabIndex = 21;
+            this.tPasswordR.Text = "Powtórz Hasło";
+            this.tPasswordR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tPasswordR.Enter += new System.EventHandler(this.PasswordR_Clear);
+            this.tPasswordR.Leave += new System.EventHandler(this.PasswordR_Return);
             // 
             // Register
             // 
@@ -332,5 +348,6 @@ namespace sklep
         private System.Windows.Forms.PictureBox Contrast;
         private System.Windows.Forms.PictureBox btnMinimalize;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox tPasswordR;
     }
 }
