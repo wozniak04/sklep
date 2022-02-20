@@ -61,6 +61,7 @@ namespace sklep
             {
                 tPassword.Text = "Hasło";
             }
+           
         }
 
         private void PasswordR_Clear(object sender, EventArgs e)
@@ -69,6 +70,7 @@ namespace sklep
             {
                 tPasswordR.Clear();
             }
+            
         }
 
         private void PasswordR_Return(object sender, EventArgs e)
@@ -77,6 +79,20 @@ namespace sklep
             {
                 tPasswordR.Text = "Powtórz Hasło";
             }
+           
+            else
+            {
+                var walidacja = new Walidacja();
+                if (!walidacja.check2Password(tPassword.Text.ToString(), tPasswordR.Text.ToString()))
+                {
+                    //tER_Password.Text = "hasło są różne";
+                }
+                else if (walidacja.check2Password(tPassword.Text.ToString(), tPasswordR.Text.ToString()))
+                {
+                    //tER_Password.Text = "";
+                }
+            }
+            
         }
 
         private void Email_Clear(object sender, EventArgs e)
