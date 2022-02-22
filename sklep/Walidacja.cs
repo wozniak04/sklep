@@ -9,31 +9,58 @@ namespace sklep
 {
     class Walidacja
     {
-        public string checkUsername(string username)
+        private bool nazwa { get; set; }
+        private bool pass1 { get; set; }
+        private bool pass2 { get; set; }
+        private bool mail { get; set; }
+        public bool checkUsername(string username)
         {
             var Data = new DataAcces();
-            if (Data.getUser(username))
+            if (!Data.getUser(username))
             {
-                return "użytkownik o takiej nazwie istnieje";
+                this.nazwa = true;
+                return true;
             }
-            return "";
+            this.nazwa = false;
+            return false;
         }
-        public string checkPassword(string haslo)
+        public bool checkPassword(string haslo)
         {
-            if (!Regex.IsMatch(haslo, "^[a-zA-Z0,9]{8,}^"))
-                return "hasło powinno zawierać 8 znaków";
-            if (!Regex.IsMatch(haslo, "^[a-z]{1,}^"))
-                return "hasło powinno zawierać chociaż 1 mały znak";
-            if (!Regex.IsMatch(haslo, "^[A-Z]{1,}^"))
-                return "hasło powinno zawierać chociaż 1 duży znak";
-            if (!Regex.IsMatch(haslo, "^[0-9]{1,}^"))
-                return "hasło powinno zawierać chociaż jedną cyfre";
-            return "";
+            if (Regex.IsMatch(haslo, "[a-zA-z0-9]{8,}"))
+            {
+                this.pass1 = true;
+                return true;
+            }
+            pass1 = false;
+            return false;
+           
         }
         public bool check2Password(string haslo1,string haslo2)
         {
             if (haslo1 == haslo2)
+            {
+                pass2 = true;
                 return true;
+            }
+            pass2 = false;
+            return false;
+        }
+        public bool checkemail(string email)
+        {
+            if (Regex.IsMatch(email, "^[a-zA-Z0-9]+[@]+[a-zA-Z0-9]+[.][a-zA-Z0-9]{2,3}"))
+            {
+                mail = true;
+                return true;
+            }
+            mail = false;
+            return false;
+        }
+        public bool czygit()
+        {
+            if(nazwa==true && pass1==true && pass2==true && mail == true)
+            {
+                return true;
+            }
             return false;
         }
     }

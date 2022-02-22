@@ -313,7 +313,7 @@ namespace sklep
             this.tUser_Error.Name = "tUser_Error";
             this.tUser_Error.Size = new System.Drawing.Size(44, 20);
             this.tUser_Error.TabIndex = 22;
-            this.tUser_Error.Text = "błąd";
+            this.tUser_Error.Text = "";
             // 
             // tPassword_Error
             // 
@@ -324,7 +324,7 @@ namespace sklep
             this.tPassword_Error.Name = "tPassword_Error";
             this.tPassword_Error.Size = new System.Drawing.Size(44, 20);
             this.tPassword_Error.TabIndex = 23;
-            this.tPassword_Error.Text = "błąd";
+            this.tPassword_Error.Text = "";
             // 
             // tPasswordRepeat_Error
             // 
@@ -335,7 +335,7 @@ namespace sklep
             this.tPasswordRepeat_Error.Name = "tPasswordRepeat_Error";
             this.tPasswordRepeat_Error.Size = new System.Drawing.Size(44, 20);
             this.tPasswordRepeat_Error.TabIndex = 24;
-            this.tPasswordRepeat_Error.Text = "błąd";
+            this.tPasswordRepeat_Error.Text = "";
             // 
             // tEmail_Error
             // 
@@ -346,7 +346,7 @@ namespace sklep
             this.tEmail_Error.Name = "tEmail_Error";
             this.tEmail_Error.Size = new System.Drawing.Size(44, 20);
             this.tEmail_Error.TabIndex = 25;
-            this.tEmail_Error.Text = "błąd";
+            this.tEmail_Error.Text = "";
             // 
             // Register
             // 

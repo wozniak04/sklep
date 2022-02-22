@@ -7,6 +7,15 @@ namespace sklep
 {
     public partial class Register : Form
     {
+        public Register()
+        {
+
+            InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+            userAwatar.Image = userAwatar_List.Images[0];
+        }
+        Walidacja walid = new Walidacja();
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
         [DllImportAttribute("user32.dll")]
@@ -15,6 +24,7 @@ namespace sklep
         public static extern bool ReleaseCapture();
         
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        
 
         private static extern IntPtr RoundCorner(
             int leftRect,
@@ -40,10 +50,16 @@ namespace sklep
                 tUser.Text = "Nazwa użytkownika";
             }
             else
-            {
-                var walid = new Walidacja();
+            {                
 
-                //tER_User.Text = walid.checkUsername(tUser.Text.ToString());
+                if (!walid.checkUsername(tUser.Text))
+                {
+                    tUser_Error.Text = "użytkownik o takiej nazwie istnieje";
+                }
+                else
+                {
+                    tUser_Error.Text = "";
+                }
             }
         }
 
@@ -60,6 +76,17 @@ namespace sklep
             if (string.IsNullOrEmpty(tPassword.Text))
             {
                 tPassword.Text = "Hasło";
+            }
+            else
+            {
+                if (!walid.checkPassword(tPassword.Text))
+                {
+                    tPassword_Error.Text = "hasło powinno zawierać 8 znakoów";
+                }
+                else
+                {
+                    tPassword_Error.Text = "";
+                }
             }
            
         }
@@ -82,14 +109,13 @@ namespace sklep
            
             else
             {
-                var walidacja = new Walidacja();
-                if (!walidacja.check2Password(tPassword.Text.ToString(), tPasswordR.Text.ToString()))
+                if (!walid.check2Password(tPassword.Text, tPasswordR.Text))
                 {
-                    //tER_Password.Text = "hasło są różne";
+                    tPasswordRepeat_Error.Text = "hasła są różne";
                 }
-                else if (walidacja.check2Password(tPassword.Text.ToString(), tPasswordR.Text.ToString()))
+                else 
                 {
-                    //tER_Password.Text = "";
+                    tPasswordRepeat_Error.Text = "";
                 }
             }
             
@@ -109,13 +135,28 @@ namespace sklep
             {
                 tEmail.Text = "Email";
             }
+            else
+            {
+                if (!walid.checkemail(tEmail.Text))
+                {
+                    tEmail_Error.Text = "nie ma takiego maila";
+                }
+                else
+                {
+                    tEmail_Error.Text = "";
+                }
+            }
         }
 
         //information about registration
         private void btnRegister_Apply_Click_1(object sender, EventArgs e)
         {
-            Register_Alert regAlert = new Register_Alert();
-            regAlert.Show();
+            if (walid.czygit()) 
+            {
+                Register_Alert regAlert = new Register_Alert();
+                regAlert.Show();
+            }
+            
         }
 
         //return to main window
@@ -175,16 +216,7 @@ namespace sklep
                 tEmail.BackColor = Color.FromArgb(90, 92, 91);
             }
         }
-
-
-
-        public Register()
-        {
-            
-            InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
-            userAwatar.Image = userAwatar_List.Images[0];
-        }
+        
 
         private void btnMinimalize_Click(object sender, EventArgs e)
         {
