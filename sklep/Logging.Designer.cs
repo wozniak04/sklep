@@ -38,13 +38,13 @@ namespace sklep
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_User = new System.Windows.Forms.Label();
             this.boxLogin = new System.Windows.Forms.Panel();
+            this.tPassword_Error = new System.Windows.Forms.Label();
+            this.tUser_Error = new System.Windows.Forms.Label();
             this.userAwatar = new System.Windows.Forms.PictureBox();
             this.Contrast = new System.Windows.Forms.PictureBox();
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tUser_Error = new System.Windows.Forms.Label();
-            this.tPassword_Error = new System.Windows.Forms.Label();
             this.boxLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
@@ -143,6 +143,26 @@ namespace sklep
             this.boxLogin.Size = new System.Drawing.Size(764, 713);
             this.boxLogin.TabIndex = 9;
             // 
+            // tPassword_Error
+            // 
+            this.tPassword_Error.AutoSize = true;
+            this.tPassword_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tPassword_Error.ForeColor = System.Drawing.Color.Red;
+            this.tPassword_Error.Location = new System.Drawing.Point(562, 417);
+            this.tPassword_Error.Name = "tPassword_Error";
+            this.tPassword_Error.Size = new System.Drawing.Size(0, 20);
+            this.tPassword_Error.TabIndex = 24;
+            // 
+            // tUser_Error
+            // 
+            this.tUser_Error.AutoSize = true;
+            this.tUser_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tUser_Error.ForeColor = System.Drawing.Color.Red;
+            this.tUser_Error.Location = new System.Drawing.Point(562, 346);
+            this.tUser_Error.Name = "tUser_Error";
+            this.tUser_Error.Size = new System.Drawing.Size(0, 20);
+            this.tUser_Error.TabIndex = 23;
+            // 
             // userAwatar
             // 
             this.userAwatar.Image = global::sklep.Properties.Resources.user0;
@@ -198,28 +218,6 @@ namespace sklep
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 68);
             this.panel1.TabIndex = 11;
-            // 
-            // tUser_Error
-            // 
-            this.tUser_Error.AutoSize = true;
-            this.tUser_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tUser_Error.ForeColor = System.Drawing.Color.Red;
-            this.tUser_Error.Location = new System.Drawing.Point(562, 346);
-            this.tUser_Error.Name = "tUser_Error";
-            this.tUser_Error.Size = new System.Drawing.Size(44, 20);
-            this.tUser_Error.TabIndex = 23;
-            this.tUser_Error.Text = "błąd";
-            // 
-            // tPassword_Error
-            // 
-            this.tPassword_Error.AutoSize = true;
-            this.tPassword_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tPassword_Error.ForeColor = System.Drawing.Color.Red;
-            this.tPassword_Error.Location = new System.Drawing.Point(562, 417);
-            this.tPassword_Error.Name = "tPassword_Error";
-            this.tPassword_Error.Size = new System.Drawing.Size(44, 20);
-            this.tPassword_Error.TabIndex = 24;
-            this.tPassword_Error.Text = "błąd";
             // 
             // Logging
             // 
