@@ -142,5 +142,19 @@ namespace sklep
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - move.X;
+                this.Top += e.Y - move.Y;
+            }
+        }
+        Point move;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move = new Point(e.X, e.Y);
+        }
     }
 }

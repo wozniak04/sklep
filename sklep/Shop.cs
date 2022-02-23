@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Drawing;
 
 namespace sklep
 {
@@ -26,6 +27,20 @@ namespace sklep
         private void btnMinimalize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - move.X;
+                this.Top += e.Y - move.Y;
+            }
+        }
+        Point move;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move = new Point(e.X, e.Y);
         }
     }
 }

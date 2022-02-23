@@ -311,7 +311,7 @@ namespace sklep
             // btnBack
             // 
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnBack.Image = global::sklep.Properties.Resources.back1;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
             this.btnBack.Location = new System.Drawing.Point(1127, 0);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(73, 79);
@@ -343,6 +343,8 @@ namespace sklep
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 79);
             this.panel1.TabIndex = 12;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // Register
             // 
