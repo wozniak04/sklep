@@ -153,8 +153,13 @@ namespace sklep
         {
             if (walid.czygit()) 
             {
-                Register_Alert regAlert = new Register_Alert();
-                regAlert.Show();
+                var data = new DataAcces();
+                if (data.insert(tUser.Text, tPassword.Text, tEmail.Text))
+                {
+                    var login = new Logging();
+                    login.ShowDialog();
+                    this.Close();
+                }
             }
             
         }
@@ -198,22 +203,23 @@ namespace sklep
         //Contrast function
         private void Contrast_Click(object sender, EventArgs e)
         {
+            var kolor = new Kolory();
 
-            if (this.BackColor == Color.FromArgb(90, 92, 91))
+            if (this.BackColor == Color.FromArgb(kolor.kolor111,kolor.kolor112, kolor.kolor113))
             {
-                this.BackColor = Color.FromArgb(225, 227, 225);
-                boxRegister.BackColor = Color.FromArgb(169, 171, 169);
-                tUser.BackColor = Color.FromArgb(225, 227, 225);
-                tPassword.BackColor = Color.FromArgb(225, 227, 225);
-                tEmail.BackColor = Color.FromArgb(225, 227, 225);
+                this.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
+                boxRegister.BackColor = Color.FromArgb(kolor.kolor221, kolor.kolor222, kolor.kolor223);
+                tUser.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
+                tPassword.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
+                tEmail.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
             }
             else
             {
-                this.BackColor = Color.FromArgb(90, 92, 91);
-                boxRegister.BackColor = Color.FromArgb(80, 82, 81);
-                tUser.BackColor = Color.FromArgb(90, 92, 91);
-                tPassword.BackColor = Color.FromArgb(90, 92, 91);
-                tEmail.BackColor = Color.FromArgb(90, 92, 91);
+                this.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
+                boxRegister.BackColor = Color.FromArgb(kolor.kolor121, kolor.kolor122, kolor.kolor123);
+                tUser.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
+                tPassword.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
+                tEmail.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
             }
         }
         

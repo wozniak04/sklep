@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAcces.cs" />
+    <Compile Include="Kolory.cs" />
     <Compile Include="Logging.cs">
       <SubType>Form</SubType>
     </Compile>
