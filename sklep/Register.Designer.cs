@@ -39,6 +39,10 @@ namespace sklep
             this.userAwatar_List = new System.Windows.Forms.ImageList(this.components);
             this.listNawigation = new System.Windows.Forms.ImageList(this.components);
             this.boxRegister = new System.Windows.Forms.Panel();
+            this.tEmail_Error = new System.Windows.Forms.Label();
+            this.tPasswordRepeat_Error = new System.Windows.Forms.Label();
+            this.tPassword_Error = new System.Windows.Forms.Label();
+            this.tUser_Error = new System.Windows.Forms.Label();
             this.tPasswordR = new System.Windows.Forms.TextBox();
             this.Contrast = new System.Windows.Forms.PictureBox();
             this.userAwatar = new System.Windows.Forms.PictureBox();
@@ -52,10 +56,6 @@ namespace sklep
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tUser_Error = new System.Windows.Forms.Label();
-            this.tPassword_Error = new System.Windows.Forms.Label();
-            this.tPasswordRepeat_Error = new System.Windows.Forms.Label();
-            this.tEmail_Error = new System.Windows.Forms.Label();
             this.boxRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
@@ -147,6 +147,46 @@ namespace sklep
             this.boxRegister.Name = "boxRegister";
             this.boxRegister.Size = new System.Drawing.Size(764, 716);
             this.boxRegister.TabIndex = 8;
+            // 
+            // tEmail_Error
+            // 
+            this.tEmail_Error.AutoSize = true;
+            this.tEmail_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tEmail_Error.ForeColor = System.Drawing.Color.Red;
+            this.tEmail_Error.Location = new System.Drawing.Point(557, 470);
+            this.tEmail_Error.Name = "tEmail_Error";
+            this.tEmail_Error.Size = new System.Drawing.Size(0, 20);
+            this.tEmail_Error.TabIndex = 25;
+            // 
+            // tPasswordRepeat_Error
+            // 
+            this.tPasswordRepeat_Error.AutoSize = true;
+            this.tPasswordRepeat_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tPasswordRepeat_Error.ForeColor = System.Drawing.Color.Red;
+            this.tPasswordRepeat_Error.Location = new System.Drawing.Point(557, 429);
+            this.tPasswordRepeat_Error.Name = "tPasswordRepeat_Error";
+            this.tPasswordRepeat_Error.Size = new System.Drawing.Size(0, 20);
+            this.tPasswordRepeat_Error.TabIndex = 24;
+            // 
+            // tPassword_Error
+            // 
+            this.tPassword_Error.AutoSize = true;
+            this.tPassword_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tPassword_Error.ForeColor = System.Drawing.Color.Red;
+            this.tPassword_Error.Location = new System.Drawing.Point(557, 388);
+            this.tPassword_Error.Name = "tPassword_Error";
+            this.tPassword_Error.Size = new System.Drawing.Size(0, 20);
+            this.tPassword_Error.TabIndex = 23;
+            // 
+            // tUser_Error
+            // 
+            this.tUser_Error.AutoSize = true;
+            this.tUser_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tUser_Error.ForeColor = System.Drawing.Color.Red;
+            this.tUser_Error.Location = new System.Drawing.Point(557, 338);
+            this.tUser_Error.Name = "tUser_Error";
+            this.tUser_Error.Size = new System.Drawing.Size(0, 20);
+            this.tUser_Error.TabIndex = 22;
             // 
             // tPasswordR
             // 
@@ -303,50 +343,6 @@ namespace sklep
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 79);
             this.panel1.TabIndex = 12;
-            // 
-            // tUser_Error
-            // 
-            this.tUser_Error.AutoSize = true;
-            this.tUser_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tUser_Error.ForeColor = System.Drawing.Color.Red;
-            this.tUser_Error.Location = new System.Drawing.Point(557, 338);
-            this.tUser_Error.Name = "tUser_Error";
-            this.tUser_Error.Size = new System.Drawing.Size(44, 20);
-            this.tUser_Error.TabIndex = 22;
-            this.tUser_Error.Text = "";
-            // 
-            // tPassword_Error
-            // 
-            this.tPassword_Error.AutoSize = true;
-            this.tPassword_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tPassword_Error.ForeColor = System.Drawing.Color.Red;
-            this.tPassword_Error.Location = new System.Drawing.Point(557, 388);
-            this.tPassword_Error.Name = "tPassword_Error";
-            this.tPassword_Error.Size = new System.Drawing.Size(44, 20);
-            this.tPassword_Error.TabIndex = 23;
-            this.tPassword_Error.Text = "";
-            // 
-            // tPasswordRepeat_Error
-            // 
-            this.tPasswordRepeat_Error.AutoSize = true;
-            this.tPasswordRepeat_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tPasswordRepeat_Error.ForeColor = System.Drawing.Color.Red;
-            this.tPasswordRepeat_Error.Location = new System.Drawing.Point(557, 429);
-            this.tPasswordRepeat_Error.Name = "tPasswordRepeat_Error";
-            this.tPasswordRepeat_Error.Size = new System.Drawing.Size(44, 20);
-            this.tPasswordRepeat_Error.TabIndex = 24;
-            this.tPasswordRepeat_Error.Text = "";
-            // 
-            // tEmail_Error
-            // 
-            this.tEmail_Error.AutoSize = true;
-            this.tEmail_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tEmail_Error.ForeColor = System.Drawing.Color.Red;
-            this.tEmail_Error.Location = new System.Drawing.Point(557, 470);
-            this.tEmail_Error.Name = "tEmail_Error";
-            this.tEmail_Error.Size = new System.Drawing.Size(44, 20);
-            this.tEmail_Error.TabIndex = 25;
-            this.tEmail_Error.Text = "";
             // 
             // Register
             // 
