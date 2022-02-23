@@ -54,7 +54,7 @@ namespace sklep
             if (this.nazwa == true && this.haslo == true)
             {
                 this.Hide();
-                var Shop = new Shop();
+                var Shop = new Shop(tUser.Text);
                 Shop.ShowDialog();
                 this.Close();
             }

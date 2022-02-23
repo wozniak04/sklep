@@ -15,11 +15,13 @@ namespace sklep
             int widthEllipse,
             int heightEllipse
             );
-        public Shop()
+        public Shop(string nazwa)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+            lbUserName.Text = nazwa;
         }
+      
 
         private void btnMinimalize_Click(object sender, EventArgs e)
         {
