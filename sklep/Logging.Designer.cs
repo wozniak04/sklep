@@ -58,6 +58,7 @@ namespace sklep
             this.btnRegister.BackColor = System.Drawing.Color.Lime;
             this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnRegister.Location = new System.Drawing.Point(239, 528);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(302, 49);
@@ -69,7 +70,9 @@ namespace sklep
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Lime;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnLogin.Location = new System.Drawing.Point(267, 468);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(248, 42);
@@ -138,9 +141,9 @@ namespace sklep
             this.boxLogin.Controls.Add(this.tER_Password);
             this.boxLogin.Controls.Add(this.tUser);
             this.boxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.boxLogin.Location = new System.Drawing.Point(207, 85);
+            this.boxLogin.Location = new System.Drawing.Point(207, 68);
             this.boxLogin.Name = "boxLogin";
-            this.boxLogin.Size = new System.Drawing.Size(764, 713);
+            this.boxLogin.Size = new System.Drawing.Size(764, 733);
             this.boxLogin.TabIndex = 9;
             // 
             // tPassword_Error
@@ -176,9 +179,9 @@ namespace sklep
             // Contrast
             // 
             this.Contrast.Image = global::sklep.Properties.Resources.contrast;
-            this.Contrast.Location = new System.Drawing.Point(652, 17);
+            this.Contrast.Location = new System.Drawing.Point(670, 18);
             this.Contrast.Name = "Contrast";
-            this.Contrast.Size = new System.Drawing.Size(91, 66);
+            this.Contrast.Size = new System.Drawing.Size(75, 50);
             this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Contrast.TabIndex = 7;
             this.Contrast.TabStop = false;
@@ -186,11 +189,10 @@ namespace sklep
             // 
             // btnMinimalize
             // 
-            this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
-            this.btnMinimalize.Location = new System.Drawing.Point(1072, 0);
+            this.btnMinimalize.Location = new System.Drawing.Point(1112, 3);
             this.btnMinimalize.Name = "btnMinimalize";
-            this.btnMinimalize.Size = new System.Drawing.Size(64, 68);
+            this.btnMinimalize.Size = new System.Drawing.Size(35, 35);
             this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimalize.TabIndex = 10;
             this.btnMinimalize.TabStop = false;
@@ -198,11 +200,10 @@ namespace sklep
             // 
             // btnClose
             // 
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnClose.Image = global::sklep.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(1136, 0);
+            this.btnClose.Location = new System.Drawing.Point(1153, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(64, 68);
+            this.btnClose.Size = new System.Drawing.Size(35, 35);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 8;
             this.btnClose.TabStop = false;
@@ -216,8 +217,9 @@ namespace sklep
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 68);
+            this.panel1.Size = new System.Drawing.Size(1200, 40);
             this.panel1.TabIndex = 11;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 

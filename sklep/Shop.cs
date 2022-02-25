@@ -42,6 +42,11 @@ namespace sklep
         {
             move = new Point(e.X, e.Y);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

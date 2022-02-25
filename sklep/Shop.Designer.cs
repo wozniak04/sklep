@@ -98,9 +98,9 @@ namespace sklep
             // Contrast
             // 
             this.Contrast.Image = global::sklep.Properties.Resources.contrast;
-            this.Contrast.Location = new System.Drawing.Point(128, 108);
+            this.Contrast.Location = new System.Drawing.Point(130, 119);
             this.Contrast.Name = "Contrast";
-            this.Contrast.Size = new System.Drawing.Size(54, 60);
+            this.Contrast.Size = new System.Drawing.Size(40, 40);
             this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Contrast.TabIndex = 8;
             this.Contrast.TabStop = false;
@@ -110,9 +110,9 @@ namespace sklep
             // btnClose
             // 
             this.btnClose.Image = global::sklep.Properties.Resources.back;
-            this.btnClose.Location = new System.Drawing.Point(229, 108);
+            this.btnClose.Location = new System.Drawing.Point(176, 119);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(54, 60);
+            this.btnClose.Size = new System.Drawing.Size(45, 40);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 7;
             this.btnClose.TabStop = false;
@@ -313,31 +313,30 @@ namespace sklep
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(303, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(897, 68);
+            this.panel1.Size = new System.Drawing.Size(897, 40);
             this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // btnMinimalize
             // 
-            this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
-            this.btnMinimalize.Location = new System.Drawing.Point(733, 0);
+            this.btnMinimalize.Location = new System.Drawing.Point(805, 2);
             this.btnMinimalize.Name = "btnMinimalize";
-            this.btnMinimalize.Size = new System.Drawing.Size(64, 68);
-            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnMinimalize.Size = new System.Drawing.Size(35, 35);
+            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimalize.TabIndex = 12;
             this.btnMinimalize.TabStop = false;
             this.btnMinimalize.Click += new System.EventHandler(this.btnMinimalize_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnBack.Image = global::sklep.Properties.Resources.close;
-            this.btnBack.Location = new System.Drawing.Point(797, 0);
+            this.btnBack.Location = new System.Drawing.Point(850, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 68);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnBack.Size = new System.Drawing.Size(35, 35);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBack.TabIndex = 11;
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnClose_Click);
@@ -345,12 +344,11 @@ namespace sklep
             // btn_flyMenu
             // 
             this.btn_flyMenu.BackColor = System.Drawing.Color.Transparent;
-            this.btn_flyMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_flyMenu.Image = global::sklep.Properties.Resources.menu;
-            this.btn_flyMenu.Location = new System.Drawing.Point(0, 0);
+            this.btn_flyMenu.Location = new System.Drawing.Point(10, 40);
             this.btn_flyMenu.Name = "btn_flyMenu";
-            this.btn_flyMenu.Size = new System.Drawing.Size(75, 114);
-            this.btn_flyMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btn_flyMenu.Size = new System.Drawing.Size(75, 60);
+            this.btn_flyMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_flyMenu.TabIndex = 1;
             this.btn_flyMenu.TabStop = false;
             this.btn_flyMenu.Click += new System.EventHandler(this.btn_flyMenu_Click);
@@ -359,9 +357,9 @@ namespace sklep
             // 
             this.panel2.Controls.Add(this.btn_flyMenu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(303, 68);
+            this.panel2.Location = new System.Drawing.Point(303, 40);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(897, 114);
+            this.panel2.Size = new System.Drawing.Size(897, 142);
             this.panel2.TabIndex = 13;
             // 
             // Shop
@@ -449,6 +447,8 @@ namespace sklep
 
                 flyMenu.BackColor = BackColor = Color.FromArgb(225, 227, 225);
 
+                panel1.BackColor = Color.FromArgb(225, 227, 225);
+
                 flyMenu_Category.BackColor = Color.FromArgb(169, 171, 169);
                 flyMenu_Category.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
 
@@ -465,6 +465,7 @@ namespace sklep
 
                 flyMenu.BackColor = BackColor = Color.FromArgb(90, 92, 91);
 
+                panel1.BackColor = Color.FromArgb(90, 92, 91);
 
                 flyMenu_Category.BackColor = Color.FromArgb(80, 82, 81);
                 flyMenu_Category.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;

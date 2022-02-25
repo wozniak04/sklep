@@ -38,12 +38,14 @@ namespace sklep
             {
                 this.BackColor = Color.FromArgb(225, 227, 225);
                 boxLogin.BackColor = Color.FromArgb(169, 171, 169);
+                panel1.BackColor = Color.FromArgb(169, 171, 169);
                 tUser.BackColor = Color.FromArgb(225, 227, 225);
                 tPassword.BackColor = Color.FromArgb(225, 227, 225);
             }
             else {
                 this.BackColor = Color.FromArgb(90, 92, 91);
                 boxLogin.BackColor = Color.FromArgb(80, 82, 81);
+                panel1.BackColor = Color.FromArgb(80, 82, 81);
                 tUser.BackColor = Color.FromArgb(90, 92, 91);
                 tPassword.BackColor = Color.FromArgb(90, 92, 91);   
             }
@@ -86,7 +88,7 @@ namespace sklep
                 var data = new DataAcces();
                 if (!data.getUser(tUser.Text.ToString()))
                 {
-                    tER_User.Text = "nie ma takiego użytkownika";
+                    tER_User.Text = "Taki użytkownik nie istnieje.";
                     this.nazwa = false;
                 }
                 else
@@ -119,7 +121,7 @@ namespace sklep
                     var data = new DataAcces();
                     if (!data.getpassword(tPassword.Text.ToString()))
                     {
-                        tER_Password.Text = "złe hasło";
+                        tER_Password.Text = "Podane hasło jest złe.";
                         this.haslo = false;
                     }
                     else
@@ -155,6 +157,11 @@ namespace sklep
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             move = new Point(e.X, e.Y);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

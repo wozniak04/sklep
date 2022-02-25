@@ -54,7 +54,7 @@ namespace sklep
 
                 if (!walid.checkUsername(tUser.Text))
                 {
-                    tUser_Error.Text = "użytkownik o takiej nazwie istnieje";
+                    tUser_Error.Text = "Użytkownik o takiej nazwie nie istnieje";
                 }
                 else
                 {
@@ -81,7 +81,7 @@ namespace sklep
             {
                 if (!walid.checkPassword(tPassword.Text))
                 {
-                    tPassword_Error.Text = "hasło powinno zawierać 8 znakoów";
+                    tPassword_Error.Text = "Hasło powinno zawierać 8 znaków.";
                 }
                 else
                 {
@@ -93,7 +93,7 @@ namespace sklep
 
         private void PasswordR_Clear(object sender, EventArgs e)
         {
-            if (tPasswordR.Text == "Powtórz Hasło")
+            if (tPasswordR.Text == "Powtórz hasło")
             {
                 tPasswordR.Clear();
             }
@@ -104,14 +104,14 @@ namespace sklep
         {
             if (string.IsNullOrEmpty(tPasswordR.Text))
             {
-                tPasswordR.Text = "Powtórz Hasło";
+                tPasswordR.Text = "Powtórz hasło";
             }
            
             else
             {
                 if (!walid.check2Password(tPassword.Text, tPasswordR.Text))
                 {
-                    tPasswordRepeat_Error.Text = "hasła są różne";
+                    tPasswordRepeat_Error.Text = "Hasła różnią się od siebie.";
                 }
                 else 
                 {
@@ -139,7 +139,7 @@ namespace sklep
             {
                 if (!walid.checkemail(tEmail.Text))
                 {
-                    tEmail_Error.Text = "nie ma takiego maila";
+                    tEmail_Error.Text = "Taki adres email nie istnieje.";
                 }
                 else
                 {
@@ -209,16 +209,20 @@ namespace sklep
             {
                 this.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
                 boxRegister.BackColor = Color.FromArgb(kolor.kolor221, kolor.kolor222, kolor.kolor223);
+                panel1.BackColor = Color.FromArgb(kolor.kolor221, kolor.kolor222, kolor.kolor223);
                 tUser.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
                 tPassword.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
+                tPasswordR.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
                 tEmail.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
             }
             else
             {
                 this.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
                 boxRegister.BackColor = Color.FromArgb(kolor.kolor121, kolor.kolor122, kolor.kolor123);
+                panel1.BackColor = Color.FromArgb(kolor.kolor121, kolor.kolor122, kolor.kolor123);
                 tUser.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
                 tPassword.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
+                tPasswordR.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
                 tEmail.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
             }
         }
@@ -245,6 +249,11 @@ namespace sklep
         {
 
             move = new Point(e.X, e.Y);
+        }
+
+        private void tPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

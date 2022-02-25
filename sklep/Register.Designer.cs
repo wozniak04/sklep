@@ -134,8 +134,8 @@ namespace sklep
             this.boxRegister.Controls.Add(this.tPassword_Error);
             this.boxRegister.Controls.Add(this.tUser_Error);
             this.boxRegister.Controls.Add(this.tPasswordR);
-            this.boxRegister.Controls.Add(this.Contrast);
             this.boxRegister.Controls.Add(this.userAwatar);
+            this.boxRegister.Controls.Add(this.Contrast);
             this.boxRegister.Controls.Add(this.btnRegister_Apply);
             this.boxRegister.Controls.Add(this.userChange_Left);
             this.boxRegister.Controls.Add(this.userChange_Right);
@@ -143,17 +143,17 @@ namespace sklep
             this.boxRegister.Controls.Add(this.tUser);
             this.boxRegister.Controls.Add(this.tPassword);
             this.boxRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.boxRegister.Location = new System.Drawing.Point(207, 85);
+            this.boxRegister.Location = new System.Drawing.Point(200, 75);
             this.boxRegister.Name = "boxRegister";
-            this.boxRegister.Size = new System.Drawing.Size(764, 716);
+            this.boxRegister.Size = new System.Drawing.Size(800, 750);
             this.boxRegister.TabIndex = 8;
             // 
             // tEmail_Error
             // 
             this.tEmail_Error.AutoSize = true;
-            this.tEmail_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tEmail_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tEmail_Error.ForeColor = System.Drawing.Color.Red;
-            this.tEmail_Error.Location = new System.Drawing.Point(557, 470);
+            this.tEmail_Error.Location = new System.Drawing.Point(550, 370);
             this.tEmail_Error.Name = "tEmail_Error";
             this.tEmail_Error.Size = new System.Drawing.Size(0, 20);
             this.tEmail_Error.TabIndex = 25;
@@ -161,9 +161,9 @@ namespace sklep
             // tPasswordRepeat_Error
             // 
             this.tPasswordRepeat_Error.AutoSize = true;
-            this.tPasswordRepeat_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tPasswordRepeat_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tPasswordRepeat_Error.ForeColor = System.Drawing.Color.Red;
-            this.tPasswordRepeat_Error.Location = new System.Drawing.Point(557, 429);
+            this.tPasswordRepeat_Error.Location = new System.Drawing.Point(550, 465);
             this.tPasswordRepeat_Error.Name = "tPasswordRepeat_Error";
             this.tPasswordRepeat_Error.Size = new System.Drawing.Size(0, 20);
             this.tPasswordRepeat_Error.TabIndex = 24;
@@ -171,9 +171,9 @@ namespace sklep
             // tPassword_Error
             // 
             this.tPassword_Error.AutoSize = true;
-            this.tPassword_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tPassword_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tPassword_Error.ForeColor = System.Drawing.Color.Red;
-            this.tPassword_Error.Location = new System.Drawing.Point(557, 388);
+            this.tPassword_Error.Location = new System.Drawing.Point(550, 423);
             this.tPassword_Error.Name = "tPassword_Error";
             this.tPassword_Error.Size = new System.Drawing.Size(0, 20);
             this.tPassword_Error.TabIndex = 23;
@@ -181,9 +181,9 @@ namespace sklep
             // tUser_Error
             // 
             this.tUser_Error.AutoSize = true;
-            this.tUser_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tUser_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tUser_Error.ForeColor = System.Drawing.Color.Red;
-            this.tUser_Error.Location = new System.Drawing.Point(557, 338);
+            this.tUser_Error.Location = new System.Drawing.Point(550, 330);
             this.tUser_Error.Name = "tUser_Error";
             this.tUser_Error.Size = new System.Drawing.Size(0, 20);
             this.tUser_Error.TabIndex = 22;
@@ -192,12 +192,12 @@ namespace sklep
             // 
             this.tPasswordR.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tPasswordR.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tPasswordR.Location = new System.Drawing.Point(230, 414);
+            this.tPasswordR.Location = new System.Drawing.Point(250, 455);
             this.tPasswordR.Multiline = true;
             this.tPasswordR.Name = "tPasswordR";
-            this.tPasswordR.Size = new System.Drawing.Size(302, 35);
+            this.tPasswordR.Size = new System.Drawing.Size(300, 35);
             this.tPasswordR.TabIndex = 21;
-            this.tPasswordR.Text = "Powtórz Hasło";
+            this.tPasswordR.Text = "Powtórz hasło";
             this.tPasswordR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tPasswordR.Enter += new System.EventHandler(this.PasswordR_Clear);
             this.tPasswordR.Leave += new System.EventHandler(this.PasswordR_Return);
@@ -205,9 +205,9 @@ namespace sklep
             // Contrast
             // 
             this.Contrast.Image = global::sklep.Properties.Resources.contrast;
-            this.Contrast.Location = new System.Drawing.Point(652, 17);
+            this.Contrast.Location = new System.Drawing.Point(700, 15);
             this.Contrast.Name = "Contrast";
-            this.Contrast.Size = new System.Drawing.Size(91, 66);
+            this.Contrast.Size = new System.Drawing.Size(75, 50);
             this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Contrast.TabIndex = 20;
             this.Contrast.TabStop = false;
@@ -215,9 +215,9 @@ namespace sklep
             // 
             // userAwatar
             // 
-            this.userAwatar.Location = new System.Drawing.Point(252, 99);
+            this.userAwatar.Location = new System.Drawing.Point(275, 80);
             this.userAwatar.Name = "userAwatar";
-            this.userAwatar.Size = new System.Drawing.Size(248, 203);
+            this.userAwatar.Size = new System.Drawing.Size(250, 200);
             this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userAwatar.TabIndex = 0;
             this.userAwatar.TabStop = false;
@@ -226,9 +226,10 @@ namespace sklep
             // 
             this.btnRegister_Apply.BackColor = System.Drawing.Color.Lime;
             this.btnRegister_Apply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister_Apply.Location = new System.Drawing.Point(252, 507);
+            this.btnRegister_Apply.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnRegister_Apply.Location = new System.Drawing.Point(275, 510);
             this.btnRegister_Apply.Name = "btnRegister_Apply";
-            this.btnRegister_Apply.Size = new System.Drawing.Size(248, 41);
+            this.btnRegister_Apply.Size = new System.Drawing.Size(250, 40);
             this.btnRegister_Apply.TabIndex = 19;
             this.btnRegister_Apply.Text = "Zatwierdź";
             this.btnRegister_Apply.UseVisualStyleBackColor = false;
@@ -237,9 +238,9 @@ namespace sklep
             // userChange_Left
             // 
             this.userChange_Left.Image = global::sklep.Properties.Resources.left_arrow;
-            this.userChange_Left.Location = new System.Drawing.Point(210, 150);
+            this.userChange_Left.Location = new System.Drawing.Point(230, 147);
             this.userChange_Left.Name = "userChange_Left";
-            this.userChange_Left.Size = new System.Drawing.Size(63, 101);
+            this.userChange_Left.Size = new System.Drawing.Size(65, 65);
             this.userChange_Left.TabIndex = 11;
             this.userChange_Left.TabStop = false;
             this.userChange_Left.Click += new System.EventHandler(this.userChange_Left_Click);
@@ -247,9 +248,9 @@ namespace sklep
             // userChange_Right
             // 
             this.userChange_Right.Image = global::sklep.Properties.Resources.right_arrow;
-            this.userChange_Right.Location = new System.Drawing.Point(479, 150);
+            this.userChange_Right.Location = new System.Drawing.Point(505, 147);
             this.userChange_Right.Name = "userChange_Right";
-            this.userChange_Right.Size = new System.Drawing.Size(73, 101);
+            this.userChange_Right.Size = new System.Drawing.Size(65, 65);
             this.userChange_Right.TabIndex = 12;
             this.userChange_Right.TabStop = false;
             this.userChange_Right.Click += new System.EventHandler(this.userChange_Right_Click);
@@ -258,10 +259,10 @@ namespace sklep
             // 
             this.tEmail.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tEmail.Location = new System.Drawing.Point(230, 455);
+            this.tEmail.Location = new System.Drawing.Point(250, 363);
             this.tEmail.Multiline = true;
             this.tEmail.Name = "tEmail";
-            this.tEmail.Size = new System.Drawing.Size(302, 35);
+            this.tEmail.Size = new System.Drawing.Size(300, 35);
             this.tEmail.TabIndex = 17;
             this.tEmail.Text = "Email";
             this.tEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -272,10 +273,10 @@ namespace sklep
             // 
             this.tUser.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tUser.Location = new System.Drawing.Point(230, 323);
+            this.tUser.Location = new System.Drawing.Point(250, 322);
             this.tUser.Multiline = true;
             this.tUser.Name = "tUser";
-            this.tUser.Size = new System.Drawing.Size(302, 35);
+            this.tUser.Size = new System.Drawing.Size(300, 35);
             this.tUser.TabIndex = 15;
             this.tUser.Text = "Nazwa użytkownika";
             this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -286,48 +287,46 @@ namespace sklep
             // 
             this.tPassword.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tPassword.Location = new System.Drawing.Point(230, 373);
+            this.tPassword.Location = new System.Drawing.Point(250, 414);
             this.tPassword.Multiline = true;
             this.tPassword.Name = "tPassword";
-            this.tPassword.Size = new System.Drawing.Size(302, 35);
+            this.tPassword.Size = new System.Drawing.Size(300, 35);
             this.tPassword.TabIndex = 16;
             this.tPassword.Text = "Hasło";
             this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tPassword.TextChanged += new System.EventHandler(this.tPassword_TextChanged);
             this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
             this.tPassword.Leave += new System.EventHandler(this.Password_Return);
             // 
             // btnClose
             // 
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnClose.Image = global::sklep.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(994, 0);
+            this.btnClose.Location = new System.Drawing.Point(1153, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(63, 79);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 7;
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.Location = new System.Drawing.Point(1127, 0);
+            this.btnBack.Location = new System.Drawing.Point(12, 0);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(73, 79);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnBack.Size = new System.Drawing.Size(45, 40);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBack.TabIndex = 6;
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnMinimalize
             // 
-            this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
-            this.btnMinimalize.Location = new System.Drawing.Point(1057, 0);
+            this.btnMinimalize.Location = new System.Drawing.Point(1112, 3);
             this.btnMinimalize.Name = "btnMinimalize";
-            this.btnMinimalize.Size = new System.Drawing.Size(70, 79);
-            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnMinimalize.Size = new System.Drawing.Size(35, 35);
+            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimalize.TabIndex = 11;
             this.btnMinimalize.TabStop = false;
             this.btnMinimalize.Click += new System.EventHandler(this.btnMinimalize_Click);
@@ -335,13 +334,13 @@ namespace sklep
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnMinimalize);
-            this.panel1.Controls.Add(this.btnBack);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 79);
+            this.panel1.Size = new System.Drawing.Size(1200, 40);
             this.panel1.TabIndex = 12;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
