@@ -44,8 +44,8 @@ namespace sklep
             this.tPassword_Error = new System.Windows.Forms.Label();
             this.tUser_Error = new System.Windows.Forms.Label();
             this.tPasswordR = new System.Windows.Forms.TextBox();
-            this.Contrast = new System.Windows.Forms.PictureBox();
             this.userAwatar = new System.Windows.Forms.PictureBox();
+            this.Contrast = new System.Windows.Forms.PictureBox();
             this.btnRegister_Apply = new System.Windows.Forms.Button();
             this.userChange_Left = new System.Windows.Forms.PictureBox();
             this.userChange_Right = new System.Windows.Forms.PictureBox();
@@ -57,8 +57,8 @@ namespace sklep
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.boxRegister.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -202,6 +202,15 @@ namespace sklep
             this.tPasswordR.Enter += new System.EventHandler(this.PasswordR_Clear);
             this.tPasswordR.Leave += new System.EventHandler(this.PasswordR_Return);
             // 
+            // userAwatar
+            // 
+            this.userAwatar.Location = new System.Drawing.Point(275, 80);
+            this.userAwatar.Name = "userAwatar";
+            this.userAwatar.Size = new System.Drawing.Size(250, 200);
+            this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userAwatar.TabIndex = 0;
+            this.userAwatar.TabStop = false;
+            // 
             // Contrast
             // 
             this.Contrast.Image = global::sklep.Properties.Resources.contrast;
@@ -212,15 +221,6 @@ namespace sklep
             this.Contrast.TabIndex = 20;
             this.Contrast.TabStop = false;
             this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
-            // 
-            // userAwatar
-            // 
-            this.userAwatar.Location = new System.Drawing.Point(275, 80);
-            this.userAwatar.Name = "userAwatar";
-            this.userAwatar.Size = new System.Drawing.Size(250, 200);
-            this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userAwatar.TabIndex = 0;
-            this.userAwatar.TabStop = false;
             // 
             // btnRegister_Apply
             // 
@@ -300,10 +300,11 @@ namespace sklep
             // 
             // btnClose
             // 
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnClose.Image = global::sklep.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(1153, 2);
+            this.btnClose.Location = new System.Drawing.Point(1130, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.Size = new System.Drawing.Size(35, 40);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 7;
             this.btnClose.TabStop = false;
@@ -311,8 +312,9 @@ namespace sklep
             // 
             // btnBack
             // 
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.Location = new System.Drawing.Point(12, 0);
+            this.btnBack.Location = new System.Drawing.Point(0, 0);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(45, 40);
             this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -322,10 +324,11 @@ namespace sklep
             // 
             // btnMinimalize
             // 
+            this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
-            this.btnMinimalize.Location = new System.Drawing.Point(1112, 3);
+            this.btnMinimalize.Location = new System.Drawing.Point(1165, 0);
             this.btnMinimalize.Name = "btnMinimalize";
-            this.btnMinimalize.Size = new System.Drawing.Size(35, 35);
+            this.btnMinimalize.Size = new System.Drawing.Size(35, 40);
             this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimalize.TabIndex = 11;
             this.btnMinimalize.TabStop = false;
@@ -363,8 +366,8 @@ namespace sklep
             this.Text = "Rejestracja";
             this.boxRegister.ResumeLayout(false);
             this.boxRegister.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();

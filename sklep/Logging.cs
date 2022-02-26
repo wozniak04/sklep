@@ -167,5 +167,13 @@ namespace sklep
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var Shop = new Shop(tUser.Text);
+            Shop.ShowDialog();
+            this.Close();
+        }
     }
 }

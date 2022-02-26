@@ -45,6 +45,7 @@ namespace sklep
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.boxLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
@@ -132,6 +133,7 @@ namespace sklep
             // boxLogin
             // 
             this.boxLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.boxLogin.Controls.Add(this.button1);
             this.boxLogin.Controls.Add(this.tPassword_Error);
             this.boxLogin.Controls.Add(this.tUser_Error);
             this.boxLogin.Controls.Add(this.btnRegister);
@@ -191,10 +193,11 @@ namespace sklep
             // 
             // btnMinimalize
             // 
+            this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
-            this.btnMinimalize.Location = new System.Drawing.Point(1112, 3);
+            this.btnMinimalize.Location = new System.Drawing.Point(1130, 0);
             this.btnMinimalize.Name = "btnMinimalize";
-            this.btnMinimalize.Size = new System.Drawing.Size(35, 35);
+            this.btnMinimalize.Size = new System.Drawing.Size(35, 40);
             this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimalize.TabIndex = 10;
             this.btnMinimalize.TabStop = false;
@@ -202,10 +205,11 @@ namespace sklep
             // 
             // btnClose
             // 
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnClose.Image = global::sklep.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(1153, 2);
+            this.btnClose.Location = new System.Drawing.Point(1165, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.Size = new System.Drawing.Size(35, 40);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 8;
             this.btnClose.TabStop = false;
@@ -224,6 +228,16 @@ namespace sklep
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(348, 611);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Logging
             // 
@@ -265,6 +279,7 @@ namespace sklep
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label tPassword_Error;
         private System.Windows.Forms.Label tUser_Error;
+        private System.Windows.Forms.Button button1;
     }
 }
 
