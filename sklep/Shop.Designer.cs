@@ -62,7 +62,6 @@ namespace sklep
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.flyMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shopCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
@@ -267,24 +266,24 @@ namespace sklep
             this.shopItems.RowCount = 2;
             this.shopItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.shopItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.shopItems.Size = new System.Drawing.Size(883, 724);
+            this.shopItems.Size = new System.Drawing.Size(883, 778);
             this.shopItems.TabIndex = 13;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(445, 365);
+            this.pictureBox6.Location = new System.Drawing.Point(445, 392);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(434, 355);
+            this.pictureBox6.Size = new System.Drawing.Size(434, 382);
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(4, 365);
+            this.pictureBox5.Location = new System.Drawing.Point(4, 392);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(434, 355);
+            this.pictureBox5.Size = new System.Drawing.Size(434, 382);
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
             // 
@@ -293,7 +292,7 @@ namespace sklep
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Location = new System.Drawing.Point(445, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(434, 354);
+            this.pictureBox4.Size = new System.Drawing.Size(434, 381);
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
@@ -302,20 +301,20 @@ namespace sklep
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Location = new System.Drawing.Point(4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(434, 354);
+            this.pictureBox3.Size = new System.Drawing.Size(434, 381);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(303, 59);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(303, 40);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(897, 756);
+            this.tabControl1.Size = new System.Drawing.Size(897, 810);
             this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
@@ -326,7 +325,7 @@ namespace sklep
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(889, 730);
+            this.tabPage1.Size = new System.Drawing.Size(889, 784);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sklep";
             // 
@@ -340,7 +339,7 @@ namespace sklep
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(889, 730);
+            this.tabPage2.Size = new System.Drawing.Size(889, 784);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Koszyk";
             // 
@@ -372,21 +371,21 @@ namespace sklep
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 683);
+            this.panel2.Location = new System.Drawing.Point(3, 737);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(855, 44);
             this.panel2.TabIndex = 14;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(626, 0);
+            this.panel3.Location = new System.Drawing.Point(513, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(229, 44);
+            this.panel3.Size = new System.Drawing.Size(342, 44);
             this.panel3.TabIndex = 3;
             // 
             // label10
@@ -394,7 +393,7 @@ namespace sklep
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.ForeColor = System.Drawing.Color.Lime;
-            this.label10.Location = new System.Drawing.Point(617, 10);
+            this.label10.Location = new System.Drawing.Point(3, 10);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(126, 25);
             this.label10.TabIndex = 0;
@@ -407,25 +406,17 @@ namespace sklep
             this.label11.ForeColor = System.Drawing.Color.Lime;
             this.label11.Location = new System.Drawing.Point(123, 10);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(25, 25);
+            this.label11.Size = new System.Drawing.Size(219, 25);
             this.label11.TabIndex = 1;
-            this.label11.Text = "0";
+            this.label11.Text = "12211231223123 zł";
             // 
             // vScrollBar1
             // 
             this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
             this.vScrollBar1.Location = new System.Drawing.Point(858, 3);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(28, 724);
+            this.vScrollBar1.Size = new System.Drawing.Size(28, 778);
             this.vScrollBar1.TabIndex = 1;
-            // 
-            // hScrollBar1
-            // 
-            this.hScrollBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.hScrollBar1.Location = new System.Drawing.Point(303, 818);
-            this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(897, 32);
-            this.hScrollBar1.TabIndex = 15;
             // 
             // Shop
             // 
@@ -433,7 +424,6 @@ namespace sklep
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1200, 850);
-            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flyMenu);
@@ -462,7 +452,6 @@ namespace sklep
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -514,8 +503,6 @@ namespace sklep
                 shopItems.BackColor = Color.FromArgb(169, 171, 169);
                 shopItems.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
 
-                shopItems_ChangingPanel.BackColor = Color.FromArgb(169, 171, 169);
-                shopItems_ChangingPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
             }
             else
             {
@@ -531,10 +518,7 @@ namespace sklep
 
                 shopItems.BackColor = Color.FromArgb(80, 82, 81);
                 shopItems.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-
-                shopItems_ChangingPanel.BackColor = Color.FromArgb(80, 82, 81);
-                shopItems_ChangingPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-
+    
             }
         }
 
@@ -569,6 +553,5 @@ namespace sklep
         private Label label11;
         private TableLayoutPanel tableLayoutPanel1;
         private PictureBox pictureBox7;
-        private HScrollBar hScrollBar1;
     }
 }
