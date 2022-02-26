@@ -124,6 +124,12 @@
     <Compile Include="Shop.Designer.cs">
       <DependentUpon>Shop.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shop_Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop_Cart.Designer.cs">
+      <DependentUpon>Shop_Cart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Walidacja.cs" />
     <EmbeddedResource Include="Logging.resx">
       <DependentUpon>Logging.cs</DependentUpon>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Shop.resx">
       <DependentUpon>Shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop_Cart.resx">
+      <DependentUpon>Shop_Cart.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
