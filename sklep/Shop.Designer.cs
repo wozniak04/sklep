@@ -42,17 +42,6 @@ namespace sklep
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.flyMenu_Category = new System.Windows.Forms.TableLayoutPanel();
             this.userAwatar = new System.Windows.Forms.PictureBox();
-            this.shopItems_ChangingPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_flyMenu = new System.Windows.Forms.PictureBox();
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
@@ -63,14 +52,22 @@ namespace sklep
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.flyMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shopCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
-            this.shopItems_ChangingPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
@@ -80,6 +77,13 @@ namespace sklep
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbUserName
@@ -189,138 +193,6 @@ namespace sklep
             this.userAwatar.TabIndex = 4;
             this.userAwatar.TabStop = false;
             // 
-            // shopItems_ChangingPanel
-            // 
-            this.shopItems_ChangingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
-            this.shopItems_ChangingPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.shopItems_ChangingPanel.ColumnCount = 10;
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopItems_ChangingPanel.Controls.Add(this.label8, 8, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.label7, 7, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.label6, 6, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.label5, 5, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.label3, 3, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.label2, 2, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.pictureBox1, 0, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.pictureBox2, 9, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.label1, 1, 0);
-            this.shopItems_ChangingPanel.Controls.Add(this.label4, 4, 0);
-            this.shopItems_ChangingPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.shopItems_ChangingPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.shopItems_ChangingPanel.Location = new System.Drawing.Point(303, 750);
-            this.shopItems_ChangingPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.shopItems_ChangingPanel.Name = "shopItems_ChangingPanel";
-            this.shopItems_ChangingPanel.RowCount = 1;
-            this.shopItems_ChangingPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.shopItems_ChangingPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
-            this.shopItems_ChangingPanel.Size = new System.Drawing.Size(897, 100);
-            this.shopItems_ChangingPanel.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(716, 1);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 55);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "8";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(627, 1);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 55);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "7";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(538, 1);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 55);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "6";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(449, 1);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 55);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "5";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(271, 1);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 55);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(182, 1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 55);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "2";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::sklep.Properties.Resources.left_arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = global::sklep.Properties.Resources.right_arrow;
-            this.pictureBox2.Location = new System.Drawing.Point(805, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 92);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(93, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 98);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(360, 1);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 55);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "4";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
@@ -342,7 +214,7 @@ namespace sklep
             this.btn_flyMenu.Image = global::sklep.Properties.Resources.menu;
             this.btn_flyMenu.Location = new System.Drawing.Point(0, 0);
             this.btn_flyMenu.Name = "btn_flyMenu";
-            this.btn_flyMenu.Size = new System.Drawing.Size(86, 40);
+            this.btn_flyMenu.Size = new System.Drawing.Size(64, 40);
             this.btn_flyMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_flyMenu.TabIndex = 1;
             this.btn_flyMenu.TabStop = false;
@@ -390,38 +262,38 @@ namespace sklep
             this.shopItems.Controls.Add(this.pictureBox4, 1, 0);
             this.shopItems.Controls.Add(this.pictureBox3, 0, 0);
             this.shopItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.shopItems.Location = new System.Drawing.Point(303, 40);
+            this.shopItems.Location = new System.Drawing.Point(3, 3);
             this.shopItems.Name = "shopItems";
             this.shopItems.RowCount = 2;
             this.shopItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.shopItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.shopItems.Size = new System.Drawing.Size(897, 710);
+            this.shopItems.Size = new System.Drawing.Size(883, 724);
             this.shopItems.TabIndex = 13;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(452, 358);
+            this.pictureBox6.Location = new System.Drawing.Point(445, 365);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(441, 348);
+            this.pictureBox6.Size = new System.Drawing.Size(434, 355);
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(4, 358);
+            this.pictureBox5.Location = new System.Drawing.Point(4, 365);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(441, 348);
+            this.pictureBox5.Size = new System.Drawing.Size(434, 355);
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(452, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(445, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(441, 347);
+            this.pictureBox4.Size = new System.Drawing.Size(434, 354);
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
@@ -430,10 +302,130 @@ namespace sklep
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Location = new System.Drawing.Point(4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(441, 347);
+            this.pictureBox3.Size = new System.Drawing.Size(434, 354);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(303, 59);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(897, 756);
+            this.tabControl1.TabIndex = 14;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tabPage1.Controls.Add(this.shopItems);
+            this.tabPage1.ForeColor = System.Drawing.Color.Black;
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(889, 730);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Sklep";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tabPage2.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Controls.Add(this.vScrollBar1);
+            this.tabPage2.ForeColor = System.Drawing.Color.Black;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(889, 730);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Koszyk";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(855, 113);
+            this.tableLayoutPanel1.TabIndex = 15;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox7.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(120, 107);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(3, 683);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(855, 44);
+            this.panel2.TabIndex = 14;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(626, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(229, 44);
+            this.panel3.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.ForeColor = System.Drawing.Color.Lime;
+            this.label10.Location = new System.Drawing.Point(617, 10);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(126, 25);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Do zapłaty: ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.ForeColor = System.Drawing.Color.Lime;
+            this.label11.Location = new System.Drawing.Point(123, 10);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(25, 25);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "0";
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.vScrollBar1.Location = new System.Drawing.Point(858, 3);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(28, 724);
+            this.vScrollBar1.TabIndex = 1;
+            // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.hScrollBar1.Location = new System.Drawing.Point(303, 818);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(897, 32);
+            this.hScrollBar1.TabIndex = 15;
             // 
             // Shop
             // 
@@ -441,9 +433,9 @@ namespace sklep
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1200, 850);
-            this.Controls.Add(this.shopItems);
+            this.Controls.Add(this.hScrollBar1);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.shopItems_ChangingPanel);
             this.Controls.Add(this.flyMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Shop";
@@ -455,10 +447,6 @@ namespace sklep
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
-            this.shopItems_ChangingPanel.ResumeLayout(false);
-            this.shopItems_ChangingPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).EndInit();
@@ -468,6 +456,15 @@ namespace sklep
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -549,20 +546,9 @@ namespace sklep
         private System.Windows.Forms.PictureBox userAwatar;
         private System.Windows.Forms.Panel flyMenu;
         private System.Windows.Forms.TableLayoutPanel flyMenu_Category;
-        private System.Windows.Forms.TableLayoutPanel shopItems_ChangingPanel;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox Contrast;
         private PictureBox btnMinimalize;
         private Label label9;
@@ -573,5 +559,16 @@ namespace sklep
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private VScrollBar vScrollBar1;
+        private Panel panel2;
+        private Panel panel3;
+        private Label label10;
+        private Label label11;
+        private TableLayoutPanel tableLayoutPanel1;
+        private PictureBox pictureBox7;
+        private HScrollBar hScrollBar1;
     }
 }
