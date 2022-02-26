@@ -38,6 +38,7 @@ namespace sklep
             this.tER_Password = new System.Windows.Forms.Label();
             this.tER_User = new System.Windows.Forms.Label();
             this.boxLogin = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.tPassword_Error = new System.Windows.Forms.Label();
             this.tUser_Error = new System.Windows.Forms.Label();
             this.userAwatar = new System.Windows.Forms.PictureBox();
@@ -45,7 +46,6 @@ namespace sklep
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.boxLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
@@ -150,6 +150,16 @@ namespace sklep
             this.boxLogin.Size = new System.Drawing.Size(764, 733);
             this.boxLogin.TabIndex = 9;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(348, 611);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // tPassword_Error
             // 
             this.tPassword_Error.AutoSize = true;
@@ -225,19 +235,8 @@ namespace sklep
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 40);
             this.panel1.TabIndex = 11;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(348, 611);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Logging
             // 
