@@ -417,6 +417,7 @@ namespace sklep
             this.vScrollBar1.Name = "vScrollBar1";
             this.vScrollBar1.Size = new System.Drawing.Size(28, 778);
             this.vScrollBar1.TabIndex = 1;
+            this.vScrollBar1.Visible = false;
             // 
             // Shop
             // 
