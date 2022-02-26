@@ -85,6 +85,7 @@ namespace sklep
             // 
             this.tPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tPassword.Location = new System.Drawing.Point(239, 402);
             this.tPassword.Multiline = true;
             this.tPassword.Name = "tPassword";
@@ -99,6 +100,7 @@ namespace sklep
             // 
             this.tUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.tUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tUser.Location = new System.Drawing.Point(239, 331);
             this.tUser.Multiline = true;
             this.tUser.Name = "tUser";

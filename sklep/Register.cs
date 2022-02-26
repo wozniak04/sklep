@@ -40,6 +40,7 @@ namespace sklep
             if (tUser.Text == "Nazwa użytkownika")
             {
                 tUser.Clear();
+                tUser.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
             }
         }
 
@@ -48,6 +49,7 @@ namespace sklep
             if (string.IsNullOrEmpty(tUser.Text))
             {
                 tUser.Text = "Nazwa użytkownika";
+                tUser.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             }
             else
             {                
@@ -68,6 +70,7 @@ namespace sklep
             if (tPassword.Text == "Hasło")
             {
                 tPassword.Clear();
+                tPassword.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
             }
         }
 
@@ -76,6 +79,7 @@ namespace sklep
             if (string.IsNullOrEmpty(tPassword.Text))
             {
                 tPassword.Text = "Hasło";
+                tPassword.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             }
             else
             {
@@ -96,6 +100,7 @@ namespace sklep
             if (tPasswordR.Text == "Powtórz hasło")
             {
                 tPasswordR.Clear();
+                tPasswordR.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
             }
             
         }
@@ -105,6 +110,7 @@ namespace sklep
             if (string.IsNullOrEmpty(tPasswordR.Text))
             {
                 tPasswordR.Text = "Powtórz hasło";
+                tPasswordR.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             }
            
             else
@@ -126,6 +132,7 @@ namespace sklep
             if (tEmail.Text == "Email")
             {
                 tEmail.Clear();
+                tEmail.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
             }
         }
 
@@ -134,6 +141,7 @@ namespace sklep
             if (string.IsNullOrEmpty(tEmail.Text))
             {
                 tEmail.Text = "Email";
+                tEmail.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             }
             else
             {

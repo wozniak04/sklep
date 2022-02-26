@@ -74,6 +74,7 @@ namespace sklep
             if (tUser.Text == "Nazwa użytkownika")
             {
                 tUser.Clear();
+                tUser.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
             }
         }
         private void User_Return(object sender, EventArgs e)
@@ -81,6 +82,7 @@ namespace sklep
             if (string.IsNullOrEmpty(tUser.Text))
             {
                 tUser.Text = "Nazwa użytkownika";
+                this.tUser.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             }
             else
             {
@@ -106,6 +108,7 @@ namespace sklep
             if (tPassword.Text == "Hasło")
             {
                 tPassword.Clear();
+                tPassword.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
             }
         }
         private void Password_Return(object sender, EventArgs e)
@@ -113,6 +116,7 @@ namespace sklep
             if (string.IsNullOrEmpty(tPassword.Text))
             {
                 tPassword.Text = "Hasło";
+                this.tUser.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             }
             else
             {
