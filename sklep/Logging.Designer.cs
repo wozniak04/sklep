@@ -124,8 +124,9 @@ namespace sklep
             // tER_User
             // 
             this.tER_User.AutoSize = true;
+            this.tER_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tER_User.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.tER_User.Location = new System.Drawing.Point(580, 331);
+            this.tER_User.Location = new System.Drawing.Point(540, 340);
             this.tER_User.Name = "tER_User";
             this.tER_User.Size = new System.Drawing.Size(0, 20);
             this.tER_User.TabIndex = 6;
@@ -163,9 +164,9 @@ namespace sklep
             // tPassword_Error
             // 
             this.tPassword_Error.AutoSize = true;
-            this.tPassword_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tPassword_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tPassword_Error.ForeColor = System.Drawing.Color.Red;
-            this.tPassword_Error.Location = new System.Drawing.Point(562, 417);
+            this.tPassword_Error.Location = new System.Drawing.Point(540, 410);
             this.tPassword_Error.Name = "tPassword_Error";
             this.tPassword_Error.Size = new System.Drawing.Size(0, 20);
             this.tPassword_Error.TabIndex = 24;
@@ -173,9 +174,9 @@ namespace sklep
             // tUser_Error
             // 
             this.tUser_Error.AutoSize = true;
-            this.tUser_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tUser_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tUser_Error.ForeColor = System.Drawing.Color.Red;
-            this.tUser_Error.Location = new System.Drawing.Point(562, 346);
+            this.tUser_Error.Location = new System.Drawing.Point(540, 340);
             this.tUser_Error.Name = "tUser_Error";
             this.tUser_Error.Size = new System.Drawing.Size(0, 20);
             this.tUser_Error.TabIndex = 23;
