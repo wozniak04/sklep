@@ -56,7 +56,7 @@ namespace sklep
 
                 if (!walid.checkUsername(tUser.Text))
                 {
-                    tUser_Error.Text = "Użytkownik o takiej nazwie nie istnieje";
+                    tUser_Error.Text = "Użytkownik o takiej nazwie już istnieje";
                 }
                 else
                 {
