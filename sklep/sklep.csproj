@@ -112,12 +112,6 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Register_Alert.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Register_Alert.Designer.cs">
-      <DependentUpon>Register_Alert.cs</DependentUpon>
-    </Compile>
     <Compile Include="Shop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,9 +135,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Register_Alert.resx">
-      <DependentUpon>Register_Alert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shop.resx">
       <DependentUpon>Shop.cs</DependentUpon>
