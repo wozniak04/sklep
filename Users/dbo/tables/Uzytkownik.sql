@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Uzytkownik]
 (
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+	[IdUzytkownika] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Nazwa] NVARCHAR(21) NOT NULL, 
     [Haslo] NVARCHAR(50) NOT NULL, 
     [Email] NVARCHAR(50) NOT NULL 

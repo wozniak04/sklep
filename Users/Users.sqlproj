@@ -63,6 +63,7 @@
   <ItemGroup>
     <Build Include="dbo\tables\Uzytkownik.sql" />
     <Build Include="dbo\tables\Oferty.sql" />
+    <Build Include="dbo\tables\Zamowienia.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="test.sql" />

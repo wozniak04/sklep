@@ -207,5 +207,12 @@
   <ItemGroup>
     <None Include="Addons\Images\Navigation\minimize-sign.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Addons\Images\kompy\cyg.jpg" />
+    <Content Include="Addons\Images\kompy\dell.jpg" />
+    <Content Include="Addons\Images\kompy\gam.jpg" />
+    <Content Include="Addons\Images\kompy\strze.jpg" />
+    <Content Include="Addons\Images\kompy\xkom.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
