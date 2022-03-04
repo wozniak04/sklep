@@ -45,11 +45,15 @@ namespace sklep
         private void shopCart_Click(object sender, EventArgs e)
         {
             //opening a form of bought products
-            Shop_Cart sCart = new Shop_Cart();
+            Shop_Cart sCart = new Shop_Cart();          
             sCart.ShowDialog();
+            
         }
 
-        
+        private void flowLayoutRoot_Click(object sender, EventArgs e)
+        {
+            nazwaP1.Text = e.ToString();
+        }
     }
 }
 

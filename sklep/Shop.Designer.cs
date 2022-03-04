@@ -47,21 +47,27 @@ namespace sklep
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.listProducts = new System.Windows.Forms.ImageList(this.components);
-            this.shopItems = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutRoot = new System.Windows.Forms.FlowLayoutPanel();
+            this.produkt1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nazwaP1 = new System.Windows.Forms.Label();
+            this.produkt2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.nazwaP2 = new System.Windows.Forms.Label();
+            this.produkt3 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.nazwaP3 = new System.Windows.Forms.Label();
+            this.produkt4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.nazwaP4 = new System.Windows.Forms.Label();
+            this.produkt5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.nazwaP5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.flyMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shopCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
@@ -71,18 +77,17 @@ namespace sklep
             ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
-            this.shopItems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.flowLayoutRoot.SuspendLayout();
+            this.produkt1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.produkt2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.produkt3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.produkt4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.produkt5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // lbUserName
@@ -111,7 +116,6 @@ namespace sklep
             this.flyMenu.Name = "flyMenu";
             this.flyMenu.Size = new System.Drawing.Size(303, 850);
             this.flyMenu.TabIndex = 6;
-            this.flyMenu.Visible = false;
             // 
             // label9
             // 
@@ -249,175 +253,241 @@ namespace sklep
             this.listProducts.ImageSize = new System.Drawing.Size(16, 16);
             this.listProducts.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // shopItems
+            // flowLayoutRoot
             // 
-            this.shopItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
-            this.shopItems.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.shopItems.ColumnCount = 2;
-            this.shopItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.shopItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.shopItems.Controls.Add(this.pictureBox6, 1, 1);
-            this.shopItems.Controls.Add(this.pictureBox5, 0, 1);
-            this.shopItems.Controls.Add(this.pictureBox4, 1, 0);
-            this.shopItems.Controls.Add(this.pictureBox3, 0, 0);
-            this.shopItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.shopItems.Location = new System.Drawing.Point(3, 3);
-            this.shopItems.Name = "shopItems";
-            this.shopItems.RowCount = 2;
-            this.shopItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.shopItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.shopItems.Size = new System.Drawing.Size(883, 778);
-            this.shopItems.TabIndex = 13;
+            this.flowLayoutRoot.AutoScroll = true;
+            this.flowLayoutRoot.Controls.Add(this.produkt1);
+            this.flowLayoutRoot.Controls.Add(this.produkt2);
+            this.flowLayoutRoot.Controls.Add(this.produkt3);
+            this.flowLayoutRoot.Controls.Add(this.produkt4);
+            this.flowLayoutRoot.Controls.Add(this.produkt5);
+            this.flowLayoutRoot.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.flowLayoutRoot.Location = new System.Drawing.Point(309, 59);
+            this.flowLayoutRoot.Name = "flowLayoutRoot";
+            this.flowLayoutRoot.Size = new System.Drawing.Size(720, 537);
+            this.flowLayoutRoot.TabIndex = 13;
+            this.flowLayoutRoot.Click += new System.EventHandler(this.flowLayoutRoot_Click);
             // 
-            // pictureBox6
+            // produkt1
             // 
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(445, 392);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(434, 382);
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
+            this.produkt1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt1.Controls.Add(this.pictureBox1);
+            this.produkt1.Controls.Add(this.nazwaP1);
+            this.produkt1.Controls.Add(this.button1);
+            this.produkt1.Location = new System.Drawing.Point(3, 3);
+            this.produkt1.Name = "produkt1";
+            this.produkt1.Size = new System.Drawing.Size(688, 104);
+            this.produkt1.TabIndex = 0;
             // 
-            // pictureBox5
+            // pictureBox1
             // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(4, 392);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(434, 382);
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.pictureBox1.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\cyg.jpg";
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // pictureBox4
+            // nazwaP1
             // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(445, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(434, 381);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.nazwaP1.AutoSize = true;
+            this.nazwaP1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP1.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP1.Name = "nazwaP1";
+            this.nazwaP1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.nazwaP1.Size = new System.Drawing.Size(97, 39);
+            this.nazwaP1.TabIndex = 1;
+            this.nazwaP1.Text = "label1";
+            // 
+            // produkt2
+            // 
+            this.produkt2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt2.Controls.Add(this.pictureBox2);
+            this.produkt2.Controls.Add(this.nazwaP2);
+            this.produkt2.Controls.Add(this.button2);
+            this.produkt2.Location = new System.Drawing.Point(3, 113);
+            this.produkt2.Name = "produkt2";
+            this.produkt2.Size = new System.Drawing.Size(688, 104);
+            this.produkt2.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\dell.jpg";
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // nazwaP2
+            // 
+            this.nazwaP2.AutoSize = true;
+            this.nazwaP2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP2.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP2.Name = "nazwaP2";
+            this.nazwaP2.Size = new System.Drawing.Size(97, 33);
+            this.nazwaP2.TabIndex = 2;
+            this.nazwaP2.Text = "label1";
+            // 
+            // produkt3
+            // 
+            this.produkt3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt3.Controls.Add(this.pictureBox3);
+            this.produkt3.Controls.Add(this.nazwaP3);
+            this.produkt3.Controls.Add(this.button3);
+            this.produkt3.Location = new System.Drawing.Point(3, 223);
+            this.produkt3.Name = "produkt3";
+            this.produkt3.Size = new System.Drawing.Size(688, 104);
+            this.produkt3.TabIndex = 2;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox3.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\gam.jpg";
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(434, 381);
+            this.pictureBox3.Size = new System.Drawing.Size(100, 94);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // tabControl1
+            // nazwaP3
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(303, 40);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(897, 810);
-            this.tabControl1.TabIndex = 14;
+            this.nazwaP3.AutoSize = true;
+            this.nazwaP3.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP3.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP3.Name = "nazwaP3";
+            this.nazwaP3.Size = new System.Drawing.Size(97, 33);
+            this.nazwaP3.TabIndex = 2;
+            this.nazwaP3.Text = "label1";
             // 
-            // tabPage1
+            // produkt4
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.tabPage1.Controls.Add(this.shopItems);
-            this.tabPage1.ForeColor = System.Drawing.Color.Black;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(889, 784);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Sklep";
+            this.produkt4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt4.Controls.Add(this.pictureBox4);
+            this.produkt4.Controls.Add(this.nazwaP4);
+            this.produkt4.Controls.Add(this.button4);
+            this.produkt4.Location = new System.Drawing.Point(3, 333);
+            this.produkt4.Name = "produkt4";
+            this.produkt4.Size = new System.Drawing.Size(688, 104);
+            this.produkt4.TabIndex = 3;
             // 
-            // tabPage2
+            // pictureBox4
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.tabPage2.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.vScrollBar1);
-            this.tabPage2.ForeColor = System.Drawing.Color.Black;
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(889, 784);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Koszyk";
+            this.pictureBox4.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\strze.jpg";
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
-            // tableLayoutPanel1
+            // nazwaP4
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(855, 113);
-            this.tableLayoutPanel1.TabIndex = 15;
+            this.nazwaP4.AutoSize = true;
+            this.nazwaP4.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP4.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP4.Name = "nazwaP4";
+            this.nazwaP4.Size = new System.Drawing.Size(97, 33);
+            this.nazwaP4.TabIndex = 2;
+            this.nazwaP4.Text = "label1";
             // 
-            // pictureBox7
+            // produkt5
             // 
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox7.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(120, 107);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
+            this.produkt5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt5.Controls.Add(this.pictureBox5);
+            this.produkt5.Controls.Add(this.nazwaP5);
+            this.produkt5.Controls.Add(this.button5);
+            this.produkt5.Location = new System.Drawing.Point(3, 443);
+            this.produkt5.Name = "produkt5";
+            this.produkt5.Size = new System.Drawing.Size(688, 104);
+            this.produkt5.TabIndex = 4;
             // 
-            // panel2
+            // pictureBox5
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 737);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(855, 44);
-            this.panel2.TabIndex = 14;
+            this.pictureBox5.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\xkom.jpg";
+            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
-            // panel3
+            // nazwaP5
             // 
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(513, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(342, 44);
-            this.panel3.TabIndex = 3;
+            this.nazwaP5.AutoSize = true;
+            this.nazwaP5.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP5.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP5.Name = "nazwaP5";
+            this.nazwaP5.Size = new System.Drawing.Size(97, 33);
+            this.nazwaP5.TabIndex = 2;
+            this.nazwaP5.Text = "label1";
             // 
-            // label10
+            // button1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.ForeColor = System.Drawing.Color.Lime;
-            this.label10.Location = new System.Drawing.Point(3, 10);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(126, 25);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Do zapłaty: ";
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(409, 23);
+            this.button1.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button1.Size = new System.Drawing.Size(152, 49);
+            this.button1.TabIndex = 2;
+            this.button1.TabStop = false;
+            this.button1.Text = "sprawdź produkt";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // button2
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.ForeColor = System.Drawing.Color.Lime;
-            this.label11.Location = new System.Drawing.Point(123, 10);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(219, 25);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "12211231223123 zł";
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(409, 23);
+            this.button2.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button2.Size = new System.Drawing.Size(152, 49);
+            this.button2.TabIndex = 3;
+            this.button2.TabStop = false;
+            this.button2.Text = "sprawdź produkt";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // vScrollBar1
+            // button3
             // 
-            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(858, 3);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(28, 778);
-            this.vScrollBar1.TabIndex = 1;
-            this.vScrollBar1.Visible = false;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Location = new System.Drawing.Point(409, 23);
+            this.button3.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(152, 49);
+            this.button3.TabIndex = 3;
+            this.button3.TabStop = false;
+            this.button3.Text = "sprawdź produkt";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.Location = new System.Drawing.Point(409, 23);
+            this.button4.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button4.Size = new System.Drawing.Size(152, 49);
+            this.button4.TabIndex = 3;
+            this.button4.TabStop = false;
+            this.button4.Text = "sprawdź produkt";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button5.Location = new System.Drawing.Point(409, 23);
+            this.button5.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button5.Name = "button5";
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(152, 49);
+            this.button5.TabIndex = 3;
+            this.button5.TabStop = false;
+            this.button5.Text = "sprawdź produkt";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // Shop
             // 
@@ -425,7 +495,7 @@ namespace sklep
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1200, 850);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.flowLayoutRoot);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flyMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -442,19 +512,22 @@ namespace sklep
             ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
-            this.shopItems.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.flowLayoutRoot.ResumeLayout(false);
+            this.produkt1.ResumeLayout(false);
+            this.produkt1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.produkt2.ResumeLayout(false);
+            this.produkt2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.produkt3.ResumeLayout(false);
+            this.produkt3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.produkt4.ResumeLayout(false);
+            this.produkt4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.produkt5.ResumeLayout(false);
+            this.produkt5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -501,8 +574,7 @@ namespace sklep
                 flyMenu_Category.BackColor = Color.FromArgb(169, 171, 169);
                 flyMenu_Category.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
 
-                shopItems.BackColor = Color.FromArgb(169, 171, 169);
-                shopItems.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
+                
 
             }
             else
@@ -517,9 +589,7 @@ namespace sklep
                 flyMenu_Category.BackColor = Color.FromArgb(80, 82, 81);
                 flyMenu_Category.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
 
-                shopItems.BackColor = Color.FromArgb(80, 82, 81);
-                shopItems.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-    
+                
             }
         }
 
@@ -539,20 +609,26 @@ namespace sklep
         private Label label9;
         private PictureBox shopCart;
         private ImageList listProducts;
-        private TableLayoutPanel shopItems;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
+        private FlowLayoutPanel flowLayoutRoot;
+        private FlowLayoutPanel produkt1;
+        private PictureBox pictureBox1;
+        private Label nazwaP1;
+        private FlowLayoutPanel produkt2;
+        private PictureBox pictureBox2;
+        private FlowLayoutPanel produkt3;
         private PictureBox pictureBox3;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private VScrollBar vScrollBar1;
-        private Panel panel2;
-        private Panel panel3;
-        private Label label10;
-        private Label label11;
-        private TableLayoutPanel tableLayoutPanel1;
-        private PictureBox pictureBox7;
+        private FlowLayoutPanel produkt4;
+        private PictureBox pictureBox4;
+        private FlowLayoutPanel produkt5;
+        private PictureBox pictureBox5;
+        private Label nazwaP2;
+        private Label nazwaP3;
+        private Label nazwaP4;
+        private Label nazwaP5;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
     }
 }
