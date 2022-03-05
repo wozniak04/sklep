@@ -37,57 +37,57 @@ namespace sklep
             this.lbUserName = new System.Windows.Forms.Label();
             this.flyMenu = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.shopCart = new System.Windows.Forms.PictureBox();
-            this.Contrast = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.PictureBox();
             this.flyMenu_Category = new System.Windows.Forms.TableLayoutPanel();
-            this.userAwatar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_flyMenu = new System.Windows.Forms.PictureBox();
-            this.btnMinimalize = new System.Windows.Forms.PictureBox();
-            this.btnBack = new System.Windows.Forms.PictureBox();
             this.listProducts = new System.Windows.Forms.ImageList(this.components);
             this.flowLayoutRoot = new System.Windows.Forms.FlowLayoutPanel();
             this.produkt1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.nazwaP1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.produkt2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.nazwaP2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.produkt3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.nazwaP3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.produkt4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.nazwaP4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.produkt5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.nazwaP5 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btn_flyMenu = new System.Windows.Forms.PictureBox();
+            this.btnMinimalize = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.shopCart = new System.Windows.Forms.PictureBox();
+            this.Contrast = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.userAwatar = new System.Windows.Forms.PictureBox();
             this.flyMenu.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.flowLayoutRoot.SuspendLayout();
+            this.produkt1.SuspendLayout();
+            this.produkt2.SuspendLayout();
+            this.produkt3.SuspendLayout();
+            this.produkt4.SuspendLayout();
+            this.produkt5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shopCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
-            this.flowLayoutRoot.SuspendLayout();
-            this.produkt1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.produkt2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.produkt3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.produkt4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.produkt5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // lbUserName
@@ -129,39 +129,6 @@ namespace sklep
             this.label9.Text = "0";
             this.label9.Visible = false;
             // 
-            // shopCart
-            // 
-            this.shopCart.Image = ((System.Drawing.Image)(resources.GetObject("shopCart.Image")));
-            this.shopCart.Location = new System.Drawing.Point(227, 119);
-            this.shopCart.Name = "shopCart";
-            this.shopCart.Size = new System.Drawing.Size(40, 40);
-            this.shopCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.shopCart.TabIndex = 9;
-            this.shopCart.TabStop = false;
-            this.shopCart.Click += new System.EventHandler(this.shopCart_Click);
-            // 
-            // Contrast
-            // 
-            this.Contrast.Image = global::sklep.Properties.Resources.contrast;
-            this.Contrast.Location = new System.Drawing.Point(130, 119);
-            this.Contrast.Name = "Contrast";
-            this.Contrast.Size = new System.Drawing.Size(40, 40);
-            this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Contrast.TabIndex = 8;
-            this.Contrast.TabStop = false;
-            this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Image = global::sklep.Properties.Resources.back;
-            this.btnClose.Location = new System.Drawing.Point(176, 119);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(45, 40);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 7;
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // flyMenu_Category
             // 
             this.flyMenu_Category.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
@@ -185,17 +152,6 @@ namespace sklep
             this.flyMenu_Category.Size = new System.Drawing.Size(303, 668);
             this.flyMenu_Category.TabIndex = 6;
             // 
-            // userAwatar
-            // 
-            this.userAwatar.BackColor = System.Drawing.Color.Transparent;
-            this.userAwatar.Image = global::sklep.Properties.Resources.user0;
-            this.userAwatar.Location = new System.Drawing.Point(8, 71);
-            this.userAwatar.Name = "userAwatar";
-            this.userAwatar.Size = new System.Drawing.Size(105, 97);
-            this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userAwatar.TabIndex = 4;
-            this.userAwatar.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
@@ -209,6 +165,253 @@ namespace sklep
             this.panel1.TabIndex = 12;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // listProducts
+            // 
+            this.listProducts.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.listProducts.ImageSize = new System.Drawing.Size(16, 16);
+            this.listProducts.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // flowLayoutRoot
+            // 
+            this.flowLayoutRoot.AutoScroll = true;
+            this.flowLayoutRoot.Controls.Add(this.produkt1);
+            this.flowLayoutRoot.Controls.Add(this.produkt2);
+            this.flowLayoutRoot.Controls.Add(this.produkt3);
+            this.flowLayoutRoot.Controls.Add(this.produkt4);
+            this.flowLayoutRoot.Controls.Add(this.produkt5);
+            this.flowLayoutRoot.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.flowLayoutRoot.Location = new System.Drawing.Point(309, 59);
+            this.flowLayoutRoot.Name = "flowLayoutRoot";
+            this.flowLayoutRoot.Size = new System.Drawing.Size(720, 537);
+            this.flowLayoutRoot.TabIndex = 13;
+            this.flowLayoutRoot.Click += new System.EventHandler(this.flowLayoutRoot_Click);
+            // 
+            // produkt1
+            // 
+            this.produkt1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt1.Controls.Add(this.pictureBox1);
+            this.produkt1.Controls.Add(this.nazwaP1);
+            this.produkt1.Controls.Add(this.button1);
+            this.produkt1.Location = new System.Drawing.Point(3, 3);
+            this.produkt1.Name = "produkt1";
+            this.produkt1.Size = new System.Drawing.Size(688, 104);
+            this.produkt1.TabIndex = 0;
+            // 
+            // nazwaP1
+            // 
+            this.nazwaP1.AutoSize = true;
+            this.nazwaP1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP1.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP1.Name = "nazwaP1";
+            this.nazwaP1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.nazwaP1.Size = new System.Drawing.Size(97, 39);
+            this.nazwaP1.TabIndex = 1;
+            this.nazwaP1.Text = "label1";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(409, 23);
+            this.button1.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button1.Size = new System.Drawing.Size(152, 49);
+            this.button1.TabIndex = 2;
+            this.button1.TabStop = false;
+            this.button1.Text = "sprawdź produkt";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // produkt2
+            // 
+            this.produkt2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt2.Controls.Add(this.pictureBox2);
+            this.produkt2.Controls.Add(this.nazwaP2);
+            this.produkt2.Controls.Add(this.button2);
+            this.produkt2.Location = new System.Drawing.Point(3, 113);
+            this.produkt2.Name = "produkt2";
+            this.produkt2.Size = new System.Drawing.Size(688, 104);
+            this.produkt2.TabIndex = 1;
+            // 
+            // nazwaP2
+            // 
+            this.nazwaP2.AutoSize = true;
+            this.nazwaP2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP2.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP2.Name = "nazwaP2";
+            this.nazwaP2.Size = new System.Drawing.Size(97, 33);
+            this.nazwaP2.TabIndex = 2;
+            this.nazwaP2.Text = "label1";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(409, 23);
+            this.button2.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button2.Size = new System.Drawing.Size(152, 49);
+            this.button2.TabIndex = 3;
+            this.button2.TabStop = false;
+            this.button2.Text = "sprawdź produkt";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // produkt3
+            // 
+            this.produkt3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt3.Controls.Add(this.pictureBox3);
+            this.produkt3.Controls.Add(this.nazwaP3);
+            this.produkt3.Controls.Add(this.button3);
+            this.produkt3.Location = new System.Drawing.Point(3, 223);
+            this.produkt3.Name = "produkt3";
+            this.produkt3.Size = new System.Drawing.Size(688, 104);
+            this.produkt3.TabIndex = 2;
+            // 
+            // nazwaP3
+            // 
+            this.nazwaP3.AutoSize = true;
+            this.nazwaP3.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP3.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP3.Name = "nazwaP3";
+            this.nazwaP3.Size = new System.Drawing.Size(97, 33);
+            this.nazwaP3.TabIndex = 2;
+            this.nazwaP3.Text = "label1";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Location = new System.Drawing.Point(409, 23);
+            this.button3.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(152, 49);
+            this.button3.TabIndex = 3;
+            this.button3.TabStop = false;
+            this.button3.Text = "sprawdź produkt";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // produkt4
+            // 
+            this.produkt4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt4.Controls.Add(this.pictureBox4);
+            this.produkt4.Controls.Add(this.nazwaP4);
+            this.produkt4.Controls.Add(this.button4);
+            this.produkt4.Location = new System.Drawing.Point(3, 333);
+            this.produkt4.Name = "produkt4";
+            this.produkt4.Size = new System.Drawing.Size(688, 104);
+            this.produkt4.TabIndex = 3;
+            // 
+            // nazwaP4
+            // 
+            this.nazwaP4.AutoSize = true;
+            this.nazwaP4.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP4.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP4.Name = "nazwaP4";
+            this.nazwaP4.Size = new System.Drawing.Size(97, 33);
+            this.nazwaP4.TabIndex = 2;
+            this.nazwaP4.Text = "label1";
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.Location = new System.Drawing.Point(409, 23);
+            this.button4.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button4.Size = new System.Drawing.Size(152, 49);
+            this.button4.TabIndex = 3;
+            this.button4.TabStop = false;
+            this.button4.Text = "sprawdź produkt";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // produkt5
+            // 
+            this.produkt5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produkt5.Controls.Add(this.pictureBox5);
+            this.produkt5.Controls.Add(this.nazwaP5);
+            this.produkt5.Controls.Add(this.button5);
+            this.produkt5.Location = new System.Drawing.Point(3, 443);
+            this.produkt5.Name = "produkt5";
+            this.produkt5.Size = new System.Drawing.Size(688, 104);
+            this.produkt5.TabIndex = 4;
+            // 
+            // nazwaP5
+            // 
+            this.nazwaP5.AutoSize = true;
+            this.nazwaP5.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nazwaP5.Location = new System.Drawing.Point(109, 0);
+            this.nazwaP5.Name = "nazwaP5";
+            this.nazwaP5.Size = new System.Drawing.Size(97, 33);
+            this.nazwaP5.TabIndex = 2;
+            this.nazwaP5.Text = "label1";
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button5.Location = new System.Drawing.Point(409, 23);
+            this.button5.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button5.Name = "button5";
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(152, 49);
+            this.button5.TabIndex = 3;
+            this.button5.TabStop = false;
+            this.button5.Text = "sprawdź produkt";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sklep.Properties.Resources.cyg;
+            this.pictureBox1.ImageLocation = "";
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::sklep.Properties.Resources.dell;
+            this.pictureBox2.ImageLocation = "";
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::sklep.Properties.Resources.gam;
+            this.pictureBox3.ImageLocation = "";
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::sklep.Properties.Resources.strze;
+            this.pictureBox4.ImageLocation = "";
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::sklep.Properties.Resources.xkom;
+            this.pictureBox5.ImageLocation = "";
+            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 94);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // btn_flyMenu
             // 
@@ -247,247 +450,49 @@ namespace sklep
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // listProducts
+            // shopCart
             // 
-            this.listProducts.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.listProducts.ImageSize = new System.Drawing.Size(16, 16);
-            this.listProducts.TransparentColor = System.Drawing.Color.Transparent;
+            this.shopCart.Image = ((System.Drawing.Image)(resources.GetObject("shopCart.Image")));
+            this.shopCart.Location = new System.Drawing.Point(227, 119);
+            this.shopCart.Name = "shopCart";
+            this.shopCart.Size = new System.Drawing.Size(40, 40);
+            this.shopCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.shopCart.TabIndex = 9;
+            this.shopCart.TabStop = false;
+            this.shopCart.Click += new System.EventHandler(this.shopCart_Click);
             // 
-            // flowLayoutRoot
+            // Contrast
             // 
-            this.flowLayoutRoot.AutoScroll = true;
-            this.flowLayoutRoot.Controls.Add(this.produkt1);
-            this.flowLayoutRoot.Controls.Add(this.produkt2);
-            this.flowLayoutRoot.Controls.Add(this.produkt3);
-            this.flowLayoutRoot.Controls.Add(this.produkt4);
-            this.flowLayoutRoot.Controls.Add(this.produkt5);
-            this.flowLayoutRoot.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.flowLayoutRoot.Location = new System.Drawing.Point(309, 59);
-            this.flowLayoutRoot.Name = "flowLayoutRoot";
-            this.flowLayoutRoot.Size = new System.Drawing.Size(720, 537);
-            this.flowLayoutRoot.TabIndex = 13;
-            this.flowLayoutRoot.Click += new System.EventHandler(this.flowLayoutRoot_Click);
+            this.Contrast.Image = global::sklep.Properties.Resources.contrast;
+            this.Contrast.Location = new System.Drawing.Point(130, 119);
+            this.Contrast.Name = "Contrast";
+            this.Contrast.Size = new System.Drawing.Size(40, 40);
+            this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Contrast.TabIndex = 8;
+            this.Contrast.TabStop = false;
+            this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
             // 
-            // produkt1
+            // btnClose
             // 
-            this.produkt1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.produkt1.Controls.Add(this.pictureBox1);
-            this.produkt1.Controls.Add(this.nazwaP1);
-            this.produkt1.Controls.Add(this.button1);
-            this.produkt1.Location = new System.Drawing.Point(3, 3);
-            this.produkt1.Name = "produkt1";
-            this.produkt1.Size = new System.Drawing.Size(688, 104);
-            this.produkt1.TabIndex = 0;
+            this.btnClose.Image = global::sklep.Properties.Resources.back;
+            this.btnClose.Location = new System.Drawing.Point(176, 119);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(45, 40);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 7;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // pictureBox1
+            // userAwatar
             // 
-            this.pictureBox1.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\cyg.jpg";
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 94);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // nazwaP1
-            // 
-            this.nazwaP1.AutoSize = true;
-            this.nazwaP1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nazwaP1.Location = new System.Drawing.Point(109, 0);
-            this.nazwaP1.Name = "nazwaP1";
-            this.nazwaP1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.nazwaP1.Size = new System.Drawing.Size(97, 39);
-            this.nazwaP1.TabIndex = 1;
-            this.nazwaP1.Text = "label1";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(409, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(152, 49);
-            this.button1.TabIndex = 2;
-            this.button1.TabStop = false;
-            this.button1.Text = "sprawdź produkt";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // produkt2
-            // 
-            this.produkt2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.produkt2.Controls.Add(this.pictureBox2);
-            this.produkt2.Controls.Add(this.nazwaP2);
-            this.produkt2.Controls.Add(this.button2);
-            this.produkt2.Location = new System.Drawing.Point(3, 113);
-            this.produkt2.Name = "produkt2";
-            this.produkt2.Size = new System.Drawing.Size(688, 104);
-            this.produkt2.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\dell.jpg";
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 94);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // nazwaP2
-            // 
-            this.nazwaP2.AutoSize = true;
-            this.nazwaP2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nazwaP2.Location = new System.Drawing.Point(109, 0);
-            this.nazwaP2.Name = "nazwaP2";
-            this.nazwaP2.Size = new System.Drawing.Size(97, 33);
-            this.nazwaP2.TabIndex = 2;
-            this.nazwaP2.Text = "label1";
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(409, 23);
-            this.button2.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(152, 49);
-            this.button2.TabIndex = 3;
-            this.button2.TabStop = false;
-            this.button2.Text = "sprawdź produkt";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // produkt3
-            // 
-            this.produkt3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.produkt3.Controls.Add(this.pictureBox3);
-            this.produkt3.Controls.Add(this.nazwaP3);
-            this.produkt3.Controls.Add(this.button3);
-            this.produkt3.Location = new System.Drawing.Point(3, 223);
-            this.produkt3.Name = "produkt3";
-            this.produkt3.Size = new System.Drawing.Size(688, 104);
-            this.produkt3.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\gam.jpg";
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 94);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // nazwaP3
-            // 
-            this.nazwaP3.AutoSize = true;
-            this.nazwaP3.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nazwaP3.Location = new System.Drawing.Point(109, 0);
-            this.nazwaP3.Name = "nazwaP3";
-            this.nazwaP3.Size = new System.Drawing.Size(97, 33);
-            this.nazwaP3.TabIndex = 2;
-            this.nazwaP3.Text = "label1";
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(409, 23);
-            this.button3.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(152, 49);
-            this.button3.TabIndex = 3;
-            this.button3.TabStop = false;
-            this.button3.Text = "sprawdź produkt";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // produkt4
-            // 
-            this.produkt4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.produkt4.Controls.Add(this.pictureBox4);
-            this.produkt4.Controls.Add(this.nazwaP4);
-            this.produkt4.Controls.Add(this.button4);
-            this.produkt4.Location = new System.Drawing.Point(3, 333);
-            this.produkt4.Name = "produkt4";
-            this.produkt4.Size = new System.Drawing.Size(688, 104);
-            this.produkt4.TabIndex = 3;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\strze.jpg";
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 94);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // nazwaP4
-            // 
-            this.nazwaP4.AutoSize = true;
-            this.nazwaP4.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nazwaP4.Location = new System.Drawing.Point(109, 0);
-            this.nazwaP4.Name = "nazwaP4";
-            this.nazwaP4.Size = new System.Drawing.Size(97, 33);
-            this.nazwaP4.TabIndex = 2;
-            this.nazwaP4.Text = "label1";
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(409, 23);
-            this.button4.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button4.Name = "button4";
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button4.Size = new System.Drawing.Size(152, 49);
-            this.button4.TabIndex = 3;
-            this.button4.TabStop = false;
-            this.button4.Text = "sprawdź produkt";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // produkt5
-            // 
-            this.produkt5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.produkt5.Controls.Add(this.pictureBox5);
-            this.produkt5.Controls.Add(this.nazwaP5);
-            this.produkt5.Controls.Add(this.button5);
-            this.produkt5.Location = new System.Drawing.Point(3, 443);
-            this.produkt5.Name = "produkt5";
-            this.produkt5.Size = new System.Drawing.Size(688, 104);
-            this.produkt5.TabIndex = 4;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.ImageLocation = "C:\\sklep\\sklep\\Addons\\Images\\kompy\\xkom.jpg";
-            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 94);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // nazwaP5
-            // 
-            this.nazwaP5.AutoSize = true;
-            this.nazwaP5.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nazwaP5.Location = new System.Drawing.Point(109, 0);
-            this.nazwaP5.Name = "nazwaP5";
-            this.nazwaP5.Size = new System.Drawing.Size(97, 33);
-            this.nazwaP5.TabIndex = 2;
-            this.nazwaP5.Text = "label1";
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(409, 23);
-            this.button5.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button5.Name = "button5";
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button5.Size = new System.Drawing.Size(152, 49);
-            this.button5.TabIndex = 3;
-            this.button5.TabStop = false;
-            this.button5.Text = "sprawdź produkt";
-            this.button5.UseVisualStyleBackColor = true;
+            this.userAwatar.BackColor = System.Drawing.Color.Transparent;
+            this.userAwatar.Image = global::sklep.Properties.Resources.user0;
+            this.userAwatar.Location = new System.Drawing.Point(8, 71);
+            this.userAwatar.Name = "userAwatar";
+            this.userAwatar.Size = new System.Drawing.Size(105, 97);
+            this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userAwatar.TabIndex = 4;
+            this.userAwatar.TabStop = false;
             // 
             // Shop
             // 
@@ -504,30 +509,30 @@ namespace sklep
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.flyMenu.ResumeLayout(false);
             this.flyMenu.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.flowLayoutRoot.ResumeLayout(false);
+            this.produkt1.ResumeLayout(false);
+            this.produkt1.PerformLayout();
+            this.produkt2.ResumeLayout(false);
+            this.produkt2.PerformLayout();
+            this.produkt3.ResumeLayout(false);
+            this.produkt3.PerformLayout();
+            this.produkt4.ResumeLayout(false);
+            this.produkt4.PerformLayout();
+            this.produkt5.ResumeLayout(false);
+            this.produkt5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shopCart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_flyMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
-            this.flowLayoutRoot.ResumeLayout(false);
-            this.produkt1.ResumeLayout(false);
-            this.produkt1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.produkt2.ResumeLayout(false);
-            this.produkt2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.produkt3.ResumeLayout(false);
-            this.produkt3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.produkt4.ResumeLayout(false);
-            this.produkt4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.produkt5.ResumeLayout(false);
-            this.produkt5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
