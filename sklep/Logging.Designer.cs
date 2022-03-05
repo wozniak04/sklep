@@ -35,24 +35,24 @@ namespace sklep
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tER_Password = new System.Windows.Forms.Label();
-            this.tER_User = new System.Windows.Forms.Label();
-            this.tUser = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.tPassword = new System.Windows.Forms.TextBox();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.userAwatar = new System.Windows.Forms.PictureBox();
-            this.Contrast = new System.Windows.Forms.PictureBox();
             this.boxLogin = new System.Windows.Forms.TableLayoutPanel();
+            this.Contrast = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.userAwatar = new System.Windows.Forms.PictureBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.tPassword = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.tUser = new System.Windows.Forms.TextBox();
+            this.tER_User = new System.Windows.Forms.Label();
+            this.tER_Password = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             this.boxLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMinimalize
@@ -109,117 +109,6 @@ namespace sklep
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 809);
             this.tableLayoutPanel1.TabIndex = 12;
             // 
-            // tER_Password
-            // 
-            this.tER_Password.AutoSize = true;
-            this.tER_Password.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tER_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tER_Password.ForeColor = System.Drawing.Color.Red;
-            this.tER_Password.Location = new System.Drawing.Point(669, 561);
-            this.tER_Password.Name = "tER_Password";
-            this.tER_Password.Size = new System.Drawing.Size(162, 40);
-            this.tER_Password.TabIndex = 14;
-            this.tER_Password.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tER_User
-            // 
-            this.tER_User.AutoSize = true;
-            this.tER_User.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tER_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tER_User.ForeColor = System.Drawing.Color.Red;
-            this.tER_User.Location = new System.Drawing.Point(669, 521);
-            this.tER_User.Name = "tER_User";
-            this.tER_User.Size = new System.Drawing.Size(162, 40);
-            this.tER_User.TabIndex = 13;
-            this.tER_User.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tUser
-            // 
-            this.tUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.tUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tUser.Location = new System.Drawing.Point(169, 524);
-            this.tUser.Multiline = true;
-            this.tUser.Name = "tUser";
-            this.tUser.Size = new System.Drawing.Size(494, 34);
-            this.tUser.TabIndex = 9;
-            this.tUser.Text = "Nazwa użytkownika";
-            this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tUser.Enter += new System.EventHandler(this.User_Clear);
-            this.tUser.Leave += new System.EventHandler(this.User_Return);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.Lime;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnLogin.Location = new System.Drawing.Point(169, 604);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(494, 34);
-            this.btnLogin.TabIndex = 11;
-            this.btnLogin.Text = "Zaloguj";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // tPassword
-            // 
-            this.tPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
-            this.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tPassword.Location = new System.Drawing.Point(169, 564);
-            this.tPassword.Multiline = true;
-            this.tPassword.Name = "tPassword";
-            this.tPassword.Size = new System.Drawing.Size(494, 34);
-            this.tPassword.TabIndex = 10;
-            this.tPassword.Text = "Hasło";
-            this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
-            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.Color.Lime;
-            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnRegister.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnRegister.Location = new System.Drawing.Point(169, 644);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(494, 34);
-            this.btnRegister.TabIndex = 12;
-            this.btnRegister.Text = "Zarejestruj";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click_1);
-            // 
-            // userAwatar
-            // 
-            this.userAwatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.userAwatar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userAwatar.Image = global::sklep.Properties.Resources.user0;
-            this.userAwatar.Location = new System.Drawing.Point(126, 42);
-            this.userAwatar.Name = "userAwatar";
-            this.userAwatar.Size = new System.Drawing.Size(241, 310);
-            this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userAwatar.TabIndex = 0;
-            this.userAwatar.TabStop = false;
-            // 
-            // Contrast
-            // 
-            this.Contrast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Contrast.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Contrast.Image = global::sklep.Properties.Resources.contrast;
-            this.Contrast.Location = new System.Drawing.Point(669, 3);
-            this.Contrast.Name = "Contrast";
-            this.Contrast.Size = new System.Drawing.Size(162, 114);
-            this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Contrast.TabIndex = 7;
-            this.Contrast.TabStop = false;
-            this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
-            // 
             // boxLogin
             // 
             this.boxLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
@@ -250,6 +139,19 @@ namespace sklep
             this.boxLogin.Size = new System.Drawing.Size(834, 803);
             this.boxLogin.TabIndex = 27;
             // 
+            // Contrast
+            // 
+            this.Contrast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Contrast.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Contrast.Image = global::sklep.Properties.Resources.contrast;
+            this.Contrast.Location = new System.Drawing.Point(669, 3);
+            this.Contrast.Name = "Contrast";
+            this.Contrast.Size = new System.Drawing.Size(162, 114);
+            this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Contrast.TabIndex = 7;
+            this.Contrast.TabStop = false;
+            this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
@@ -267,6 +169,104 @@ namespace sklep
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(494, 395);
             this.tableLayoutPanel2.TabIndex = 28;
+            // 
+            // userAwatar
+            // 
+            this.userAwatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.userAwatar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userAwatar.Image = global::sklep.Properties.Resources.user0;
+            this.userAwatar.Location = new System.Drawing.Point(126, 42);
+            this.userAwatar.Name = "userAwatar";
+            this.userAwatar.Size = new System.Drawing.Size(241, 310);
+            this.userAwatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userAwatar.TabIndex = 0;
+            this.userAwatar.TabStop = false;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.Color.Lime;
+            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRegister.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnRegister.Location = new System.Drawing.Point(169, 644);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(494, 34);
+            this.btnRegister.TabIndex = 12;
+            this.btnRegister.Text = "Zarejestruj";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click_1);
+            // 
+            // tPassword
+            // 
+            this.tPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tPassword.Location = new System.Drawing.Point(169, 564);
+            this.tPassword.Multiline = true;
+            this.tPassword.Name = "tPassword";
+            this.tPassword.Size = new System.Drawing.Size(494, 34);
+            this.tPassword.TabIndex = 10;
+            this.tPassword.Text = "Hasło";
+            this.tPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
+            this.tPassword.Leave += new System.EventHandler(this.Password_Return);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Lime;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnLogin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLogin.Location = new System.Drawing.Point(169, 604);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(494, 34);
+            this.btnLogin.TabIndex = 11;
+            this.btnLogin.Text = "Zaloguj";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // tUser
+            // 
+            this.tUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(92)))), ((int)(((byte)(91)))));
+            this.tUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tUser.Location = new System.Drawing.Point(169, 524);
+            this.tUser.Multiline = true;
+            this.tUser.Name = "tUser";
+            this.tUser.Size = new System.Drawing.Size(494, 34);
+            this.tUser.TabIndex = 9;
+            this.tUser.Text = "Nazwa użytkownika";
+            this.tUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tUser.Enter += new System.EventHandler(this.User_Clear);
+            this.tUser.Leave += new System.EventHandler(this.User_Return);
+            // 
+            // tER_User
+            // 
+            this.tER_User.AutoSize = true;
+            this.tER_User.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tER_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tER_User.ForeColor = System.Drawing.Color.Red;
+            this.tER_User.Location = new System.Drawing.Point(669, 521);
+            this.tER_User.Name = "tER_User";
+            this.tER_User.Size = new System.Drawing.Size(162, 40);
+            this.tER_User.TabIndex = 13;
+            this.tER_User.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tER_Password
+            // 
+            this.tER_Password.AutoSize = true;
+            this.tER_Password.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tER_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tER_Password.ForeColor = System.Drawing.Color.Red;
+            this.tER_Password.Location = new System.Drawing.Point(669, 561);
+            this.tER_Password.Name = "tER_Password";
+            this.tER_Password.Size = new System.Drawing.Size(162, 40);
+            this.tER_Password.TabIndex = 14;
+            this.tER_Password.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Logging
             // 
@@ -287,11 +287,11 @@ namespace sklep
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             this.boxLogin.ResumeLayout(false);
             this.boxLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.userAwatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

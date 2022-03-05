@@ -144,10 +144,21 @@ namespace sklep
         }
         private void Password_Clear(object sender, EventArgs e)
         {
-            if (tPassword.Text == "Hasło")
+            if (tPassword.Text != "Hasło")
             {
-                tPassword.Clear();
-                tPassword.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
+                tPassword.PasswordChar = '•';
+            }
+            else
+            {
+                if (tPassword.Text == "Hasło")
+                {
+                    tPassword.Clear();
+                    if (tPassword.Text != "Hasło")
+                    {
+                        tPassword.PasswordChar = '•';
+                    }
+                    tPassword.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
+                }
             }
         }
         private void Password_Return(object sender, EventArgs e)
@@ -155,6 +166,10 @@ namespace sklep
             if (string.IsNullOrEmpty(tPassword.Text))
             {
                 tPassword.Text = "Hasło";
+                if (tPassword.Text == "Hasło")
+                {
+                    tPassword.PasswordChar = default;
+                }
                 this.tUser.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             }
             else
