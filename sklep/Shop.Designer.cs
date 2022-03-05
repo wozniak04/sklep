@@ -132,6 +132,7 @@ namespace sklep
             // 
             // Contrast
             // 
+            this.Contrast.Image = global::sklep.Properties.Resources.contrast;
             this.Contrast.Location = new System.Drawing.Point(130, 119);
             this.Contrast.Name = "Contrast";
             this.Contrast.Size = new System.Drawing.Size(40, 40);
@@ -142,6 +143,7 @@ namespace sklep
             // 
             // btnClose
             // 
+            this.btnClose.Image = global::sklep.Properties.Resources.power_off;
             this.btnClose.Location = new System.Drawing.Point(176, 119);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(45, 40);
@@ -176,6 +178,7 @@ namespace sklep
             // userAwatar
             // 
             this.userAwatar.BackColor = System.Drawing.Color.Transparent;
+            this.userAwatar.Image = global::sklep.Properties.Resources.user0;
             this.userAwatar.Location = new System.Drawing.Point(8, 71);
             this.userAwatar.Name = "userAwatar";
             this.userAwatar.Size = new System.Drawing.Size(105, 97);
@@ -201,6 +204,7 @@ namespace sklep
             // 
             this.btn_flyMenu.BackColor = System.Drawing.Color.Transparent;
             this.btn_flyMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_flyMenu.Image = global::sklep.Properties.Resources.menu;
             this.btn_flyMenu.Location = new System.Drawing.Point(0, 0);
             this.btn_flyMenu.Name = "btn_flyMenu";
             this.btn_flyMenu.Size = new System.Drawing.Size(64, 40);
@@ -212,6 +216,7 @@ namespace sklep
             // btnMinimalize
             // 
             this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
             this.btnMinimalize.Location = new System.Drawing.Point(827, 0);
             this.btnMinimalize.Name = "btnMinimalize";
             this.btnMinimalize.Size = new System.Drawing.Size(35, 40);
@@ -223,6 +228,7 @@ namespace sklep
             // btnBack
             // 
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnBack.Image = global::sklep.Properties.Resources.close;
             this.btnBack.Location = new System.Drawing.Point(862, 0);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(35, 40);
@@ -299,6 +305,7 @@ namespace sklep
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::sklep.Properties.Resources.gam;
             this.pictureBox5.Location = new System.Drawing.Point(4, 648);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(261, 158);
@@ -379,6 +386,7 @@ namespace sklep
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::sklep.Properties.Resources.dell;
             this.pictureBox2.Location = new System.Drawing.Point(4, 165);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(261, 154);
@@ -437,6 +445,7 @@ namespace sklep
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::sklep.Properties.Resources.cyg;
             this.pictureBox1.Location = new System.Drawing.Point(4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(261, 154);
