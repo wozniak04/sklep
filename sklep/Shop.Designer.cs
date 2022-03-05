@@ -51,22 +51,22 @@ namespace sklep
             this.produkt1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.nazwaP1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.produkt2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.nazwaP2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.produkt3 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.nazwaP3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.produkt4 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.nazwaP4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.produkt5 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.nazwaP5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.flyMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shopCart)).BeginInit();
@@ -300,6 +300,19 @@ namespace sklep
             this.nazwaP1.TabIndex = 1;
             this.nazwaP1.Text = "label1";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(409, 23);
+            this.button1.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button1.Size = new System.Drawing.Size(152, 49);
+            this.button1.TabIndex = 2;
+            this.button1.TabStop = false;
+            this.button1.Text = "sprawdź produkt";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // produkt2
             // 
             this.produkt2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -330,6 +343,19 @@ namespace sklep
             this.nazwaP2.Size = new System.Drawing.Size(97, 33);
             this.nazwaP2.TabIndex = 2;
             this.nazwaP2.Text = "label1";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(409, 23);
+            this.button2.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button2.Size = new System.Drawing.Size(152, 49);
+            this.button2.TabIndex = 3;
+            this.button2.TabStop = false;
+            this.button2.Text = "sprawdź produkt";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // produkt3
             // 
@@ -362,6 +388,19 @@ namespace sklep
             this.nazwaP3.TabIndex = 2;
             this.nazwaP3.Text = "label1";
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Location = new System.Drawing.Point(409, 23);
+            this.button3.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(152, 49);
+            this.button3.TabIndex = 3;
+            this.button3.TabStop = false;
+            this.button3.Text = "sprawdź produkt";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // produkt4
             // 
             this.produkt4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -393,6 +432,19 @@ namespace sklep
             this.nazwaP4.TabIndex = 2;
             this.nazwaP4.Text = "label1";
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.Location = new System.Drawing.Point(409, 23);
+            this.button4.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button4.Size = new System.Drawing.Size(152, 49);
+            this.button4.TabIndex = 3;
+            this.button4.TabStop = false;
+            this.button4.Text = "sprawdź produkt";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // produkt5
             // 
             this.produkt5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -423,58 +475,6 @@ namespace sklep
             this.nazwaP5.Size = new System.Drawing.Size(97, 33);
             this.nazwaP5.TabIndex = 2;
             this.nazwaP5.Text = "label1";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(409, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(152, 49);
-            this.button1.TabIndex = 2;
-            this.button1.TabStop = false;
-            this.button1.Text = "sprawdź produkt";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(409, 23);
-            this.button2.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(152, 49);
-            this.button2.TabIndex = 3;
-            this.button2.TabStop = false;
-            this.button2.Text = "sprawdź produkt";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(409, 23);
-            this.button3.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(152, 49);
-            this.button3.TabIndex = 3;
-            this.button3.TabStop = false;
-            this.button3.Text = "sprawdź produkt";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(409, 23);
-            this.button4.Margin = new System.Windows.Forms.Padding(200, 23, 3, 3);
-            this.button4.Name = "button4";
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button4.Size = new System.Drawing.Size(152, 49);
-            this.button4.TabIndex = 3;
-            this.button4.TabStop = false;
-            this.button4.Text = "sprawdź produkt";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
