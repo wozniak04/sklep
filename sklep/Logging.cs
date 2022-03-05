@@ -26,10 +26,49 @@ namespace sklep
         public Logging()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(RoundCorner(0,0,Width,Height,20,20));
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+            
         }
         private bool haslo { get; set; }
         private bool nazwa { get; set; }
+
+        const int WM_NCHITTEST = 0x84;
+        const int HTCLIENT = 1;
+        const int HTCAPTION = 2;
+
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+            switch (m.Msg)
+            {
+                case WM_NCHITTEST: 
+                    if(m.Result == (IntPtr)HTCLIENT)
+                    {
+                        m.Result = (IntPtr)HTCAPTION;
+                    }
+                    break;
+            }
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.Style = (cp.Style | 262144);
+                return cp;
+            }
+        }
+
+        private void Logging_Resize(object sender, EventArgs e)
+        {
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+        }
+
+        private void Logging_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
 
         private void Contrast_Click(object sender, EventArgs e)
         {
@@ -170,5 +209,7 @@ namespace sklep
             Shop.ShowDialog();
             this.Close();
         }
+
+        
     }
 }
