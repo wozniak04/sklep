@@ -50,10 +50,6 @@ namespace sklep
             
         }
 
-        private void flowLayoutRoot_Click(object sender, EventArgs e)
-        {
-            nazwaP1.Text = e.ToString();
-        }
     }
 }
 
