@@ -266,7 +266,7 @@ namespace sklep
             this.tER_Password.Name = "tER_Password";
             this.tER_Password.Size = new System.Drawing.Size(162, 40);
             this.tER_Password.TabIndex = 14;
-            this.tER_Password.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tER_Password.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Logging
             // 

@@ -7,6 +7,16 @@ namespace sklep
 {
     public partial class Register : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr RoundCorner(
+            int leftRect,
+            int topRect,
+            int rigthRect,
+            int bottomRect,
+            int widthEllipse,
+            int heightEllipse
+            );
         public Register()
         {
 
@@ -15,25 +25,45 @@ namespace sklep
             userAwatar.Image = userAwatar_List.Images[0];
         }
         Walidacja walid = new Walidacja();
+        const int WM_NCHITTEST = 0x84;
+        const int HTCLIENT = 1;
+        const int HTCAPTION = 2;
 
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
-        [DllImportAttribute("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [DllImportAttribute("user32.dll")]
-        public static extern bool ReleaseCapture();
-        
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+            switch (m.Msg)
+            {
+                case WM_NCHITTEST:
+                    if (m.Result == (IntPtr)HTCLIENT)
+                    {
+                        m.Result = (IntPtr)HTCAPTION;
+                    }
+                    break;
+            }
+        }
 
-        private static extern IntPtr RoundCorner(
-            int leftRect,
-            int topRect,
-            int rigthRect,
-            int bottomRect,
-            int widthEllipse,
-            int heightEllipse
-        );
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.Style = (cp.Style | 262144);
+                return cp;
+            }
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+        }
+
+        private void Register_Resize(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+        }
 
         private void User_Clear(object sender, EventArgs e)
         {
@@ -85,11 +115,11 @@ namespace sklep
             {
                 if (!walid.checkPassword(tPassword.Text))
                 {
-                    tPassword_Error.Text = "Hasło powinno zawierać 8 znaków.";
+                    tEmail_Error.Text = "Hasło powinno zawierać 8 znaków.";
                 }
                 else
                 {
-                    tPassword_Error.Text = "";
+                    tEmail_Error.Text = "";
                 }
             }
            
@@ -97,31 +127,31 @@ namespace sklep
 
         private void PasswordR_Clear(object sender, EventArgs e)
         {
-            if (tPasswordR.Text == "Powtórz hasło")
+            if (tPasswordRepeat.Text == "Powtórz hasło")
             {
-                tPasswordR.Clear();
-                tPasswordR.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
+                tPasswordRepeat.Clear();
+                tPasswordRepeat.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold)));
             }
             
         }
 
         private void PasswordR_Return(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tPasswordR.Text))
+            if (string.IsNullOrEmpty(tPasswordRepeat.Text))
             {
-                tPasswordR.Text = "Powtórz hasło";
-                tPasswordR.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+                tPasswordRepeat.Text = "Powtórz hasło";
+                tPasswordRepeat.Font = new Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             }
            
             else
             {
-                if (!walid.check2Password(tPassword.Text, tPasswordR.Text))
+                if (!walid.check2Password(tPassword.Text, tPasswordRepeat.Text))
                 {
-                    tPasswordRepeat_Error.Text = "Hasła różnią się od siebie.";
+                    tPassword_Error.Text = "Hasła różnią się od siebie.";
                 }
                 else 
                 {
-                    tPasswordRepeat_Error.Text = "";
+                    tPassword_Error.Text = "";
                 }
             }
             
@@ -147,11 +177,11 @@ namespace sklep
             {
                 if (!walid.checkemail(tEmail.Text))
                 {
-                    tEmail_Error.Text = "Taki adres email nie istnieje.";
+                    tEmail.Text = "Taki adres email nie istnieje.";
                 }
                 else
                 {
-                    tEmail_Error.Text = "";
+                    tEmail.Text = "";
                 }
             }
         }
@@ -220,7 +250,7 @@ namespace sklep
                 panel1.BackColor = Color.FromArgb(kolor.kolor221, kolor.kolor222, kolor.kolor223);
                 tUser.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
                 tPassword.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
-                tPasswordR.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
+                tPasswordRepeat.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
                 tEmail.BackColor = Color.FromArgb(kolor.kolor211, kolor.kolor212, kolor.kolor213);
             }
             else
@@ -230,7 +260,7 @@ namespace sklep
                 panel1.BackColor = Color.FromArgb(kolor.kolor121, kolor.kolor122, kolor.kolor123);
                 tUser.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
                 tPassword.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
-                tPasswordR.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
+                tPasswordRepeat.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
                 tEmail.BackColor = Color.FromArgb(kolor.kolor111, kolor.kolor112, kolor.kolor113);
             }
         }
@@ -258,11 +288,7 @@ namespace sklep
 
             move = new Point(e.X, e.Y);
         }
-
-        private void tPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
 

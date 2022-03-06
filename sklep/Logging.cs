@@ -27,7 +27,6 @@ namespace sklep
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
-            
         }
         private bool haslo { get; set; }
         private bool nazwa { get; set; }
@@ -62,12 +61,14 @@ namespace sklep
 
         private void Logging_Resize(object sender, EventArgs e)
         {
-            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));    
         }
 
         private void Logging_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
         }
 
         private void Contrast_Click(object sender, EventArgs e)
