@@ -115,11 +115,11 @@ namespace sklep
             {
                 if (!walid.checkPassword(tPassword.Text))
                 {
-                    tEmail_Error.Text = "Hasło powinno zawierać 8 znaków.";
+                    tPassword_Error.Text = "Hasło powinno zawierać 8 znaków.";
                 }
                 else
                 {
-                    tEmail_Error.Text = "";
+                    tPassword_Error.Text = "";
                 }
             }
            
@@ -177,11 +177,11 @@ namespace sklep
             {
                 if (!walid.checkemail(tEmail.Text))
                 {
-                    tEmail.Text = "Taki adres email nie istnieje.";
+                   tEmail_Error.Text = "Taki adres email nie istnieje.";
                 }
                 else
                 {
-                    tEmail.Text = "";
+                    tEmail_Error.Text = "";
                 }
             }
         }
@@ -192,7 +192,7 @@ namespace sklep
             if (walid.czygit()) 
             {
                 var data = new DataAcces();
-                if (data.insert(tUser.Text, tPassword.Text, tEmail.Text))
+                if (data.insert(tUser.Text, tPassword.Text, tEmail.Text, (byte[])new ImageConverter().ConvertTo(userAwatar.Image, typeof(byte[]))))
                 {
                     var login = new Logging();
                     login.ShowDialog();

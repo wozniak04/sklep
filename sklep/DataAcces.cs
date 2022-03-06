@@ -52,11 +52,12 @@ namespace sklep
 
             return false;
         }
-        public bool insert(string nazwa, string haslo, string email)
+        public bool insert(string nazwa, string haslo, string email,byte[] zdjecie)
         {
             var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
             conn.Open();
-            var query = new SqlCommand($"insert into Uzytkownik (Nazwa,Haslo,Email) values ('{nazwa}','{haslo}','{email}')", conn);
+            var query = new SqlCommand($"insert into Uzytkownik (Nazwa,Haslo,Email,Zdjecie) values ('{nazwa}','{haslo}','{email}',@Zdjecie)", conn);
+            query.Parameters.AddWithValue("@Zdjecie",zdjecie);
             query.ExecuteNonQuery();
 
             conn.Close();
