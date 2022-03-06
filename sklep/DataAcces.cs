@@ -87,6 +87,27 @@ namespace sklep
             return false;
         }
 
+        private bool test2(string nazwa)
+        {
+            string nazwad = "";
+
+            var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
+            conn.Open();
+            var query = new SqlCommand($"select NazwaUzytkownika from Zamowienia Where NazwaUzytkownika='{nazwa}' ", conn);
+            var reader = query.ExecuteReader();
+
+            while (reader.Read())
+            {
+                nazwad = reader.GetString(0);
+            }
+
+            conn.Close();
+
+            if (nazwad.Length > 0)
+                return true;
+            return false;
+        }
+
         public string nazwa(int licznik)
         {
             string produkt="";
@@ -102,8 +123,37 @@ namespace sklep
             conn.Close();
             return produkt;
         }
-            
+        public string cena(int licznik)
+        {
+            string produkt = "";
+            var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
 
+            conn.Open();
+            var query = new SqlCommand($"select Cena From Oferty Where idOferty={licznik} ", conn);
+            var reader = query.ExecuteReader();
+            if (reader.Read())
+            {
+                produkt = reader["Cena"].ToString();
+            }
+            conn.Close();
+            return produkt;
+        }
+
+        public bool insertOferty(string nazwa,byte[] zdjecie,string oferta, int cena)
+        {
+            var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
+            conn.Open();
+            var query = new SqlCommand($"insert into Zamowienia (NazwaUzytkownika,ZdjecieOferty,NazwaOferty,CenaOferty) values ('{nazwa}',@zdjecie,'{oferta}',{cena})", conn);
+            query.Parameters.AddWithValue("@zdjecie",zdjecie);
+            query.ExecuteNonQuery();
+
+            conn.Close();
+            if (!this.test2(nazwa))
+            {
+                return false;
+            }
+            return true;
+        }
 
 
     }
