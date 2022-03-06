@@ -102,7 +102,22 @@ namespace sklep
             conn.Close();
             return produkt;
         }
-            
+        public string cena(int licznik)
+        {
+            string produkt = "";
+            var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
+
+            conn.Open();
+            var query = new SqlCommand($"select Cena From Oferty Where idOferty={licznik} ", conn);
+            var reader = query.ExecuteReader();
+            if (reader.Read())
+            {
+                produkt = reader["Cena"].ToString();
+            }
+            conn.Close();
+            return produkt;
+        }
+
 
 
 

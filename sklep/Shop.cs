@@ -24,10 +24,15 @@ namespace sklep
             var polacz = new DataAcces();
 
             label1.Text = polacz.nazwa(1);
+            pPrice1.Text = polacz.cena(1)+"zł";
             label2.Text = polacz.nazwa(2);
+            pPrice2.Text = polacz.cena(2) + "zł";
             label3.Text = polacz.nazwa(3);
+            pPrice3.Text = polacz.cena(3) + "zł";
             label4.Text = polacz.nazwa(4);
+            pPrice4.Text = polacz.cena(4) + "zł";
             label5.Text = polacz.nazwa(5);
+            pPrice5.Text = polacz.cena(5) + "zł";
         }
 
         private void btnMinimalize_Click(object sender, EventArgs e)
