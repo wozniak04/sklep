@@ -62,6 +62,38 @@ namespace sklep
             
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var pol = new DataAcces();
+            pol.insertOferty(lbUserName.Text,(byte[])new ImageConverter().ConvertTo(pictureBox1.Image,typeof(byte[])) , label1.Text, int.Parse(pPrice1.Text.Remove(pPrice1.Text.Length - 2)));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var pol = new DataAcces();
+            pol.insertOferty(lbUserName.Text, (byte[])new ImageConverter().ConvertTo(pictureBox2.Image, typeof(byte[])), label2.Text, int.Parse(pPrice2.Text.Remove(pPrice2.Text.Length - 2)));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var pol = new DataAcces();
+            pol.insertOferty(lbUserName.Text, (byte[])new ImageConverter().ConvertTo(pictureBox3.Image, typeof(byte[])), label3.Text, int.Parse(pPrice3.Text.Remove(pPrice3.Text.Length - 2)));
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var pol = new DataAcces();
+            pol.insertOferty(lbUserName.Text, (byte[])new ImageConverter().ConvertTo(pictureBox4.Image, typeof(byte[])), label4.Text, int.Parse(pPrice4.Text.Remove(pPrice4.Text.Length - 2)));
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var pol = new DataAcces();
+            if(!pol.insertOferty(lbUserName.Text, (byte[])new ImageConverter().ConvertTo(pictureBox5.Image, typeof(byte[])), label5.Text, int.Parse(pPrice5.Text.Remove(pPrice5.Text.Length - 2))))
+            {
+                MessageBox.Show("bład");
+            }
+        }
     }
 }
 
