@@ -14,21 +14,21 @@ namespace sklep
             var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
             conn.Open();
 
-            var query = new SqlCommand($"select Nazwa from Uzytkownik Where Nazwa='{nazwa}' ",conn);
+            var query = new SqlCommand($"select Nazwa from Uzytkownik Where Nazwa='{nazwa}' ", conn);
             var reader = query.ExecuteReader();
 
             while (reader.Read())
             {
                 nazwaD = reader.GetString(0);
             }
-            
+
             conn.Close();
             if (nazwaD.Length > 0)
                 return true;
-            
+
             return false;
-            
-            
+
+
         }
 
         public bool getpassword(string haslo)
@@ -49,16 +49,16 @@ namespace sklep
 
             if (hasloD.Length > 0)
                 return true;
-            
+
             return false;
         }
-        public bool insert(string nazwa,string haslo,string email)
+        public bool insert(string nazwa, string haslo, string email)
         {
             var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
             conn.Open();
             var query = new SqlCommand($"insert into Uzytkownik (Nazwa,Haslo,Email) values ('{nazwa}','{haslo}','{email}')", conn);
             query.ExecuteNonQuery();
-            
+
             conn.Close();
             if (!this.test(nazwa))
             {
@@ -74,18 +74,35 @@ namespace sklep
             conn.Open();
             var query = new SqlCommand($"select Nazwa from Uzytkownik Where Nazwa='{nazwa}' ", conn);
             var reader = query.ExecuteReader();
-            
-            while (reader.Read()) 
+
+            while (reader.Read())
             {
                 nazwad = reader.GetString(0);
             }
-            
+
             conn.Close();
 
             if (nazwad.Length > 0)
                 return true;
             return false;
         }
+
+        public string nazwa(int licznik)
+        {
+            string produkt="";
+            var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
+            
+            conn.Open();
+            var query = new SqlCommand($"select Nazwa From Oferty Where idOferty={licznik} ", conn);
+            var reader = query.ExecuteReader();
+            if (reader.Read())
+            {
+                produkt = reader["Nazwa"].ToString();               
+            }
+            conn.Close();
+            return produkt;
+        }
+            
 
 
 
