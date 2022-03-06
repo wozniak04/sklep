@@ -21,6 +21,13 @@ namespace sklep
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
             lbUserName.Text = nazwa;
+            var polacz = new DataAcces();
+
+            label1.Text = polacz.nazwa(1);
+            label2.Text = polacz.nazwa(2);
+            label3.Text = polacz.nazwa(3);
+            label4.Text = polacz.nazwa(4);
+            label5.Text = polacz.nazwa(5);
         }
 
         private void btnMinimalize_Click(object sender, EventArgs e)
