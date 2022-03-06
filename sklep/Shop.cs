@@ -21,6 +21,25 @@ namespace sklep
         const int HTCLIENT = 1;
         const int HTCAPTION = 2;
 
+        public Shop(string nazwa)
+        {
+            InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+            lbUserName.Text = nazwa;
+            var polacz = new DataAcces();
+
+            label1.Text = polacz.nazwa(1);
+            pPrice1.Text = polacz.cena(1) + "zł";
+            label2.Text = polacz.nazwa(2);
+            pPrice2.Text = polacz.cena(2) + "zł";
+            label3.Text = polacz.nazwa(3);
+            pPrice3.Text = polacz.cena(3) + "zł";
+            label4.Text = polacz.nazwa(4);
+            pPrice4.Text = polacz.cena(4) + "zł";
+            label5.Text = polacz.nazwa(5);
+            pPrice5.Text = polacz.cena(5) + "zł";
+        }
+
         protected override void WndProc(ref Message m)
         {
             base.WndProc(ref m);
@@ -47,34 +66,17 @@ namespace sklep
 
         private void Shop_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void Shop_Resize(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
+            
             Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
         }
         
-        public Shop(string nazwa)
-        {
-            InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
-            lbUserName.Text = nazwa;
-            var polacz = new DataAcces();
-
-            label1.Text = polacz.nazwa(1);
-            pPrice1.Text = polacz.cena(1)+"zł";
-            label2.Text = polacz.nazwa(2);
-            pPrice2.Text = polacz.cena(2) + "zł";
-            label3.Text = polacz.nazwa(3);
-            pPrice3.Text = polacz.cena(3) + "zł";
-            label4.Text = polacz.nazwa(4);
-            pPrice4.Text = polacz.cena(4) + "zł";
-            label5.Text = polacz.nazwa(5);
-            pPrice5.Text = polacz.cena(5) + "zł";
-        }
+        
 
         private void btnMinimalize_Click(object sender, EventArgs e)
         {

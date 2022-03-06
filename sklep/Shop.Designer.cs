@@ -441,6 +441,7 @@ namespace sklep
             this.shopLayoutProduct.Controls.Add(this.label4, 1, 3);
             this.shopLayoutProduct.Controls.Add(this.label6, 2, 4);
             this.shopLayoutProduct.Controls.Add(this.label5, 1, 4);
+            this.shopLayoutProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.shopLayoutProduct.Location = new System.Drawing.Point(301, 3);
             this.shopLayoutProduct.Name = "shopLayoutProduct";
             this.shopLayoutProduct.RowCount = 5;
