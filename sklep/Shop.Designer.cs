@@ -596,7 +596,7 @@ namespace sklep
             // 
             this.lbUserName.AutoSize = true;
             this.lbUserName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lbUserName.Location = new System.Drawing.Point(153, 0);
             this.lbUserName.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
@@ -651,6 +651,7 @@ namespace sklep
             this.Contrast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Contrast.TabIndex = 8;
             this.Contrast.TabStop = false;
+            this.Contrast.Click += new System.EventHandler(this.Contrast_Click);
             // 
             // btnClose
             // 
@@ -662,6 +663,7 @@ namespace sklep
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 7;
             this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // shopCart
             // 
@@ -673,6 +675,7 @@ namespace sklep
             this.shopCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.shopCart.TabIndex = 9;
             this.shopCart.TabStop = false;
+            this.shopCart.Click += new System.EventHandler(this.shopCart_Click);
             // 
             // flyMenu_Category
             // 
@@ -743,11 +746,16 @@ namespace sklep
             if (flyMenu.Visible == true)
             {
                 flyMenu.Visible = false;
+                tableLayoutPanel1.ColumnStyles[0].SizeType = SizeType.Absolute;
+                tableLayoutPanel1.ColumnStyles[0].Width = 0;
+                
             }
 
             else
             {
                 flyMenu.Visible = true;
+                tableLayoutPanel1.ColumnStyles[0].SizeType = SizeType.Percent;
+                tableLayoutPanel1.ColumnStyles[0].Width = 25;
             }
                 
 
