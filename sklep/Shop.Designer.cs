@@ -63,6 +63,11 @@ namespace sklep
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pPrice1 = new System.Windows.Forms.Label();
+            this.pPrice2 = new System.Windows.Forms.Label();
+            this.pPrice3 = new System.Windows.Forms.Label();
+            this.pPrice4 = new System.Windows.Forms.Label();
+            this.pPrice5 = new System.Windows.Forms.Label();
             this.flyMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shopCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
@@ -84,7 +89,7 @@ namespace sklep
             // 
             this.lbUserName.AutoSize = true;
             this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbUserName.ForeColor = System.Drawing.Color.GreenYellow;
+            this.lbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lbUserName.Location = new System.Drawing.Point(120, 59);
             this.lbUserName.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
             this.lbUserName.Name = "lbUserName";
@@ -247,25 +252,31 @@ namespace sklep
             // 
             this.shopLayoutPanel.AutoScroll = true;
             this.shopLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.shopLayoutPanel.ColumnCount = 3;
+            this.shopLayoutPanel.ColumnCount = 4;
             this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopLayoutPanel.Controls.Add(this.button5, 2, 4);
+            this.shopLayoutPanel.Controls.Add(this.pPrice5, 2, 4);
+            this.shopLayoutPanel.Controls.Add(this.pPrice4, 2, 3);
+            this.shopLayoutPanel.Controls.Add(this.pPrice3, 2, 2);
+            this.shopLayoutPanel.Controls.Add(this.pPrice2, 2, 1);
             this.shopLayoutPanel.Controls.Add(this.label5, 1, 4);
             this.shopLayoutPanel.Controls.Add(this.pictureBox5, 0, 4);
-            this.shopLayoutPanel.Controls.Add(this.button4, 2, 3);
             this.shopLayoutPanel.Controls.Add(this.label4, 1, 3);
             this.shopLayoutPanel.Controls.Add(this.pictureBox4, 0, 3);
-            this.shopLayoutPanel.Controls.Add(this.button3, 2, 2);
             this.shopLayoutPanel.Controls.Add(this.label3, 1, 2);
             this.shopLayoutPanel.Controls.Add(this.pictureBox3, 0, 2);
             this.shopLayoutPanel.Controls.Add(this.pictureBox2, 0, 1);
-            this.shopLayoutPanel.Controls.Add(this.button2, 2, 1);
             this.shopLayoutPanel.Controls.Add(this.label2, 1, 1);
-            this.shopLayoutPanel.Controls.Add(this.button1, 2, 0);
             this.shopLayoutPanel.Controls.Add(this.label1, 1, 0);
             this.shopLayoutPanel.Controls.Add(this.pictureBox1, 0, 0);
+            this.shopLayoutPanel.Controls.Add(this.button1, 3, 0);
+            this.shopLayoutPanel.Controls.Add(this.button2, 3, 1);
+            this.shopLayoutPanel.Controls.Add(this.button3, 3, 2);
+            this.shopLayoutPanel.Controls.Add(this.button4, 3, 3);
+            this.shopLayoutPanel.Controls.Add(this.button5, 3, 4);
+            this.shopLayoutPanel.Controls.Add(this.pPrice1, 2, 0);
             this.shopLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.shopLayoutPanel.Location = new System.Drawing.Point(303, 40);
             this.shopLayoutPanel.Name = "shopLayoutPanel";
@@ -453,6 +464,71 @@ namespace sklep
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // pPrice1
+            // 
+            this.pPrice1.AutoSize = true;
+            this.pPrice1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pPrice1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice1.Location = new System.Drawing.Point(629, 1);
+            this.pPrice1.Name = "pPrice1";
+            this.pPrice1.Size = new System.Drawing.Size(172, 160);
+            this.pPrice1.TabIndex = 16;
+            this.pPrice1.Text = "1500 zł";
+            this.pPrice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pPrice2
+            // 
+            this.pPrice2.AutoSize = true;
+            this.pPrice2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice2.Location = new System.Drawing.Point(629, 162);
+            this.pPrice2.Name = "pPrice2";
+            this.pPrice2.Size = new System.Drawing.Size(172, 160);
+            this.pPrice2.TabIndex = 17;
+            this.pPrice2.Text = "1800 zł";
+            this.pPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pPrice3
+            // 
+            this.pPrice3.AutoSize = true;
+            this.pPrice3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pPrice3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice3.Location = new System.Drawing.Point(629, 323);
+            this.pPrice3.Name = "pPrice3";
+            this.pPrice3.Size = new System.Drawing.Size(172, 160);
+            this.pPrice3.TabIndex = 18;
+            this.pPrice3.Text = "500 zł";
+            this.pPrice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pPrice4
+            // 
+            this.pPrice4.AutoSize = true;
+            this.pPrice4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pPrice4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice4.Location = new System.Drawing.Point(629, 484);
+            this.pPrice4.Name = "pPrice4";
+            this.pPrice4.Size = new System.Drawing.Size(172, 160);
+            this.pPrice4.TabIndex = 19;
+            this.pPrice4.Text = "3500 zł";
+            this.pPrice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pPrice5
+            // 
+            this.pPrice5.AutoSize = true;
+            this.pPrice5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pPrice5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice5.Location = new System.Drawing.Point(629, 645);
+            this.pPrice5.Name = "pPrice5";
+            this.pPrice5.Size = new System.Drawing.Size(172, 164);
+            this.pPrice5.TabIndex = 20;
+            this.pPrice5.Text = "2200 zł";
+            this.pPrice5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -584,5 +660,10 @@ namespace sklep
         private PictureBox pictureBox2;
         private Button button2;
         private Label label2;
+        private Label pPrice5;
+        private Label pPrice4;
+        private Label pPrice3;
+        private Label pPrice2;
+        private Label pPrice1;
     }
 }
