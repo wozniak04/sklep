@@ -48,26 +48,31 @@ namespace sklep
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.listProducts = new System.Windows.Forms.ImageList(this.components);
             this.shopLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.pPrice5 = new System.Windows.Forms.Label();
+            this.pPrice4 = new System.Windows.Forms.Label();
+            this.pPrice3 = new System.Windows.Forms.Label();
+            this.pPrice2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.pPrice1 = new System.Windows.Forms.Label();
-            this.pPrice2 = new System.Windows.Forms.Label();
-            this.pPrice3 = new System.Windows.Forms.Label();
-            this.pPrice4 = new System.Windows.Forms.Label();
-            this.pPrice5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.flyMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shopCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
@@ -252,15 +257,16 @@ namespace sklep
             // 
             this.shopLayoutPanel.AutoScroll = true;
             this.shopLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.shopLayoutPanel.ColumnCount = 4;
-            this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.shopLayoutPanel.ColumnCount = 5;
             this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.shopLayoutPanel.Controls.Add(this.pPrice5, 2, 4);
-            this.shopLayoutPanel.Controls.Add(this.pPrice4, 2, 3);
-            this.shopLayoutPanel.Controls.Add(this.pPrice3, 2, 2);
-            this.shopLayoutPanel.Controls.Add(this.pPrice2, 2, 1);
+            this.shopLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.shopLayoutPanel.Controls.Add(this.label11, 2, 4);
+            this.shopLayoutPanel.Controls.Add(this.label10, 2, 3);
+            this.shopLayoutPanel.Controls.Add(this.label8, 2, 2);
+            this.shopLayoutPanel.Controls.Add(this.label7, 2, 1);
             this.shopLayoutPanel.Controls.Add(this.label5, 1, 4);
             this.shopLayoutPanel.Controls.Add(this.pictureBox5, 0, 4);
             this.shopLayoutPanel.Controls.Add(this.label4, 1, 3);
@@ -271,12 +277,17 @@ namespace sklep
             this.shopLayoutPanel.Controls.Add(this.label2, 1, 1);
             this.shopLayoutPanel.Controls.Add(this.label1, 1, 0);
             this.shopLayoutPanel.Controls.Add(this.pictureBox1, 0, 0);
-            this.shopLayoutPanel.Controls.Add(this.button1, 3, 0);
-            this.shopLayoutPanel.Controls.Add(this.button2, 3, 1);
-            this.shopLayoutPanel.Controls.Add(this.button3, 3, 2);
-            this.shopLayoutPanel.Controls.Add(this.button4, 3, 3);
-            this.shopLayoutPanel.Controls.Add(this.button5, 3, 4);
-            this.shopLayoutPanel.Controls.Add(this.pPrice1, 2, 0);
+            this.shopLayoutPanel.Controls.Add(this.button1, 4, 0);
+            this.shopLayoutPanel.Controls.Add(this.pPrice1, 3, 0);
+            this.shopLayoutPanel.Controls.Add(this.button2, 4, 1);
+            this.shopLayoutPanel.Controls.Add(this.button3, 4, 2);
+            this.shopLayoutPanel.Controls.Add(this.button4, 4, 3);
+            this.shopLayoutPanel.Controls.Add(this.button5, 4, 4);
+            this.shopLayoutPanel.Controls.Add(this.pPrice2, 3, 1);
+            this.shopLayoutPanel.Controls.Add(this.pPrice3, 3, 2);
+            this.shopLayoutPanel.Controls.Add(this.pPrice4, 3, 3);
+            this.shopLayoutPanel.Controls.Add(this.pPrice5, 3, 4);
+            this.shopLayoutPanel.Controls.Add(this.label6, 2, 0);
             this.shopLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.shopLayoutPanel.Location = new System.Drawing.Point(303, 40);
             this.shopLayoutPanel.Name = "shopLayoutPanel";
@@ -289,25 +300,64 @@ namespace sklep
             this.shopLayoutPanel.Size = new System.Drawing.Size(897, 810);
             this.shopLayoutPanel.TabIndex = 13;
             // 
-            // button5
+            // pPrice5
             // 
-            this.button5.BackColor = System.Drawing.Color.PaleGreen;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(808, 648);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 158);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "kup";
-            this.button5.UseVisualStyleBackColor = false;
+            this.pPrice5.AutoSize = true;
+            this.pPrice5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pPrice5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice5.Location = new System.Drawing.Point(705, 849);
+            this.pPrice5.Name = "pPrice5";
+            this.pPrice5.Size = new System.Drawing.Size(81, 211);
+            this.pPrice5.TabIndex = 20;
+            this.pPrice5.Text = "2200 zł";
+            this.pPrice5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pPrice4
+            // 
+            this.pPrice4.AutoSize = true;
+            this.pPrice4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pPrice4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice4.Location = new System.Drawing.Point(705, 637);
+            this.pPrice4.Name = "pPrice4";
+            this.pPrice4.Size = new System.Drawing.Size(81, 211);
+            this.pPrice4.TabIndex = 19;
+            this.pPrice4.Text = "3500 zł";
+            this.pPrice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pPrice3
+            // 
+            this.pPrice3.AutoSize = true;
+            this.pPrice3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pPrice3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice3.Location = new System.Drawing.Point(705, 425);
+            this.pPrice3.Name = "pPrice3";
+            this.pPrice3.Size = new System.Drawing.Size(81, 211);
+            this.pPrice3.TabIndex = 18;
+            this.pPrice3.Text = "500 zł";
+            this.pPrice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pPrice2
+            // 
+            this.pPrice2.AutoSize = true;
+            this.pPrice2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pPrice2.Location = new System.Drawing.Point(705, 213);
+            this.pPrice2.Name = "pPrice2";
+            this.pPrice2.Size = new System.Drawing.Size(81, 211);
+            this.pPrice2.TabIndex = 17;
+            this.pPrice2.Text = "1800 zł";
+            this.pPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(272, 645);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label5.Location = new System.Drawing.Point(179, 849);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 42);
             this.label5.TabIndex = 14;
@@ -317,32 +367,19 @@ namespace sklep
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = global::sklep.Properties.Resources.gam;
-            this.pictureBox5.Location = new System.Drawing.Point(4, 648);
+            this.pictureBox5.Location = new System.Drawing.Point(4, 852);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(261, 158);
+            this.pictureBox5.Size = new System.Drawing.Size(168, 205);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.PaleGreen;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(808, 487);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 154);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "kup";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(272, 484);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label4.Location = new System.Drawing.Point(179, 637);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 42);
             this.label4.TabIndex = 11;
@@ -352,32 +389,19 @@ namespace sklep
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(4, 487);
+            this.pictureBox4.Location = new System.Drawing.Point(4, 640);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(261, 154);
+            this.pictureBox4.Size = new System.Drawing.Size(168, 205);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.PaleGreen;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(808, 326);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 154);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "kup";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(272, 323);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label3.Location = new System.Drawing.Point(179, 425);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 42);
             this.label3.TabIndex = 8;
@@ -387,9 +411,9 @@ namespace sklep
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(4, 326);
+            this.pictureBox3.Location = new System.Drawing.Point(4, 428);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(261, 154);
+            this.pictureBox3.Size = new System.Drawing.Size(168, 205);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -398,56 +422,30 @@ namespace sklep
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::sklep.Properties.Resources.dell;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 165);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 216);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(261, 154);
+            this.pictureBox2.Size = new System.Drawing.Size(168, 205);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.PaleGreen;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(808, 165);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 154);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "kup";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(272, 162);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label2.Location = new System.Drawing.Point(179, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 42);
             this.label2.TabIndex = 4;
             this.label2.Text = "label2";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.PaleGreen;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(808, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 154);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "kup";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(272, 1);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label1.Location = new System.Drawing.Point(179, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 42);
             this.label1.TabIndex = 1;
@@ -459,75 +457,157 @@ namespace sklep
             this.pictureBox1.Image = global::sklep.Properties.Resources.cyg;
             this.pictureBox1.Location = new System.Drawing.Point(4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(261, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(168, 205);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleGreen;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(793, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 205);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "kup";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.PaleGreen;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(793, 216);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(83, 205);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "kup";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.AutoSize = true;
+            this.button3.BackColor = System.Drawing.Color.PaleGreen;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(793, 428);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(83, 205);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "kup";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.AutoSize = true;
+            this.button4.BackColor = System.Drawing.Color.PaleGreen;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(793, 640);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(83, 205);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "kup";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.AutoSize = true;
+            this.button5.BackColor = System.Drawing.Color.PaleGreen;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(793, 852);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(83, 205);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "kup";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // pPrice1
             // 
             this.pPrice1.AutoSize = true;
             this.pPrice1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pPrice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pPrice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.pPrice1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pPrice1.Location = new System.Drawing.Point(629, 1);
+            this.pPrice1.Location = new System.Drawing.Point(705, 1);
             this.pPrice1.Name = "pPrice1";
-            this.pPrice1.Size = new System.Drawing.Size(172, 160);
+            this.pPrice1.Size = new System.Drawing.Size(81, 211);
             this.pPrice1.TabIndex = 16;
             this.pPrice1.Text = "1500 zł";
             this.pPrice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pPrice2
+            // label6
             // 
-            this.pPrice2.AutoSize = true;
-            this.pPrice2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pPrice2.Location = new System.Drawing.Point(629, 162);
-            this.pPrice2.Name = "pPrice2";
-            this.pPrice2.Size = new System.Drawing.Size(172, 160);
-            this.pPrice2.TabIndex = 17;
-            this.pPrice2.Text = "1800 zł";
-            this.pPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label6.Location = new System.Drawing.Point(442, 1);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(256, 211);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "opis1";
             // 
-            // pPrice3
+            // label7
             // 
-            this.pPrice3.AutoSize = true;
-            this.pPrice3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pPrice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pPrice3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pPrice3.Location = new System.Drawing.Point(629, 323);
-            this.pPrice3.Name = "pPrice3";
-            this.pPrice3.Size = new System.Drawing.Size(172, 160);
-            this.pPrice3.TabIndex = 18;
-            this.pPrice3.Text = "500 zł";
-            this.pPrice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.AutoSize = true;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label7.Location = new System.Drawing.Point(442, 213);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(256, 211);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "opis2";
             // 
-            // pPrice4
+            // label8
             // 
-            this.pPrice4.AutoSize = true;
-            this.pPrice4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pPrice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pPrice4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pPrice4.Location = new System.Drawing.Point(629, 484);
-            this.pPrice4.Name = "pPrice4";
-            this.pPrice4.Size = new System.Drawing.Size(172, 160);
-            this.pPrice4.TabIndex = 19;
-            this.pPrice4.Text = "3500 zł";
-            this.pPrice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.AutoSize = true;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label8.Location = new System.Drawing.Point(442, 425);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(256, 211);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "opis3";
             // 
-            // pPrice5
+            // label10
             // 
-            this.pPrice5.AutoSize = true;
-            this.pPrice5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pPrice5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pPrice5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pPrice5.Location = new System.Drawing.Point(629, 645);
-            this.pPrice5.Name = "pPrice5";
-            this.pPrice5.Size = new System.Drawing.Size(172, 164);
-            this.pPrice5.TabIndex = 20;
-            this.pPrice5.Text = "2200 zł";
-            this.pPrice5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.AutoSize = true;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label10.Location = new System.Drawing.Point(442, 637);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(256, 211);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "opis4";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label11.Location = new System.Drawing.Point(442, 849);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(256, 211);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "opis5";
             // 
             // Shop
             // 
@@ -665,5 +745,10 @@ namespace sklep
         private Label pPrice3;
         private Label pPrice2;
         private Label pPrice1;
+        private Label label6;
+        private Label label11;
+        private Label label10;
+        private Label label8;
+        private Label label7;
     }
 }
