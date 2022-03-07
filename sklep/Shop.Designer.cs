@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Linq;
 
 namespace sklep
 {
@@ -257,7 +258,7 @@ namespace sklep
             this.button5.BackColor = System.Drawing.Color.PaleGreen;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(802, 636);
             this.button5.Name = "button5";
@@ -272,7 +273,7 @@ namespace sklep
             this.button4.BackColor = System.Drawing.Color.PaleGreen;
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Location = new System.Drawing.Point(802, 478);
             this.button4.Name = "button4";
@@ -287,7 +288,7 @@ namespace sklep
             this.button3.BackColor = System.Drawing.Color.PaleGreen;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(802, 320);
             this.button3.Name = "button3";
@@ -302,7 +303,7 @@ namespace sklep
             this.button2.BackColor = System.Drawing.Color.PaleGreen;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(802, 162);
             this.button2.Name = "button2";
@@ -317,7 +318,7 @@ namespace sklep
             this.button1.BackColor = System.Drawing.Color.PaleGreen;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(802, 4);
             this.button1.Name = "button1";
@@ -780,7 +781,7 @@ namespace sklep
             {
                 this.BackColor = Color.FromArgb(225, 227, 225);
                 lbUserName.ForeColor = Color.Black;
-
+               
                 flyMenu.BackColor = BackColor = Color.FromArgb(225, 227, 225);
 
                 panel1.BackColor = Color.FromArgb(225, 227, 225);
@@ -791,15 +792,52 @@ namespace sklep
                 shopLayoutProduct.CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
                 shopLayoutProduct.BackColor = BackColor = Color.FromArgb(225, 227, 225);
 
-
+                void ChangeLabelColor(Control control)
+                {
+                    if (control is Label)
+                    {
+                        Label lbl = (Label)control;
+                        if (lbl.Text.StartsWith("opis") || lbl.Name.StartsWith("label") || lbl.Name.StartsWith("pPrice"))
+                        {
+                            lbl.ForeColor = Color.Black;
+                        }
+                    }
+                    else
+                    {
+                        foreach (Control child in control.Controls)
+                        {
+                            ChangeLabelColor(child);
+                        }
+                    }
+                }
+                ChangeLabelColor(this);
             }
             else
             {
+                //128; 255; 128
                 this.BackColor = Color.FromArgb(90, 92, 91);
                 lbUserName.ForeColor = Color.GreenYellow;
-
                 flyMenu.BackColor = BackColor = Color.FromArgb(90, 92, 91);
 
+                void ChangeLabelColor2(Control control)
+                {
+                    if (control is Label)
+                    {
+                        Label lbl = (Label)control;
+                        if (lbl.Text.StartsWith("opis") || lbl.Name.StartsWith("label") || lbl.Name.StartsWith("pPrice"))
+                        {
+                            lbl.ForeColor = Color.FromArgb(128, 255, 128);
+                        }
+                    }
+                    else
+                    {
+                        foreach (Control child in control.Controls)
+                        {
+                            ChangeLabelColor2(child);
+                        }
+                    }
+                }
+                ChangeLabelColor2(this);
                 panel1.BackColor = Color.FromArgb(90, 92, 91);
 
                 flyMenu_Category.BackColor = Color.FromArgb(80, 82, 81);
@@ -810,6 +848,8 @@ namespace sklep
 
             }
         }
+
+        
 
 
 
