@@ -75,7 +75,5 @@ namespace sklep
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        
     }
 }
