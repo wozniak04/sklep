@@ -44,9 +44,9 @@ namespace sklep
             this.tEmail = new System.Windows.Forms.TextBox();
             this.tUser = new System.Windows.Forms.TextBox();
             this.tPassword = new System.Windows.Forms.TextBox();
-            this.btnClose = new System.Windows.Forms.PictureBox();
-            this.btnBack = new System.Windows.Forms.PictureBox();
             this.btnMinimalize = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.boxRegister = new System.Windows.Forms.TableLayoutPanel();
@@ -59,9 +59,9 @@ namespace sklep
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.boxRegister.SuspendLayout();
@@ -222,17 +222,17 @@ namespace sklep
             this.tPassword.Enter += new System.EventHandler(this.Password_Clear);
             this.tPassword.Leave += new System.EventHandler(this.Password_Return);
             // 
-            // btnClose
+            // btnMinimalize
             // 
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.Image = global::sklep.Properties.Resources.close;
-            this.btnClose.Location = new System.Drawing.Point(1130, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(35, 40);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 7;
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
+            this.btnMinimalize.Location = new System.Drawing.Point(1130, 0);
+            this.btnMinimalize.Name = "btnMinimalize";
+            this.btnMinimalize.Size = new System.Drawing.Size(35, 40);
+            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimalize.TabIndex = 7;
+            this.btnMinimalize.TabStop = false;
+            this.btnMinimalize.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnBack
             // 
@@ -246,24 +246,24 @@ namespace sklep
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnMinimalize
+            // btnClose
             // 
-            this.btnMinimalize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMinimalize.Image = global::sklep.Properties.Resources.minimize_sign;
-            this.btnMinimalize.Location = new System.Drawing.Point(1165, 0);
-            this.btnMinimalize.Name = "btnMinimalize";
-            this.btnMinimalize.Size = new System.Drawing.Size(35, 40);
-            this.btnMinimalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimalize.TabIndex = 11;
-            this.btnMinimalize.TabStop = false;
-            this.btnMinimalize.Click += new System.EventHandler(this.btnMinimalize_Click);
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.Image = global::sklep.Properties.Resources.close;
+            this.btnClose.Location = new System.Drawing.Point(1165, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(35, 40);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 11;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnMinimalize_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
             this.panel1.Controls.Add(this.btnBack);
-            this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnMinimalize);
+            this.panel1.Controls.Add(this.btnClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -410,9 +410,9 @@ namespace sklep
             ((System.ComponentModel.ISupportInitialize)(this.Contrast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Left)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userChange_Right)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.boxRegister.ResumeLayout(false);
@@ -429,7 +429,7 @@ namespace sklep
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.ImageList userAwatar_List;
         private System.Windows.Forms.ImageList listNawigation;
-        private System.Windows.Forms.PictureBox btnClose;
+        private System.Windows.Forms.PictureBox btnMinimalize;
         private System.Windows.Forms.PictureBox userAwatar;
         private System.Windows.Forms.Button btnRegister_Apply;
         private System.Windows.Forms.PictureBox userChange_Left;
@@ -438,7 +438,7 @@ namespace sklep
         private System.Windows.Forms.TextBox tUser;
         private System.Windows.Forms.TextBox tPassword;
         private System.Windows.Forms.PictureBox Contrast;
-        private System.Windows.Forms.PictureBox btnMinimalize;
+        private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tPasswordRepeat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

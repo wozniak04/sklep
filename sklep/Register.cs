@@ -232,8 +232,8 @@ namespace sklep
             }
             userAwatar.Image = userAwatar_List.Images[count];
         }
-        //Close window function
-        private void btnClose_Click(object sender, EventArgs e)
+        //Minimaliz window function
+        private void btnMinimalize_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -266,7 +266,7 @@ namespace sklep
         }
         
 
-        private void btnMinimalize_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
