@@ -140,6 +140,22 @@ namespace sklep
             return produkt;
         }
 
+        public string opis(int licznik)
+        {
+            string produkt = "";
+            var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
+
+            conn.Open();
+            var query = new SqlCommand($"select Opis From Oferty Where idOferty={licznik} ", conn);
+            var reader = query.ExecuteReader();
+            if (reader.Read())
+            {
+                produkt = reader["Opis"].ToString();
+            }
+            conn.Close();
+            return produkt;
+        }
+
         public bool insertOferty(string nazwa,byte[] zdjecie,string oferta, int cena)
         {
             var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
@@ -155,6 +171,7 @@ namespace sklep
             }
             return true;
         }
+
 
 
     }

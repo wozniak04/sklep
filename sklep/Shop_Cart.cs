@@ -53,6 +53,8 @@ namespace sklep
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+            
+
         }
 
         private void Shop_Cart_Load(object sender, EventArgs e)
