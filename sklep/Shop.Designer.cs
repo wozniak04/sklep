@@ -65,7 +65,7 @@ namespace sklep
             this.pDescripton3 = new System.Windows.Forms.Label();
             this.pDescripton2 = new System.Windows.Forms.Label();
             this.pDescripton1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.pDescription5 = new System.Windows.Forms.Label();
             this.ShopLayout = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flyMenu = new System.Windows.Forms.TableLayoutPanel();
@@ -440,7 +440,7 @@ namespace sklep
             this.shopLayoutProduct.Controls.Add(this.pPrice5, 3, 4);
             this.shopLayoutProduct.Controls.Add(this.label3, 1, 2);
             this.shopLayoutProduct.Controls.Add(this.label4, 1, 3);
-            this.shopLayoutProduct.Controls.Add(this.label6, 2, 4);
+            this.shopLayoutProduct.Controls.Add(this.pDescription5, 2, 4);
             this.shopLayoutProduct.Controls.Add(this.label5, 1, 4);
             this.shopLayoutProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.shopLayoutProduct.Location = new System.Drawing.Point(301, 3);
@@ -459,7 +459,7 @@ namespace sklep
             // 
             this.pDescripton4.AutoSize = true;
             this.pDescripton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pDescripton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pDescripton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.pDescripton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pDescripton4.Location = new System.Drawing.Point(447, 475);
             this.pDescripton4.Name = "pDescripton4";
@@ -471,7 +471,7 @@ namespace sklep
             // 
             this.pDescripton3.AutoSize = true;
             this.pDescripton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pDescripton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pDescripton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.pDescripton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pDescripton3.Location = new System.Drawing.Point(447, 317);
             this.pDescripton3.Name = "pDescripton3";
@@ -483,7 +483,7 @@ namespace sklep
             // 
             this.pDescripton2.AutoSize = true;
             this.pDescripton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pDescripton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pDescripton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.pDescripton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pDescripton2.Location = new System.Drawing.Point(447, 159);
             this.pDescripton2.Name = "pDescripton2";
@@ -495,7 +495,7 @@ namespace sklep
             // 
             this.pDescripton1.AutoSize = true;
             this.pDescripton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pDescripton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pDescripton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.pDescripton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pDescripton1.Location = new System.Drawing.Point(447, 1);
             this.pDescripton1.Name = "pDescripton1";
@@ -503,17 +503,17 @@ namespace sklep
             this.pDescripton1.TabIndex = 26;
             this.pDescripton1.Text = "opis";
             // 
-            // label6
+            // pDescription5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label6.Location = new System.Drawing.Point(447, 633);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(259, 157);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "opis";
+            this.pDescription5.AutoSize = true;
+            this.pDescription5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pDescription5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pDescription5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pDescription5.Location = new System.Drawing.Point(447, 633);
+            this.pDescription5.Name = "pDescription5";
+            this.pDescription5.Size = new System.Drawing.Size(259, 157);
+            this.pDescription5.TabIndex = 30;
+            this.pDescription5.Text = "opis";
             // 
             // ShopLayout
             // 
@@ -896,6 +896,6 @@ namespace sklep
         private PictureBox btnClose;
         private PictureBox shopCart;
         private TableLayoutPanel flyMenu_Category;
-        private Label label6;
+        private Label pDescription5;
     }
 }

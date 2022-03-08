@@ -30,14 +30,19 @@ namespace sklep
 
             label1.Text = polacz.nazwa(1);
             pPrice1.Text = polacz.cena(1) + "zł";
+            pDescripton1.Text = polacz.opis(1);
             label2.Text = polacz.nazwa(2);
             pPrice2.Text = polacz.cena(2) + "zł";
+            pDescripton2.Text = polacz.opis(2);
             label3.Text = polacz.nazwa(3);
             pPrice3.Text = polacz.cena(3) + "zł";
+            pDescripton3.Text = polacz.opis(3);
             label4.Text = polacz.nazwa(4);
             pPrice4.Text = polacz.cena(4) + "zł";
+            pDescripton4.Text = polacz.opis(4);
             label5.Text = polacz.nazwa(5);
             pPrice5.Text = polacz.cena(5) + "zł";
+            pDescription5.Text = polacz.opis(5);
         }
 
         protected override void WndProc(ref Message m)
