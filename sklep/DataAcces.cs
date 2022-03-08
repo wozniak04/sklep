@@ -172,6 +172,22 @@ namespace sklep
             return true;
         }
 
+        public byte[] getZdjecie(string nazwa) {
+
+            byte[] zdjecie=null;
+            var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
+
+            conn.Open();
+            var query = new SqlCommand($"select Zdjecie From Uzytkownik Where Nazwa='{nazwa}' ", conn);
+            var reader = query.ExecuteReader();
+            if (reader.Read())
+            {
+                zdjecie = (byte[])reader["Zdjecie"];
+            }
+            conn.Close();
+            return zdjecie;
+        }
+
 
 
     }

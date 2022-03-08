@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Drawing;
+using System.IO;
 
 namespace sklep
 {
@@ -43,7 +44,11 @@ namespace sklep
             label5.Text = polacz.nazwa(5);
             pPrice5.Text = polacz.cena(5) + "zł";
             pDescription5.Text = polacz.opis(5);
-        }
+            using (MemoryStream ms=new MemoryStream(polacz.getZdjecie(nazwa))) 
+            { 
+                userAwatar.Image=Image.FromStream(ms);
+            }
+        }   
 
         protected override void WndProc(ref Message m)
         {
