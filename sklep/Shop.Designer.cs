@@ -710,7 +710,7 @@ namespace sklep
             this.ClientSize = new System.Drawing.Size(1200, 850);
             this.Controls.Add(this.ShopLayout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(360, 718);
+            this.MinimumSize = new System.Drawing.Size(1200, 850);
             this.Name = "Shop";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

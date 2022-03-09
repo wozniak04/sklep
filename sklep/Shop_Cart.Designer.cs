@@ -33,6 +33,7 @@
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pWyczysc = new System.Windows.Forms.Label();
             this.pCost = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimalize)).BeginInit();
@@ -91,12 +92,26 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(82)))), ((int)(((byte)(81)))));
+            this.panel2.Controls.Add(this.pWyczysc);
             this.panel2.Controls.Add(this.pCost);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 750);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 100);
             this.panel2.TabIndex = 14;
+            // 
+            // pWyczysc
+            // 
+            this.pWyczysc.AutoSize = true;
+            this.pWyczysc.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pWyczysc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pWyczysc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pWyczysc.Location = new System.Drawing.Point(971, 0);
+            this.pWyczysc.Name = "pWyczysc";
+            this.pWyczysc.Size = new System.Drawing.Size(229, 31);
+            this.pWyczysc.TabIndex = 1;
+            this.pWyczysc.Text = "Wyczyść koszyk";
+            this.pWyczysc.Click += new System.EventHandler(this.pWyczysc_Click);
             // 
             // pCost
             // 
@@ -120,6 +135,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1200, 850);
             this.Name = "Shop_Cart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shop_Cart";
@@ -143,5 +159,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label pCost;
+        private System.Windows.Forms.Label pWyczysc;
     }
 }

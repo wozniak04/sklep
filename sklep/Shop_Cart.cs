@@ -58,13 +58,14 @@ namespace sklep
             using(var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString())) 
             { 
                 conn.Open();
-                using (var comand = new SqlDataAdapter($"SELECT ZdjecieOferty, NazwaOferty,CenaOferty FROM Zamowienia WHERE NazwaUzytkownika='{nazwa}'", conn)) 
+                using (var comand = new SqlDataAdapter($"SELECT NazwaOferty,CenaOferty FROM Zamowienia WHERE NazwaUzytkownika='{nazwa}'", conn)) 
                 {
 
                     var data=new DataTable();
                     comand.Fill(data);
                     dataGridView1.DataSource = data;
-                    
+                    dataGridView1.RowTemplate.Height = 100;
+
                 }
                 conn.Close();
             
@@ -94,6 +95,11 @@ namespace sklep
         private void btnMinimalize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pWyczysc_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = null;
         }
     }
 }

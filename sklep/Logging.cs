@@ -226,7 +226,5 @@ namespace sklep
             Shop.ShowDialog();
             this.Close();
         }
-
-        
     }
 }
