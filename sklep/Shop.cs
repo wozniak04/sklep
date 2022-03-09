@@ -21,9 +21,10 @@ namespace sklep
         const int WM_NCHITTEST = 0x84;
         const int HTCLIENT = 1;
         const int HTCAPTION = 2;
-
+        private string nazwa;
         public Shop(string nazwa)
         {
+            this.nazwa = nazwa;
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
             lbUserName.Text = nazwa;
@@ -44,9 +45,12 @@ namespace sklep
             label5.Text = polacz.nazwa(5);
             pPrice5.Text = polacz.cena(5) + "zł";
             pDescription5.Text = polacz.opis(5);
-            using (MemoryStream ms=new MemoryStream(polacz.getZdjecie(nazwa))) 
-            { 
-                userAwatar.Image=Image.FromStream(ms);
+            if (polacz.getZdjecie(nazwa) != null)
+            {
+                using (MemoryStream ms = new MemoryStream(polacz.getZdjecie(nazwa)))
+                {
+                    userAwatar.Image = Image.FromStream(ms);
+                }
             }
         }   
 
@@ -110,7 +114,7 @@ namespace sklep
         private void shopCart_Click(object sender, EventArgs e)
         {
             //opening a form of bought products
-            Shop_Cart sCart = new Shop_Cart();          
+            Shop_Cart sCart = new Shop_Cart(nazwa);          
             sCart.ShowDialog();
             
         }

@@ -52,12 +52,12 @@ namespace sklep
 
             return false;
         }
-        public bool insert(string nazwa, string haslo, string email,byte[] zdjecie)
+        public bool insert(string nazwa, string haslo, string email, byte[] zdjecie)
         {
             var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
             conn.Open();
             var query = new SqlCommand($"insert into Uzytkownik (Nazwa,Haslo,Email,Zdjecie) values ('{nazwa}','{haslo}','{email}',@Zdjecie)", conn);
-            query.Parameters.AddWithValue("@Zdjecie",zdjecie);
+            query.Parameters.AddWithValue("@Zdjecie", zdjecie);
             query.ExecuteNonQuery();
 
             conn.Close();
@@ -111,15 +111,15 @@ namespace sklep
 
         public string nazwa(int licznik)
         {
-            string produkt="";
+            string produkt = "";
             var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
-            
+
             conn.Open();
             var query = new SqlCommand($"select Nazwa From Oferty Where idOferty={licznik} ", conn);
             var reader = query.ExecuteReader();
             if (reader.Read())
             {
-                produkt = reader["Nazwa"].ToString();               
+                produkt = reader["Nazwa"].ToString();
             }
             conn.Close();
             return produkt;
@@ -156,12 +156,12 @@ namespace sklep
             return produkt;
         }
 
-        public bool insertOferty(string nazwa,byte[] zdjecie,string oferta, int cena)
+        public bool insertOferty(string nazwa, byte[] zdjecie, string oferta, int cena)
         {
             var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
             conn.Open();
             var query = new SqlCommand($"insert into Zamowienia (NazwaUzytkownika,ZdjecieOferty,NazwaOferty,CenaOferty) values ('{nazwa}',@zdjecie,'{oferta}',{cena})", conn);
-            query.Parameters.AddWithValue("@zdjecie",zdjecie);
+            query.Parameters.AddWithValue("@zdjecie", zdjecie);
             query.ExecuteNonQuery();
 
             conn.Close();
@@ -174,7 +174,7 @@ namespace sklep
 
         public byte[] getZdjecie(string nazwa) {
 
-            byte[] zdjecie=null;
+            byte[] zdjecie = null;
             var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
 
             conn.Open();
@@ -182,10 +182,33 @@ namespace sklep
             var reader = query.ExecuteReader();
             if (reader.Read())
             {
-                zdjecie = (byte[])reader["Zdjecie"];
+                if (reader["Zdjecie"].GetType() == typeof(byte[]))
+                    zdjecie = (byte[])reader["Zdjecie"];
+            }
+            else
+            {
+                zdjecie = null;
             }
             conn.Close();
             return zdjecie;
+        }
+        public string getcena (string nazwa)
+            {
+            int cena = 0;
+            string cenaD = "0";
+            var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString());
+            conn.Open();
+            var query = new SqlCommand($"select CenaOferty From Zamowienia Where NazwaUzytkownika='{nazwa}' ", conn);
+            var reader = query.ExecuteReader();
+
+            while (reader.Read())
+            {
+               
+                cena += (int)reader["CenaOferty"];
+            }   
+            
+            conn.Close();
+            return cenaD=cena.ToString()+"zł";
         }
 
 

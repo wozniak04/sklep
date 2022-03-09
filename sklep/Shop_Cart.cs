@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -49,10 +51,26 @@ namespace sklep
                 return cp;
             }
         }
-        public Shop_Cart()
+        public Shop_Cart(string nazwa)
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(RoundCorner(0, 0, Width, Height, 20, 20));
+            using(var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["uzytkownicy"].ConnectionString.ToString())) 
+            { 
+                conn.Open();
+                using (var comand = new SqlDataAdapter($"SELECT ZdjecieOferty, NazwaOferty,CenaOferty FROM Zamowienia WHERE NazwaUzytkownika='{nazwa}'", conn)) 
+                {
+
+                    var data=new DataTable();
+                    comand.Fill(data);
+                    dataGridView1.DataSource = data;
+                    
+                }
+                conn.Close();
+            
+            }
+            var polacz = new DataAcces();
+            pCost.Text=polacz.getcena(nazwa);
             
 
         }
